@@ -45,15 +45,17 @@ namespace UABPetelnija.GGJ2025.Runtime.UI.Views
         {
             base.OnDisable();
 
-            startGameButton.onClick.AddListener(OnStartGameButtonClicked);
-            exitGameButton.onClick.AddListener(OnExitGameButtonClicked);
+            startGameButton.onClick.RemoveListener(OnStartGameButtonClicked);
+            exitGameButton.onClick.RemoveListener(OnExitGameButtonClicked);
 
-            lookSensitivitySlider.onValueChanged.AddListener(OnLookSensitivitySliderChanged);
-            masterVolumeSlider.onValueChanged.AddListener(OnMasterVolumeSliderChanged);
+            lookSensitivitySlider.onValueChanged.RemoveListener(OnLookSensitivitySliderChanged);
+            masterVolumeSlider.onValueChanged.RemoveListener(OnMasterVolumeSliderChanged);
         }
 
-        public void SelectStartGameButton()
+        protected override void OnViewShowEntered()
         {
+            base.OnViewShowEntered();
+
             var eventSystem = EventSystem.current;
             if (eventSystem == false)
             {
