@@ -10,7 +10,7 @@ Global Game Jam 2025 repo of team "UAB Petelnija" (template-ish for now).
 
 - [Download latest release (Windows)](https://github.com/Edvinas01/ggj-2025/releases/latest)
 - Download from itch.io (Windows): TBD
-- Global Game Jam 2023 Page: TDB
+- Global Game Jam 2025 Page: TDB
 - Trailer: TDB
 
 ## Controls
