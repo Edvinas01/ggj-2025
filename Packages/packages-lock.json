@@ -28,6 +28,12 @@
       "source": "embedded",
       "dependencies": {}
     },
+    "com.chark.simple-ui": {
+      "version": "file:com.chark.simple-ui",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.kyrylokuzyk.primetween": {
       "version": "file:com.kyrylokuzyk.primetween",
       "depth": 0,
