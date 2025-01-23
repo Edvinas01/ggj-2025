@@ -59,7 +59,7 @@ namespace UABPetelnija.GGJ2025.Runtime.Systems.Scenes
             controller.LoadSceneCollection(menuSceneCollection);
         }
 
-        public void LoadStartingScene()
+        public void LoadGameplayScene()
         {
             controller.LoadSceneCollection(startingSceneCollection);
         }

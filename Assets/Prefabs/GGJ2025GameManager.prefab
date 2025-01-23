@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3495899542627269071}
   - component: {fileID: 6282296170639005796}
+  - component: {fileID: 1006030762066336865}
   m_Layer: 0
   m_Name: System_Audio
   m_TagString: Untagged
@@ -50,6 +51,28 @@ MonoBehaviour:
   globalMasterVolumeParameter: {fileID: 2654973150724560419}
   globalMusicVolumeParameter: {fileID: 821812384097132345}
   globalSfxVolumeParameter: {fileID: 3792741928687031707}
+--- !u!114 &1006030762066336865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584595080776047213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9468c5f457ace64f8d4df6d642b107f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LoadEvent: 7
+  UnloadEvent: 8
+  Banks:
+  - Master
+  - Master.strings
+  - Ambience
+  - Music
+  - SFX
+  CollisionTag: 
+  PreloadSamples: 0
 --- !u!1 &3660914291565715677
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,7 +135,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_TargetDisplay: 0
 --- !u!114 &2387782821295336148
 MonoBehaviour:
@@ -854,7 +877,6 @@ MonoBehaviour:
   controller: {fileID: 4539497797057166673}
   menuSceneCollection: {fileID: 11400000, guid: 4ded77bce1f4449449772934cbf79cdb, type: 2}
   startingSceneCollection: {fileID: 11400000, guid: 31f756c216d01fb4d9deecbb4aa61e55, type: 2}
-  sceneCollections: []
 --- !u!114 &4539497797057166673
 MonoBehaviour:
   m_ObjectHideFlags: 0

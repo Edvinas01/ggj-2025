@@ -21,6 +21,8 @@ namespace CHARK.SimpleUI
         [TitleGroup(ViewGroupKey + "/General")]
         [PropertySpace(spaceBefore: 0f, spaceAfter: 8f)]
         [Required]
+#else
+        [Header("View General")]
 #endif
         [SerializeField]
         private CanvasGroup canvasGroup;
@@ -50,6 +52,8 @@ namespace CHARK.SimpleUI
         [TitleGroup(ViewGroupKey + "/Animation")]
         [Title("Animation", HorizontalLine = false)]
         [Optional]
+#else
+        [Header("View Animations")]
 #endif
         [SerializeField]
         private ViewAnimation showAnimationAsset;
@@ -65,6 +69,8 @@ namespace CHARK.SimpleUI
 #if ODIN_INSPECTOR
         [TitleGroup(ViewGroupKey + "/Events")]
         [FoldoutGroup(ViewGroupKey + "/Events/Show Events")]
+#else
+        [Header("View Events")]
 #endif
         [SerializeField]
         private UnityEvent onShowEntered;

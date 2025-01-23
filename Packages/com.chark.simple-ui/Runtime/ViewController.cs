@@ -15,6 +15,8 @@ namespace CHARK.SimpleUI
         [HideIf(nameof(view))]
         [Required]
         [AssetsOnly]
+#else
+        [Header("Controller General")]
 #endif
         [SerializeField]
         private TView viewPrefab;
@@ -121,6 +123,8 @@ namespace CHARK.SimpleUI
 
 #if ODIN_INSPECTOR
         [TitleGroup(ControllerGroupKey + "/Features")]
+#else
+        [Header("Controller Features")]
 #endif
         [SerializeField]
         private LifecycleBehavior awakeBehaviour = LifecycleBehavior.HideImmediate;
@@ -131,27 +135,12 @@ namespace CHARK.SimpleUI
         [SerializeField]
         private LifecycleBehavior startBehaviour;
 
-#if ODIN_INSPECTOR
-        [TitleGroup(ControllerGroupKey + "/Features")]
-        [HideInInspector]
-        [ReadOnly]
-#endif
-        [SerializeField]
-        private bool isHideViewOnAwake;
-
         protected const string ControllerGroupKey = "Controller Component";
 
         public abstract ViewVisibilityState ViewState { get; }
 
         protected virtual void Awake()
         {
-            // Backwards compatibility
-            if (isHideViewOnAwake)
-            {
-                OnHide(isAnimate: false);
-                return;
-            }
-
             UpdateViewVisibility(awakeBehaviour);
         }
 

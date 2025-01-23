@@ -272,11 +272,13 @@ namespace CHARK.ScriptableScenes
 
         private IEnumerator LoadInternalRoutine()
         {
+            // TODO: quick workaround
+            var isAdditive = SceneManager.sceneCount > 1;
             var operation = StartLoadSceneOperation();
 
             AsyncOperation StartLoadSceneOperation()
             {
-                var parameters = new LoadSceneParameters(LoadSceneMode.Additive);
+                var parameters = new LoadSceneParameters(isAdditive ? LoadSceneMode.Additive : LoadSceneMode.Single);
 
 #if UNITY_EDITOR
                 // Allow to load scenes which are not added to Build Settings (Editor only).
@@ -299,6 +301,11 @@ namespace CHARK.ScriptableScenes
 
         private IEnumerator UnloadInternalRoutine()
         {
+            if (SceneManager.sceneCount == 1)
+            {
+                yield break;
+            }
+
             var scene = SceneManager.GetSceneByPath(scenePath);
             if (scene.IsValid() == false)
             {

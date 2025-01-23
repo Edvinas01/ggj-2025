@@ -34,7 +34,7 @@ namespace UABPetelnija.GGJ2025.Runtime.Systems.Scenes
         /// <summary>
         /// Load starting game scene.
         /// </summary>
-        public void LoadStartingScene();
+        public void LoadGameplayScene();
 
         /// <summary>
         /// Load given <paramref name="collection"/>.
