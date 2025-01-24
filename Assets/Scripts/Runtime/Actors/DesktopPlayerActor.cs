@@ -2,6 +2,7 @@
 using UABPetelnia.GGJ2025.Runtime.Components.Input;
 using UABPetelnia.GGJ2025.Runtime.Systems.Cursors;
 using UABPetelnia.GGJ2025.Runtime.Systems.Players;
+using UABPetelnia.GGJ2025.Runtime.UI.Controllers;
 using Unity.Cinemachine;
 using UnityEngine;
 
@@ -15,6 +16,10 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
 
         [SerializeField]
         private CinemachineCamera cinemachineCamera;
+
+        [Header("UI")]
+        [SerializeField]
+        private GameplayViewController gameplayViewController;
 
         [Header("Input")]
         [SerializeField]
@@ -92,6 +97,16 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         private void StopZoomingIn()
         {
             targetFov = initialFov;
+        }
+
+        public void ShowText(string text)
+        {
+            gameplayViewController.ShowChatText(text);
+        }
+
+        public void HideText()
+        {
+            gameplayViewController.HideChatText();
         }
     }
 }

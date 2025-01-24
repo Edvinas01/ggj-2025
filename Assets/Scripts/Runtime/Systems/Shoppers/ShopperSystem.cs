@@ -7,27 +7,32 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Shoppers
 {
     internal sealed class ShopperSystem : SimpleSystem, IShopperSystem
     {
-        private readonly List<IShopperActor> shoppers = new();
+        private readonly List<IShopperActor> spawnedShoppers = new();
 
         public bool TryGetShopper(out IShopperActor shopper)
         {
-            shopper = shoppers.FirstOrDefault();
+            shopper = spawnedShoppers.FirstOrDefault();
             return shopper != default;
+        }
+
+        public IShopperActor SpawnRandomShopper()
+        {
+            return default;
         }
 
         public void AddShopper(IShopperActor shopper)
         {
-            if (shoppers.Contains(shopper))
+            if (spawnedShoppers.Contains(shopper))
             {
                 return;
             }
 
-            shoppers.Add(shopper);
+            spawnedShoppers.Add(shopper);
         }
 
         public void RemoveShopper(IShopperActor shopper)
         {
-            shoppers.Remove(shopper);
+            spawnedShoppers.Remove(shopper);
         }
     }
 }

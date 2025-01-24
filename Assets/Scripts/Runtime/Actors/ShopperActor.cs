@@ -8,6 +8,8 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
     {
         private IShopperSystem shopperSystem;
 
+        public string Name => name;
+
         private void Awake()
         {
             shopperSystem = GameManager.GetSystem<IShopperSystem>();
@@ -21,6 +23,15 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         private void OnDisable()
         {
             shopperSystem.RemoveShopper(this);
+        }
+
+        public void WalkTo(Vector3 position)
+        {
+        }
+
+        public void Destroy()
+        {
+            Destroy(gameObject);
         }
     }
 }

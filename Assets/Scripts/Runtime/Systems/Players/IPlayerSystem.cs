@@ -5,6 +5,8 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Players
 {
     internal interface IPlayerSystem : ISystem
     {
+        public IPlayerActor Player { get; }
+
         public bool TryGetPlayer(out IPlayerActor player);
 
         public void AddPlayer(IPlayerActor player);

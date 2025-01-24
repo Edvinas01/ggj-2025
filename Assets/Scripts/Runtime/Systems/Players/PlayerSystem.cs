@@ -9,6 +9,8 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Players
     {
         private readonly List<IPlayerActor> players = new();
 
+        public IPlayerActor Player => players.First();
+
         public bool TryGetPlayer(out IPlayerActor player)
         {
             player = players.FirstOrDefault();

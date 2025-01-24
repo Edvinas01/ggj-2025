@@ -1,6 +1,7 @@
 ﻿using CHARK.GameManagement;
 using UABPetelnia.GGJ2025.Runtime.Systems.Audio;
 using UABPetelnia.GGJ2025.Runtime.Systems.Cursors;
+using UABPetelnia.GGJ2025.Runtime.Systems.Gameplay;
 using UABPetelnia.GGJ2025.Runtime.Systems.Input;
 using UABPetelnia.GGJ2025.Runtime.Systems.Pausing;
 using UABPetelnia.GGJ2025.Runtime.Systems.Players;
@@ -44,10 +45,17 @@ namespace UABPetelnia.GGJ2025.Runtime
 
             AddSystem(new PlayerSystem());
             AddSystem(new ShopperSystem());
+            AddSystem(new GameplaySystem());
         }
 
         protected override void OnAfterInitializeSystems()
         {
+        }
+
+        protected override void OnStarted()
+        {
+            var gameplaySystem = GetSystem<IGameplaySystem>();
+            gameplaySystem.StartGameplay();
         }
     }
 }
