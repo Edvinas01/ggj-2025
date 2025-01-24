@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace UABPetelnija.GGJ2025.Runtime.Systems.Settings
+namespace UABPetelnia.GGJ2025.Runtime.Systems.Settings
 {
     internal struct SettingsData
     {

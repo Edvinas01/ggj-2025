@@ -1,13 +1,13 @@
 ﻿using CHARK.GameManagement;
-using UABPetelnija.GGJ2025.Runtime.Systems.Audio;
-using UABPetelnija.GGJ2025.Runtime.Systems.Cursors;
-using UABPetelnija.GGJ2025.Runtime.Systems.Input;
-using UABPetelnija.GGJ2025.Runtime.Systems.Pausing;
-using UABPetelnija.GGJ2025.Runtime.Systems.Scenes;
-using UABPetelnija.GGJ2025.Runtime.Systems.Settings;
+using UABPetelnia.GGJ2025.Runtime.Systems.Audio;
+using UABPetelnia.GGJ2025.Runtime.Systems.Cursors;
+using UABPetelnia.GGJ2025.Runtime.Systems.Input;
+using UABPetelnia.GGJ2025.Runtime.Systems.Pausing;
+using UABPetelnia.GGJ2025.Runtime.Systems.Scenes;
+using UABPetelnia.GGJ2025.Runtime.Systems.Settings;
 using UnityEngine;
 
-namespace UABPetelnija.GGJ2025.Runtime
+namespace UABPetelnia.GGJ2025.Runtime
 {
     // ReSharper disable once InconsistentNaming
     internal sealed class GGJ2025GameManager : GameManager

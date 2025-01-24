@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace UABPetelnija.GGJ2025.Runtime.Constants
+namespace UABPetelnia.GGJ2025.Runtime.Constants
 {
     /// <summary>
     /// Constants using in <see cref="UnityEngine.CreateAssetMenuAttribute"/>.
@@ -15,7 +15,7 @@ namespace UABPetelnija.GGJ2025.Runtime.Constants
         /// <summary>
         /// Prefix for <see cref="CreateAssetMenuAttribute.menuName"/>
         /// </summary>
-        public const string BaseMenuName = "UAB Petelnija/GGJ 2025";
+        public const string BaseMenuName = "UAB Petelnia/GGJ 2025";
 
         /// <summary>
         /// Prefix for <see cref="CreateAssetMenuAttribute.order"/>

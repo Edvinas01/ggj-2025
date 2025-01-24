@@ -1,9 +1,9 @@
 ﻿using CHARK.GameManagement;
 using CHARK.GameManagement.Systems;
-using UABPetelnija.GGJ2025.Runtime.Settings;
+using UABPetelnia.GGJ2025.Runtime.Settings;
 using UnityEngine;
 
-namespace UABPetelnija.GGJ2025.Runtime.Systems.Settings
+namespace UABPetelnia.GGJ2025.Runtime.Systems.Settings
 {
     internal sealed class SettingsSystem : MonoSystem, ISettingsSystem
     {

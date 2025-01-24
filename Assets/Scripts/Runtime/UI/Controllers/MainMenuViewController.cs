@@ -1,12 +1,12 @@
 ﻿using CHARK.GameManagement;
 using CHARK.SimpleUI;
-using UABPetelnija.GGJ2025.Runtime.Settings;
-using UABPetelnija.GGJ2025.Runtime.Systems.Audio;
-using UABPetelnija.GGJ2025.Runtime.Systems.Input;
-using UABPetelnija.GGJ2025.Runtime.Systems.Scenes;
-using UABPetelnija.GGJ2025.Runtime.UI.Views;
+using UABPetelnia.GGJ2025.Runtime.Settings;
+using UABPetelnia.GGJ2025.Runtime.Systems.Audio;
+using UABPetelnia.GGJ2025.Runtime.Systems.Input;
+using UABPetelnia.GGJ2025.Runtime.Systems.Scenes;
+using UABPetelnia.GGJ2025.Runtime.UI.Views;
 
-namespace UABPetelnija.GGJ2025.Runtime.UI.Controllers
+namespace UABPetelnia.GGJ2025.Runtime.UI.Controllers
 {
     internal sealed class MainMenuViewController : ViewController<MainMenuView>
     {

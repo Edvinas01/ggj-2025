@@ -4,7 +4,7 @@
 
 # GGJ 2025
 
-Global Game Jam 2025 repo of team "UAB Petelnija" (template-ish for now).
+Global Game Jam 2025 repo of team "UAB Petelnia" (template-ish for now).
 
 ## Links
 

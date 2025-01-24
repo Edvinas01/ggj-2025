@@ -1,16 +1,14 @@
 {
-    "name": "UABPetelnija.GGJ2025.Editor",
-    "rootNamespace": "UABPetelnija.GGJ2025",
-    "references": [
-    ],
+    "name": "UABPetelnia.GGJ2025.Editor",
+    "rootNamespace": "UABPetelnia.GGJ2025",
+    "references": [],
     "includePlatforms": [
         "Editor"
     ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": true,
-    "precompiledReferences": [
-    ],
+    "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
     "versionDefines": [],

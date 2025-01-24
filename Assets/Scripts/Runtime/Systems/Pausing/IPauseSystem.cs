@@ -1,6 +1,6 @@
 ﻿using CHARK.GameManagement.Systems;
 
-namespace UABPetelnija.GGJ2025.Runtime.Systems.Pausing
+namespace UABPetelnia.GGJ2025.Runtime.Systems.Pausing
 {
     internal interface IPauseSystem : ISystem
     {

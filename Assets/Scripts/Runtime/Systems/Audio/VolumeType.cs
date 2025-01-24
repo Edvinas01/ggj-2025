@@ -1,4 +1,4 @@
-﻿namespace UABPetelnija.GGJ2025.Runtime.Systems.Audio
+﻿namespace UABPetelnia.GGJ2025.Runtime.Systems.Audio
 {
     internal enum VolumeType
     {

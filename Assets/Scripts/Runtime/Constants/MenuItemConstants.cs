@@ -1,4 +1,4 @@
-﻿namespace UABPetelnija.GGJ2025.Runtime.Constants
+﻿namespace UABPetelnia.GGJ2025.Runtime.Constants
 {
     /// <summary>
     /// Constants used in <see cref="UnityEditor.MenuItem"/>.
@@ -8,12 +8,12 @@
         /// <summary>
         /// Prefix for <see cref="UnityEditor.MenuItem.menuItem"/>.
         /// </summary>
-        public const string BaseWindowItemName = "Window/UAB Petelnija";
+        public const string BaseWindowItemName = "Window/UAB Petelnia";
 
         /// <summary>
         /// Prefix for <see cref="UnityEditor.MenuItem.menuItem"/>.
         /// </summary>
-        public const string BaseToolsItemName = "Tools/UAB Petelnija";
+        public const string BaseToolsItemName = "Tools/UAB Petelnia";
 
         /// <summary>
         /// Prefix for <see cref="UnityEditor.MenuItem.priority"/>.
@@ -28,7 +28,7 @@
         /// <summary>
         /// Base menu item name for Create asset menu items.
         /// </summary>
-        public const string BaseGameObjectItemName = "GameObject/UAB Petelnija";
+        public const string BaseGameObjectItemName = "GameObject/UAB Petelnia";
 
         /// <summary>
         /// Base menu item priority for Create asset menu items.

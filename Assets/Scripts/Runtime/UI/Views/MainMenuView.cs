@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace UABPetelnija.GGJ2025.Runtime.UI.Views
+namespace UABPetelnia.GGJ2025.Runtime.UI.Views
 {
     internal sealed class MainMenuView : View
     {

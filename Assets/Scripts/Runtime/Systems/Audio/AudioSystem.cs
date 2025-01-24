@@ -2,11 +2,11 @@
 using CHARK.GameManagement;
 using CHARK.GameManagement.Systems;
 using CHARK.ScriptableAudio;
-using UABPetelnija.GGJ2025.Runtime.Settings;
-using UABPetelnija.GGJ2025.Runtime.Systems.Settings;
+using UABPetelnia.GGJ2025.Runtime.Settings;
+using UABPetelnia.GGJ2025.Runtime.Systems.Settings;
 using UnityEngine;
 
-namespace UABPetelnija.GGJ2025.Runtime.Systems.Audio
+namespace UABPetelnia.GGJ2025.Runtime.Systems.Audio
 {
     internal sealed class AudioSystem : MonoSystem, IAudioSystem
     {

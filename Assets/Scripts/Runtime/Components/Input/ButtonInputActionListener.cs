@@ -1,6 +1,6 @@
 ﻿using UnityEngine.InputSystem;
 
-namespace UABPetelnija.GGJ2025.Runtime.Components.Input
+namespace UABPetelnia.GGJ2025.Runtime.Components.Input
 {
     /// <summary>
     /// Triggers events when a button is pressed.

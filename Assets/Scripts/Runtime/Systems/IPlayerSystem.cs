@@ -1,7 +1,7 @@
-﻿namespace UABPetelnija.GGJ2025.Runtime.Systems
+﻿namespace UABPetelnia.GGJ2025.Runtime.Systems
 {
     internal interface IPlayerSystem
     {
-        
+
     }
 }

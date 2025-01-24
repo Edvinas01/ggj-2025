@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
-namespace UABPetelnija.GGJ2025.Runtime.Components.Input
+namespace UABPetelnia.GGJ2025.Runtime.Components.Input
 {
     internal abstract class InputActionListener<T> : MonoBehaviour
     {

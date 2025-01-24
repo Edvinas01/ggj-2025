@@ -1,6 +1,6 @@
 ﻿using CHARK.GameManagement.Systems;
 
-namespace UABPetelnija.GGJ2025.Runtime.Systems.Cursors
+namespace UABPetelnia.GGJ2025.Runtime.Systems.Cursors
 {
     internal interface ICursorSystem : ISystem
     {

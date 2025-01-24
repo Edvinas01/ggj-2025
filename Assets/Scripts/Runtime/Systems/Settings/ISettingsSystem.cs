@@ -1,6 +1,6 @@
 ﻿using CHARK.GameManagement.Systems;
 
-namespace UABPetelnija.GGJ2025.Runtime.Systems.Settings
+namespace UABPetelnia.GGJ2025.Runtime.Systems.Settings
 {
     internal interface ISettingsSystem : ISystem
     {

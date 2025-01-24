@@ -1,7 +1,7 @@
-﻿namespace UABPetelnija.GGJ2025.Runtime.Actors
+﻿namespace UABPetelnia.GGJ2025.Runtime.Actors
 {
     internal interface IPlayerActor
     {
-        
+
     }
 }

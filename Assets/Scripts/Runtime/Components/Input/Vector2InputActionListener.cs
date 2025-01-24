@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace UABPetelnija.GGJ2025.Runtime.Components.Input
+namespace UABPetelnia.GGJ2025.Runtime.Components.Input
 {
     /// <summary>
     /// Triggers events when 2D axis is input, for example a thumb-stick, is moved

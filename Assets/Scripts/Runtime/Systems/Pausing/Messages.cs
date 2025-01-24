@@ -1,6 +1,6 @@
 ﻿using CHARK.GameManagement.Messaging;
 
-namespace UABPetelnija.GGJ2025.Runtime.Systems.Pausing
+namespace UABPetelnia.GGJ2025.Runtime.Systems.Pausing
 {
     internal readonly struct GamePausedMessage : IMessage
     {

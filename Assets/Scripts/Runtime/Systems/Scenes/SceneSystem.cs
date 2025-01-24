@@ -3,10 +3,10 @@ using CHARK.GameManagement;
 using CHARK.GameManagement.Systems;
 using CHARK.ScriptableScenes;
 using CHARK.ScriptableScenes.Events;
-using UABPetelnija.GGJ2025.Runtime.Systems.Pausing;
+using UABPetelnia.GGJ2025.Runtime.Systems.Pausing;
 using UnityEngine;
 
-namespace UABPetelnija.GGJ2025.Runtime.Systems.Scenes
+namespace UABPetelnia.GGJ2025.Runtime.Systems.Scenes
 {
     internal sealed class SceneSystem : MonoSystem, ISceneSystem
     {

@@ -2,7 +2,7 @@
 using CHARK.GameManagement.Systems;
 using UnityEngine;
 
-namespace UABPetelnija.GGJ2025.Runtime.Systems.Pausing
+namespace UABPetelnia.GGJ2025.Runtime.Systems.Pausing
 {
     internal sealed class PauseSystem : MonoSystem, IPauseSystem
     {

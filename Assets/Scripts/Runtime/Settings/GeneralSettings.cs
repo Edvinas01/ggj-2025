@@ -1,7 +1,7 @@
-﻿using UABPetelnija.GGJ2025.Runtime.Constants;
+﻿using UABPetelnia.GGJ2025.Runtime.Constants;
 using UnityEngine;
 
-namespace UABPetelnija.GGJ2025.Runtime.Settings
+namespace UABPetelnia.GGJ2025.Runtime.Settings
 {
     [CreateAssetMenu(
         fileName = CreateAssetMenuConstants.BaseFileName + nameof(GeneralSettings),

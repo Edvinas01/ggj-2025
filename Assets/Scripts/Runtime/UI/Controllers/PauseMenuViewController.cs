@@ -1,12 +1,12 @@
 ﻿using CHARK.GameManagement;
 using CHARK.SimpleUI;
-using UABPetelnija.GGJ2025.Runtime.Components.Input;
-using UABPetelnija.GGJ2025.Runtime.Systems.Pausing;
-using UABPetelnija.GGJ2025.Runtime.Systems.Scenes;
-using UABPetelnija.GGJ2025.Runtime.UI.Views;
+using UABPetelnia.GGJ2025.Runtime.Components.Input;
+using UABPetelnia.GGJ2025.Runtime.Systems.Pausing;
+using UABPetelnia.GGJ2025.Runtime.Systems.Scenes;
+using UABPetelnia.GGJ2025.Runtime.UI.Views;
 using UnityEngine;
 
-namespace UABPetelnija.GGJ2025.Runtime.UI.Controllers
+namespace UABPetelnia.GGJ2025.Runtime.UI.Controllers
 {
     internal sealed class PauseMenuViewController : ViewController<PauseMenuView>
     {

@@ -1,7 +1,7 @@
 ﻿using CHARK.GameManagement.Systems;
 using CHARK.ScriptableScenes;
 
-namespace UABPetelnija.GGJ2025.Runtime.Systems.Scenes
+namespace UABPetelnia.GGJ2025.Runtime.Systems.Scenes
 {
     internal interface ISceneSystem : ISystem
     {

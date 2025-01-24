@@ -1,7 +1,7 @@
 ﻿using CHARK.GameManagement.Systems;
 using UnityEngine;
 
-namespace UABPetelnija.GGJ2025.Runtime.Systems.Cursors
+namespace UABPetelnia.GGJ2025.Runtime.Systems.Cursors
 {
     internal sealed class CursorSystem : MonoSystem, ICursorSystem
     {
