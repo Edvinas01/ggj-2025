@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79fe642011dc4bf4a9a62b45432de49e, type: 3}
   m_Name: PlayerSettings
   m_EditorClassIdentifier: 
-  zoomInSpeed: 8
+  zoomInSpeed: 3
   zoomInFov: 50
