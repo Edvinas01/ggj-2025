@@ -45,7 +45,6 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         [SerializeField]
         private Animator giveAnimation;
 
-        [Header("UI")]
         [FormerlySerializedAs("gameplayViewController")]
         [SerializeField]
         private ChatViewController chatViewController;
