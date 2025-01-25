@@ -648,34 +648,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 7029965685994039882}
-        m_TargetAssemblyTypeName: CHARK.ScriptableAudio.AudioEmitter, CHARK.ScriptableAudio
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   OnBuyStop:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2290540662877085555}
-        m_TargetAssemblyTypeName: CHARK.ScriptableAudio.AudioEmitter, CHARK.ScriptableAudio
-        m_MethodName: Stop
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 7029965685994039882}
         m_TargetAssemblyTypeName: CHARK.ScriptableAudio.AudioEmitter, CHARK.ScriptableAudio
         m_MethodName: Stop
         m_Mode: 1
@@ -965,61 +941,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5459506642793911729}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!1 &5324745844303996952
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2194645584406162616}
-  - component: {fileID: 7029965685994039882}
-  m_Layer: 0
-  m_Name: S_Calculator
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2194645584406162616
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5324745844303996952}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7357024523354059134}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7029965685994039882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5324745844303996952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 208a8ebf37464c02ae229851015d0a38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioEventAsset: {fileID: 11400000, guid: a24a16a46d4c9a144b9ab276cc6120cf, type: 2}
-  rigidBody: {fileID: 0}
-  playMode: 0
-  stopMode: 2
-  isAllowFadeout: 1
-  isTriggerOnce: 0
-  isPreload: 0
-  isIgnoreParameterSeekSpeed: 0
-  isAttachToGameObject: 1
-  isOverrideAttenuation: 0
-  distanceOverride: {x: 0, y: 20}
 --- !u!1 &5622105163785379332
 GameObject:
   m_ObjectHideFlags: 0
@@ -1082,7 +1003,6 @@ Transform:
   m_Children:
   - {fileID: 816953191684466252}
   - {fileID: 4418125585795035641}
-  - {fileID: 2194645584406162616}
   m_Father: {fileID: 3816526038094228786}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6139972616354473029

@@ -163,7 +163,7 @@ Transform:
   m_GameObject: {fileID: 1503215786318419302}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.554, z: 0.194}
+  m_LocalPosition: {x: 0, y: 1.604, z: 2.121}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -753,6 +753,61 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &4053926761935489006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5559355572335080762}
+  - component: {fileID: 2193268721910712415}
+  m_Layer: 7
+  m_Name: S_GiveItem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5559355572335080762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4053926761935489006}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2935616230659689986}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2193268721910712415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4053926761935489006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 208a8ebf37464c02ae229851015d0a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioEventAsset: {fileID: 11400000, guid: da4a7aa8808e851478f5d638c767354b, type: 2}
+  rigidBody: {fileID: 0}
+  playMode: 0
+  stopMode: 2
+  isAllowFadeout: 1
+  isTriggerOnce: 0
+  isPreload: 0
+  isIgnoreParameterSeekSpeed: 0
+  isAttachToGameObject: 1
+  isOverrideAttenuation: 0
+  distanceOverride: {x: 0, y: 20}
 --- !u!1 &4234565635295452011
 GameObject:
   m_ObjectHideFlags: 0
@@ -973,6 +1028,95 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFlipDirection: 1
+--- !u!1 &6075939150655753475
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9006121440246140344}
+  - component: {fileID: 424462452248394355}
+  m_Layer: 7
+  m_Name: S_Calculator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9006121440246140344
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6075939150655753475}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2935616230659689986}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &424462452248394355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6075939150655753475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 208a8ebf37464c02ae229851015d0a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioEventAsset: {fileID: 11400000, guid: a24a16a46d4c9a144b9ab276cc6120cf, type: 2}
+  rigidBody: {fileID: 0}
+  playMode: 0
+  stopMode: 2
+  isAllowFadeout: 1
+  isTriggerOnce: 0
+  isPreload: 0
+  isIgnoreParameterSeekSpeed: 0
+  isAttachToGameObject: 1
+  isOverrideAttenuation: 0
+  distanceOverride: {x: 0, y: 20}
+--- !u!1 &6336639455686774251
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2935616230659689986}
+  m_Layer: 7
+  m_Name: Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2935616230659689986
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6336639455686774251}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 9006121440246140344}
+  - {fileID: 290492994985998598}
+  - {fileID: 5559355572335080762}
+  m_Father: {fileID: 6825078355517245703}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6463552156288334311
 GameObject:
   m_ObjectHideFlags: 0
@@ -1223,6 +1367,7 @@ Transform:
   - {fileID: 5220013752719138992}
   - {fileID: 3888915992082622235}
   - {fileID: 4751201449766730356}
+  - {fileID: 2935616230659689986}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6440080557831225280
@@ -1249,6 +1394,91 @@ MonoBehaviour:
   chatViewController: {fileID: 786520511760355161}
   zoomInputListener: {fileID: 2742926479419062595}
   selectListener: {fileID: 1195591150476502563}
+  onHealthChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8876316654682804238}
+        m_TargetAssemblyTypeName: CHARK.ScriptableAudio.AudioEmitter, CHARK.ScriptableAudio
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onCentsChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 424462452248394355}
+        m_TargetAssemblyTypeName: CHARK.ScriptableAudio.AudioEmitter, CHARK.ScriptableAudio
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &7745618389468654969
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 290492994985998598}
+  - component: {fileID: 8876316654682804238}
+  m_Layer: 7
+  m_Name: S_PlayerDamage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &290492994985998598
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7745618389468654969}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2935616230659689986}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8876316654682804238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7745618389468654969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 208a8ebf37464c02ae229851015d0a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioEventAsset: {fileID: 11400000, guid: 61ed6dd87d6c4864698197b2ee5731fc, type: 2}
+  rigidBody: {fileID: 0}
+  playMode: 0
+  stopMode: 2
+  isAllowFadeout: 1
+  isTriggerOnce: 0
+  isPreload: 0
+  isIgnoreParameterSeekSpeed: 0
+  isAttachToGameObject: 1
+  isOverrideAttenuation: 0
+  distanceOverride: {x: 0, y: 20}
 --- !u!1 &8217753049880017752
 GameObject:
   m_ObjectHideFlags: 0
