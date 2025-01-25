@@ -326,7 +326,10 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         {
             foreach (var bubble in choices)
             {
-                bubble.Destroy();
+                if (bubble is Object bubbleObject && bubbleObject)
+                {
+                    bubble.Destroy();
+                }
             }
 
             choices.Clear();

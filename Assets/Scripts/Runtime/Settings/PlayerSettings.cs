@@ -32,6 +32,10 @@ namespace UABPetelnia.GGJ2025.Runtime.Settings
         [SerializeField]
         private List<Texture2D> healthStateTextures;
 
+        [Header("Goals")]
+        [SerializeField]
+        private int goalCents = 100 * 100;
+
         public int MaxHealth => healthStateTextures.Count;
 
         public float ZoomInSpeed => zoomInSpeed;
@@ -50,8 +54,15 @@ namespace UABPetelnia.GGJ2025.Runtime.Settings
 
         public Vector3 CameraShakeForce => cameraShakeForce;
 
+        public int GoalCents => goalCents;
+
         public Texture2D GetHealthTexture(int health)
         {
+            if (health <= 0)
+            {
+                return default;
+            }
+
             return healthStateTextures[Mathf.Max(0, MaxHealth - health)];
         }
     }

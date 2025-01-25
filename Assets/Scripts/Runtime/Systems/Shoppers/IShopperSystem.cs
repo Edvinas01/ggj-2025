@@ -16,6 +16,8 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Shoppers
 
         public IShopperActor SpawnRandomShopper(Vector3 position);
 
+        public bool TrySpawnRandomShopper(Vector3 position, out IShopperActor shopper);
+
         public void AddShopper(IShopperActor shopper);
 
         public void RemoveShopper(IShopperActor shopper);

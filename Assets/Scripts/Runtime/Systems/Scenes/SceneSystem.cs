@@ -21,6 +21,12 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Scenes
         [SerializeField]
         private ScriptableSceneCollection startingSceneCollection;
 
+        [SerializeField]
+        private ScriptableSceneCollection gameVictorySceneCollection;
+
+        [SerializeField]
+        private ScriptableSceneCollection gameOverSceneCollection;
+
         private IPauseSystem pauseSystem;
 
         public bool IsLoading => controller.IsLoading;
@@ -31,12 +37,16 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Scenes
 
             controller.CollectionEvents.OnLoadEntered += OnLoadEntered;
             controller.CollectionEvents.OnLoadExited += OnLoadExited;
+
+            controller.CollectionEvents.OnUnloadEntered += OnUnloadEntered;
         }
 
         public override void OnDisposed()
         {
             controller.CollectionEvents.OnLoadEntered -= OnLoadEntered;
             controller.CollectionEvents.OnLoadExited -= OnLoadExited;
+
+            controller.CollectionEvents.OnUnloadEntered -= OnUnloadEntered;
         }
 
         public bool TryGetLoadedCollection(out ScriptableSceneCollection collection)
@@ -69,6 +79,16 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Scenes
             controller.LoadSceneCollection(collection);
         }
 
+        public void LoadGameVictoryScene()
+        {
+            controller.LoadSceneCollection(gameVictorySceneCollection);
+        }
+
+        public void LoadGameOverScene()
+        {
+            controller.LoadSceneCollection(gameOverSceneCollection);
+        }
+
         private static void OnLoadEntered(CollectionLoadEventArgs args)
         {
             var message = new SceneLoadEnteredMessage(args.Collection);
@@ -80,6 +100,12 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Scenes
             pauseSystem.ResumeGame();
 
             var message = new SceneLoadExitedMessage(args.Collection);
+            GameManager.Publish(message);
+        }
+
+        private void OnUnloadEntered(CollectionUnloadEventArgs args)
+        {
+            var message = new SceneUnloadEnteredMessage(args.Collection);
             GameManager.Publish(message);
         }
     }

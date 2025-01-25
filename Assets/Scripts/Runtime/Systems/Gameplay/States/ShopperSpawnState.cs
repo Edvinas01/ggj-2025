@@ -18,8 +18,6 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay.States
 
         protected override void OnEntered(GameplayStateContext context)
         {
-            var shopper = shopperSystem.SpawnRandomShopper(shopperSystem.RandomSpawnPoint);
-            context.ActiveShopper = shopper;
         }
 
         protected override void OnExited(GameplayStateContext context)
@@ -28,7 +26,13 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay.States
 
         protected override Status OnUpdated(GameplayStateContext context)
         {
-            return Status.Completed;
+            if (shopperSystem.TrySpawnRandomShopper(shopperSystem.RandomSpawnPoint, out var shopper))
+            {
+                context.ActiveShopper = shopper;
+                return Status.Completed;
+            }
+
+            return Status.Working;
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using CHARK.GameManagement;
 using CHARK.SimpleUI;
 using UABPetelnia.GGJ2025.Runtime.Components.Input;
+using UABPetelnia.GGJ2025.Runtime.Systems.Cursors;
 using UABPetelnia.GGJ2025.Runtime.Systems.Pausing;
 using UABPetelnia.GGJ2025.Runtime.Systems.Scenes;
 using UABPetelnia.GGJ2025.Runtime.UI.Views;
@@ -14,6 +15,7 @@ namespace UABPetelnia.GGJ2025.Runtime.UI.Controllers
         [SerializeField]
         private ButtonInputActionListener toggleMenuListener;
 
+        private ICursorSystem cursorSystem;
         private IPauseSystem pauseSystem;
         private ISceneSystem sceneSystem;
 
@@ -21,6 +23,7 @@ namespace UABPetelnia.GGJ2025.Runtime.UI.Controllers
         {
             base.Awake();
 
+            cursorSystem = GameManager.GetSystem<ICursorSystem>();
             pauseSystem = GameManager.GetSystem<IPauseSystem>();
             sceneSystem = GameManager.GetSystem<ISceneSystem>();
         }
@@ -75,11 +78,13 @@ namespace UABPetelnia.GGJ2025.Runtime.UI.Controllers
         private void OnViewShowEntered()
         {
             pauseSystem.PauseGame();
+            cursorSystem.UnLockCursor();
         }
 
         private void OnViewHideEntered()
         {
             pauseSystem.ResumeGame();
+            cursorSystem.LockCursor();
         }
     }
 }

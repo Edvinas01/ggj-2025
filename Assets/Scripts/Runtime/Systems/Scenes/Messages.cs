@@ -22,4 +22,14 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Scenes
             Collection = collection;
         }
     }
+
+    internal readonly struct SceneUnloadEnteredMessage : IMessage
+    {
+        public ScriptableSceneCollection Collection { get; }
+
+        public SceneUnloadEnteredMessage(ScriptableSceneCollection collection)
+        {
+            Collection = collection;
+        }
+    }
 }
