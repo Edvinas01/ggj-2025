@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoomInSpeed: 7
   zoomInFov: 40
+  cameraShakeForce: {x: 0, y: 0, z: -0.3}
   data:
     raycastDistance: 5
     raycastRadius: 0.05

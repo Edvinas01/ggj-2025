@@ -12,10 +12,14 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         [SerializeField]
         private Rigidbody rigidBody;
 
-        [Header("Pulling")]
+        [Header("Forces")]
         [Min(0f)]
         [SerializeField]
         private float pullForce = 5f;
+
+        [Min(0f)]
+        [SerializeField]
+        private float maxSpeed = 2f;
 
         [Header("Rendering")]
         [SerializeField]
@@ -59,6 +63,8 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
             var dir = (PullPoint - transform.position).normalized;
             var force = dir * pullForce;
             rigidBody.AddForce(force);
+
+            rigidBody.linearVelocity = Vector3.ClampMagnitude(rigidBody.linearVelocity, maxSpeed);
         }
 
         public void Click()
