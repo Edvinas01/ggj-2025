@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Data_Shopper_Test
   m_EditorClassIdentifier: 
   shopperPrefab: {fileID: 7521200843629131009, guid: d7df9776e0969cc4f9f4f520ad8d97cd, type: 3}
+  image: {fileID: 2800000, guid: 6c2cc34a4c44f89499917721ec30646a, type: 3}

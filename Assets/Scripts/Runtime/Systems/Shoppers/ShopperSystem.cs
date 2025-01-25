@@ -47,6 +47,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Shoppers
             var randomShopperData = gameplaySettings.AvailableShoppers.GetRandom();
             var shopperPrefab = randomShopperData.ShopperPrefab;
             var shopper = Instantiate(shopperPrefab, position, Quaternion.identity);
+            shopper.Initialize(randomShopperData);
 
             return shopper;
         }

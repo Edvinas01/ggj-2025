@@ -14,6 +14,11 @@ namespace UABPetelnia.GGJ2025.Runtime.Settings
         [SerializeField]
         private ShopperActor shopperPrefab;
 
+        [SerializeField]
+        private Texture2D image;
+
         public ShopperActor ShopperPrefab => shopperPrefab;
+
+        public Texture2D Image => image;
     }
 }
