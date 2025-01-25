@@ -40,5 +40,9 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Scenes
         /// Load given <paramref name="collection"/>.
         /// </summary>
         public void LoadScene(ScriptableSceneCollection collection);
+
+        public void LoadGameVictoryScene();
+
+        public void LoadGameOverScene();
     }
 }

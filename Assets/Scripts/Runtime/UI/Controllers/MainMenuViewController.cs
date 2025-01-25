@@ -2,6 +2,7 @@
 using CHARK.SimpleUI;
 using UABPetelnia.GGJ2025.Runtime.Settings;
 using UABPetelnia.GGJ2025.Runtime.Systems.Audio;
+using UABPetelnia.GGJ2025.Runtime.Systems.Cursors;
 using UABPetelnia.GGJ2025.Runtime.Systems.Input;
 using UABPetelnia.GGJ2025.Runtime.Systems.Scenes;
 using UABPetelnia.GGJ2025.Runtime.UI.Views;
@@ -10,6 +11,7 @@ namespace UABPetelnia.GGJ2025.Runtime.UI.Controllers
 {
     internal sealed class MainMenuViewController : ViewController<MainMenuView>
     {
+        private ICursorSystem cursorSystem;
         private ISceneSystem sceneSystem;
         private IInputSystem inputSystem;
         private IAudioSystem audioSystem;
@@ -18,6 +20,7 @@ namespace UABPetelnia.GGJ2025.Runtime.UI.Controllers
         {
             base.Awake();
 
+            cursorSystem = GameManager.GetSystem<ICursorSystem>();
             sceneSystem = GameManager.GetSystem<ISceneSystem>();
             inputSystem = GameManager.GetSystem<IInputSystem>();
             audioSystem = GameManager.GetSystem<IAudioSystem>();
@@ -32,6 +35,8 @@ namespace UABPetelnia.GGJ2025.Runtime.UI.Controllers
 
             View.OnLookSensitivityChanged += OnViewLookSensitivityChanged;
             View.OnMasterVolumeChanged += OnViewMasterVolumeChanged;
+
+            cursorSystem.UnLockCursor();
         }
 
         protected override void OnDisable()

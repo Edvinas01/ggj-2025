@@ -8,6 +8,8 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
 
         public int Cents { get; set; }
 
+        public bool IsCentsGoalReached { get; }
+
         public void ShowPurchase(PurchaseRequest text);
 
         public void PlayGiveAnimation(ItemData item);

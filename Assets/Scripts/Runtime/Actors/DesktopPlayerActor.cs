@@ -1,4 +1,5 @@
-﻿using CHARK.GameManagement;
+﻿using System;
+using CHARK.GameManagement;
 using UABPetelnia.GGJ2025.Runtime.Components.Input;
 using UABPetelnia.GGJ2025.Runtime.Components.Interaction.Interactors;
 using UABPetelnia.GGJ2025.Runtime.Settings;
@@ -89,6 +90,8 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
             }
         }
 
+        public bool IsCentsGoalReached => settings.GoalCents <= currentCents;
+
         private void Awake()
         {
             currentHealth = settings.MaxHealth;
@@ -127,6 +130,11 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
 
             selectListener.OnPerformed -= OnSelectPerformed;
             selectListener.OnCanceled -= OnSelectCanceled;
+        }
+
+        private void OnDestroy()
+        {
+            cursorSystem.UnLockCursor();
         }
 
         private void Update()
@@ -170,9 +178,12 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         {
             var texture = settings.GetHealthTexture(Health);
 
-            var block = new MaterialPropertyBlock();
-            block.SetTexture(bodyTexturePropertyId, texture);
-            bodyRenderer.SetPropertyBlock(block);
+            if (texture)
+            {
+                var block = new MaterialPropertyBlock();
+                block.SetTexture(bodyTexturePropertyId, texture);
+                bodyRenderer.SetPropertyBlock(block);
+            }
 
             cinemachineImpulse.GenerateImpulse(settings.CameraShakeForce);
 
