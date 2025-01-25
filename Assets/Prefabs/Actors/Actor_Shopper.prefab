@@ -421,6 +421,7 @@ GameObject:
   - component: {fileID: 3816526038094228786}
   - component: {fileID: 8830957257483158660}
   - component: {fileID: 7521200843629131009}
+  - component: {fileID: 5749574115430480141}
   m_Layer: 0
   m_Name: Actor_Shopper
   m_TagString: Untagged
@@ -488,9 +489,35 @@ MonoBehaviour:
   invalidItemRange: {x: 2, y: 4}
   buyAnimation: {fileID: 2171931338241779529}
   punchAnimation: {fileID: 7316762813772801759}
+  walkAnimation: {fileID: 5749574115430480141}
+  walkAnimationNames:
+  - Animation_Shooper_Walk_Jump
+  - Animation_Shooper_Walk_Swing
   keywordToken: ${KEYWORD}
   bodyRenderer: {fileID: 6967824870788517571}
   texturePropertyId: _BaseMap
+--- !u!95 &5749574115430480141
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2915822078629846281}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a93fdb3f1d759ed4ca71b1a776ac7f4b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3558242855493790365
 GameObject:
   m_ObjectHideFlags: 0

@@ -36,6 +36,9 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         [SerializeField]
         private Animator punchAnimation;
 
+        [SerializeField]
+        private Animator walkAnimation;
+
         [Header("Text")]
         [SerializeField]
         private string keywordToken = "${KEYWORD}";
@@ -236,6 +239,19 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         public void StopPunchAnimation()
         {
             punchAnimation.gameObject.SetActive(false);
+        }
+
+        public void PlayWalkAnimation()
+        {
+            walkAnimation.enabled = true;
+            walkAnimation.Play("Animation_Shooper_Walk_Jump", -1, 0f);
+        }
+
+        public void StopWalkAnimation()
+        {
+            walkAnimation.playbackTime = 0f;
+            walkAnimation.StopPlayback();
+            walkAnimation.enabled = false;
         }
 
         private Transform GetOriginPoint()
