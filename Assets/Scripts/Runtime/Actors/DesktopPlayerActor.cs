@@ -1,6 +1,7 @@
 ﻿using CHARK.GameManagement;
 using UABPetelnia.GGJ2025.Runtime.Components.Input;
 using UABPetelnia.GGJ2025.Runtime.Systems.Cursors;
+using UABPetelnia.GGJ2025.Runtime.Systems.Gameplay;
 using UABPetelnia.GGJ2025.Runtime.Systems.Players;
 using UABPetelnia.GGJ2025.Runtime.UI.Controllers;
 using Unity.Cinemachine;
@@ -25,6 +26,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         [SerializeField]
         private ButtonInputActionListener zoomInputListener;
 
+        private IGameplaySystem gameplaySystem;
         private IPlayerSystem playerSystem;
         private ICursorSystem cursorSystem;
 
@@ -34,6 +36,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
 
         private void Awake()
         {
+            gameplaySystem = GameManager.GetSystem<IGameplaySystem>();
             playerSystem = GameManager.GetSystem<IPlayerSystem>();
             cursorSystem = GameManager.GetSystem<ICursorSystem>();
         }
@@ -43,6 +46,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
             initialFov = cinemachineCamera.Lens.FieldOfView;
             targetFov = cinemachineCamera.Lens.FieldOfView;
 
+            gameplaySystem.StartGameplay();
             cursorSystem.LockCursor();
         }
 

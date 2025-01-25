@@ -716,6 +716,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings: {fileID: 11400000, guid: 8518d77df5892334c8eafee2f51603ab, type: 2}
   cinemachineCamera: {fileID: 8195886524701573072}
+  gameplayViewController: {fileID: 786520511760355161}
   zoomInputListener: {fileID: 2742926479419062595}
 --- !u!1 &8217753049880017752
 GameObject:

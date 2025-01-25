@@ -1,44 +1,32 @@
-﻿using CHARK.GameManagement;
-using CHARK.GameManagement.Systems;
-using UABPetelnia.GGJ2025.Runtime.Actors;
-using UABPetelnia.GGJ2025.Runtime.Systems.Players;
-using UABPetelnia.GGJ2025.Runtime.Systems.Shoppers;
+﻿using CHARK.GameManagement.Systems;
+using UABPetelnia.GGJ2025.Runtime.Systems.Gameplay.States;
 using UnityEngine;
 
 namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay
 {
     internal sealed class GameplaySystem : SimpleSystem, IGameplaySystem
     {
-        private enum GameplayState
-        {
-            Stopped,
-            SpawningShopper,
-            ShopperEntering,
-            ShopperChatting,
-            ShopperLeaving,
-            DeSpawningShopper,
-            GameLost,
-            GameWon,
-        }
+        private readonly GameplayStateContext context = new();
 
-        private IShopperSystem shopperSystem;
-        private IPlayerSystem playerSystem;
-
-        private GameplayState currentState = GameplayState.Stopped;
+        private GameplayState startingState;
+        private GameplayState currentState;
 
         private GameplayState State
         {
+            get => currentState;
             set
             {
                 var oldState = currentState;
                 var newState = value;
 
-                if (oldState == newState)
+                if (oldState != null && oldState == newState)
                 {
                     return;
                 }
 
+                oldState?.Exit(context);
                 currentState = newState;
+                newState?.Enter(context);
 
                 OnStateChanged(oldState, newState);
             }
@@ -46,81 +34,49 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay
 
         public override void OnInitialized()
         {
-            shopperSystem = GameManager.GetSystem<IShopperSystem>();
-            playerSystem = GameManager.GetSystem<IPlayerSystem>();
+            var spawnState = new ShopperSpawnState();
+            var moveToKioskState = new ShopperMoveState(ShopperMoveState.MoveTo.KioskPoint);
+            var moveToSpawnPointState = new ShopperMoveState(ShopperMoveState.MoveTo.SpawnPoint);
+            var chattingState = new ShopperChattingState();
+            var destroyState = new ShopperDestroyState();
+
+            // 1. Spawn player and move to kiosk after spawning
+            spawnState.Initialize(moveToKioskState);
+
+            // 2. Reaching kiosk, start chatting
+            moveToKioskState.Initialize(moveToSpawnPointState);
+
+            // TODO: chatting state not finished
+            // 3. Finishing the chat, move back to spawn point
+            // chattingState.Initialize(moveToSpawnPointState);
+
+            // 4. Destroy on reaching the spawn point
+            moveToSpawnPointState.Initialize(destroyState);
+
+            // 5. Restart.
+            destroyState.Initialize(spawnState);
+
+            startingState = spawnState;
+        }
+
+        public void OnUpdated(float deltaTime)
+        {
+            if (State == default)
+            {
+                return;
+            }
+
+            State = currentState.Update(context);
         }
 
         public void StartGameplay()
         {
-            State = GameplayState.SpawningShopper;
+            State = startingState;
         }
 
-        private IShopperActor activeShopper;
-
-        private void OnStateChanged(GameplayState oldState, GameplayState newState)
+        private static void OnStateChanged(GameplayState oldState, GameplayState newState)
         {
-            Debug.Log($"Game State: {newState}");
-
-            switch (newState)
-            {
-                case GameplayState.Stopped:
-                {
-                    break;
-                }
-                case GameplayState.SpawningShopper:
-                {
-                    activeShopper = shopperSystem.SpawnRandomShopper();
-                    // TODO: set move position
-
-                    State = GameplayState.ShopperEntering;
-                    break;
-                }
-                case GameplayState.ShopperEntering:
-                {
-                    // TODO: move shopper
-                    // TODO: add delay
-                    break;
-                }
-                case GameplayState.ShopperChatting:
-                {
-                    var player = playerSystem.Player;
-                    player.ShowText($"New shopper {activeShopper.Name}");
-                    // TODO: wait until decision
-
-                    break;
-                }
-                case GameplayState.ShopperLeaving:
-                {
-                    var player = playerSystem.Player;
-                    player.HideText();
-
-                    // TODO: move shopper
-                    // TODO: add delay
-
-                    break;
-                }
-                case GameplayState.DeSpawningShopper:
-                {
-                    activeShopper.Destroy();
-                    activeShopper = default;
-
-                    break;
-                }
-                case GameplayState.GameLost:
-                {
-                    // TODO: lose screen
-                    break;
-                }
-                case GameplayState.GameWon:
-                {
-                    // TODO: win screen
-                    break;
-                }
-                default:
-                {
-                    break;
-                }
-            }
+            Debug.Log($"New state {newState?.Name}");
         }
     }
 }
