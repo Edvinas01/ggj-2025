@@ -12,20 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f59ee02a435643b2afce271386728791, type: 3}
   m_Name: Data_Purchases_Goblins
   m_EditorClassIdentifier: 
-  purchases:
-  - templateText: As noriu ${KEYWORD}
-    keywords:
-    - text: gert
-      items:
-      - {fileID: 11400000, guid: ce3cbe4343c90ee4485704202b12d020, type: 2}
-      - {fileID: 11400000, guid: 2d273ff84cb579548baa8e619de975db, type: 2}
-    - text: vaistu
-      items:
-      - {fileID: 11400000, guid: 72020ec0dfe286a429a66e4a2e94ee62, type: 2}
-    - text: visko
-      items:
-      - {fileID: 11400000, guid: ce3cbe4343c90ee4485704202b12d020, type: 2}
-      - {fileID: 11400000, guid: 72020ec0dfe286a429a66e4a2e94ee62, type: 2}
-      - {fileID: 11400000, guid: 2d273ff84cb579548baa8e619de975db, type: 2}
-    - text: nieko
-      items: []
+  purchases: []
