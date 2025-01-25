@@ -51,9 +51,15 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         [Header("Events")]
         [SerializeField]
         public UnityEvent onPunchStart;
-        
+
         [SerializeField]
         public UnityEvent onPunchStop;
+
+        [SerializeField]
+        public UnityEvent OnBuyStart;
+
+        [SerializeField]
+        public UnityEvent OnBuyStop;
 
         [SerializeField]
         private string texturePropertyId = "_BaseMap";
@@ -231,11 +237,13 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         {
             buyAnimation.gameObject.SetActive(true);
             buyAnimation.Play("Animation_Shopper_Money");
+            OnBuyStart.Invoke();
         }
 
         public void StopBuyAnimation()
         {
             buyAnimation.gameObject.SetActive(false);
+            OnBuyStop.Invoke();
         }
 
         public void PlayPunchAnimation()
