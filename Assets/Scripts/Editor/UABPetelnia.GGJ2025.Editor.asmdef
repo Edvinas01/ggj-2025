@@ -1,7 +1,9 @@
 {
     "name": "UABPetelnia.GGJ2025.Editor",
     "rootNamespace": "UABPetelnia.GGJ2025",
-    "references": [],
+    "references": [
+        "GUID:69d1ad59ba444c13bfa908fdb8e85b37"
+    ],
     "includePlatforms": [
         "Editor"
     ],

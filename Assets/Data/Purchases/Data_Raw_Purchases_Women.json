@@ -1,6 +1,6 @@
 ﻿[
   {
-    "text": "Sveikutis! Ar žiūrėjai vakar laukinukę? Omg, įsivaizduok, Rosaura įžengia į Arismendžių dvarą, ką tik iš Panoramos. Plaukai – tobulai tiesūs, makiažas prabangus, o suknele tikra stiliaus bomba! Arismendžiai nustėrę žiūri, Luisas Marius vos neapsiverkia iš šoko. Rosaura su šaltu žvilgsniu sako: „Dabar aš valdau, o jūs? Jūs esate niekas. ${KEYWORD}",
+    "text": "Sveikutis! Ar žiūrėjai vakar laukinukę? Omg, įsivaizduok, Rosaura įžengia į Arismendžių dvarą, ką tik iš Panoramos. Plaukai – tobulai tiesūs, makiažas prabangus, o suknelė -  tikra stiliaus bomba! Arismendžiai nustėrę žiūri, Luisas Marius vos neapsiverkia iš šoko. Rosaura su šaltu žvilgsniu sako: „Dabar aš valdau, o jūs? Jūs esate niekas. ${KEYWORD}",
     "keywords": [
       {
         "text": "Gumos man",
@@ -10,7 +10,7 @@
         ]
       },
       {
-        "text": "Item_Zozole man",
+        "text": "Zozolę man",
         "items": [
           "Item_Zozole"
         ]
@@ -84,7 +84,7 @@
         ]
       },
       {
-        "text": "gal galima Item_Aspirino?",
+        "text": "gal galima Aspirino?",
         "items": [
           "Item_Aspirin"
         ]
@@ -92,7 +92,7 @@
     ]
   },
   {
-    "text": "Labas. Girdėjau, kad TicTac tik dvi kalorijos. Norėtųsi kažko maistingesnio ${KEYWORD}",
+    "text": "Labas. Girdėjau, kad TicTac tik dvi kalorijos. Norėtųsi kažko maistingesnio, ${KEYWORD}",
     "keywords": [
       {
         "text": "gal turite kažką su 5-15 kalorijų?",
@@ -122,10 +122,10 @@
     ]
   },
   {
-    "text": "Labas. Žinai skaičiau vakar savo horoskopą ir supratau, kad privalau kai ką nusipirkti ${KEYWORD}",
+    "text": "Labas. Žinai skaičiau vakar savo horoskopą ir supratau, kad privalau kai ką nusipirkti, esu ${KEYWORD}",
     "keywords": [
       {
-        "text": "Vėžys",
+        "text": "Vėžys.",
         "items": [
           "Item_GumLoveIs",
           "Item_Selita",
@@ -133,51 +133,11 @@
         ]
       },
       {
-        "text": "Skorpionas?",
+        "text": "Skorpionas.",
         "items": [
           "Item_Durex",
           "Item_Alus",
           "Item_Alita"
-        ]
-      }
-    ]
-  },
-  {
-    "text": "Labas. Žinai skaičiau vakar savo horoskopą ir supratau, kad privalau kai ką nusipirkti ${KEYWORD}",
-    "keywords": [
-      {
-        "text": "Vėžys",
-        "items": [
-          "Item_GumLoveIs",
-          "Item_Selita",
-          "Item_Durex"
-        ]
-      },
-      {
-        "text": "Skorpionas?",
-        "items": [
-          "Item_Durex",
-          "Item_Alus",
-          "Item_Alita"
-        ]
-      }
-    ]
-  },
-  {
-    "text": "Sveikas. Išvariau vyrą iš namų. ${KEYWORD}",
-    "keywords": [
-      {
-        "text": "Gal nori užsukt?",
-        "items": [
-          "Item_Durex",
-          "Item_Alita"
-        ]
-      },
-      {
-        "text": "Skauda galvą, lindo vaflis.",
-        "items": [
-          "Item_Aspirin",
-          "Item_Alus"
         ]
       }
     ]

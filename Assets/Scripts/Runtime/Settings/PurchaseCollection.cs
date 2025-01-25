@@ -20,15 +20,19 @@ namespace UABPetelnia.GGJ2025.Runtime.Settings
             private string templateText;
 
             [SerializeField]
-            private List<Keyword> keywords;
+            private List<Keyword> keywords = new();
 
-            public string TemplateText => templateText;
+            public string TemplateText
+            {
+                get => templateText;
+                set => templateText = value;
+            }
 
             public List<Keyword> Keywords => keywords;
         }
 
         [SerializeField]
-        private List<Purchase> purchases;
+        private List<Purchase> purchases = new();
 
         public List<Purchase> Purchases => purchases;
 

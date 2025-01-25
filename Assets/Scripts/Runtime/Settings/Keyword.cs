@@ -11,11 +11,15 @@ namespace UABPetelnia.GGJ2025.Runtime.Settings
         private string text;
 
         [SerializeField]
-        private List<ItemData> items;
+        private List<ItemData> items = new();
 
         public bool IsUsed { get; set; }
 
-        public string Text => text;
+        public string Text
+        {
+            get => text;
+            set => text = value;
+        }
 
         public List<ItemData> Items => items;
     }
