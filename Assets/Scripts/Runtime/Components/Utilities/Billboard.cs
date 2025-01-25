@@ -14,7 +14,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Components.Utilities
             mainCamera = Camera.main;
         }
 
-        private void Update()
+        private void LateUpdate()
         {
             if (mainCamera == false)
             {

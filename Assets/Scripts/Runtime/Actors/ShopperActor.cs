@@ -249,8 +249,8 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
 
         public void StopWalkAnimation()
         {
-            walkAnimation.playbackTime = 0f;
-            walkAnimation.StopPlayback();
+            walkAnimation.Play(walkAnimation.GetCurrentAnimatorStateInfo(0).fullPathHash, 0, 0f);
+            walkAnimation.Update(0f);
             walkAnimation.enabled = false;
         }
 
