@@ -29,7 +29,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Settings
         [SerializeField]
         private List<Texture2D> healthStateTextures;
 
-        public int MaxHealth => healthStateTextures.Count + 1;
+        public int MaxHealth => healthStateTextures.Count;
 
         public float ZoomInSpeed => zoomInSpeed;
 

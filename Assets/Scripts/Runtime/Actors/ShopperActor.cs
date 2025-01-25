@@ -29,6 +29,13 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         [SerializeField]
         private Vector2Int invalidItemRange = new(2, 4);
 
+        [Header("Animations")]
+        [SerializeField]
+        private Animator buyAnimation;
+
+        [SerializeField]
+        private Animator punchAnimation;
+
         [Header("Text")]
         [SerializeField]
         private string keywordToken = "${KEYWORD}";
@@ -48,6 +55,34 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         public ShopperData Data { get; private set; }
 
         public bool IsContainsPurchases => Data.PurchaseCollection.Purchases.Count > 0;
+
+        public bool IsBuying
+        {
+            get
+            {
+                var stateInfo = buyAnimation.GetCurrentAnimatorStateInfo(0);
+                if (stateInfo.IsName("Animation_Shopper_Money") && stateInfo.normalizedTime < 1f)
+                {
+                    return true;
+                }
+
+                return false;
+            }
+        }
+
+        public bool IsPunching
+        {
+            get
+            {
+                var stateInfo = punchAnimation.GetCurrentAnimatorStateInfo(0);
+                if (stateInfo.IsName("Animation_Shopper_Fist") && stateInfo.normalizedTime < 1f)
+                {
+                    return true;
+                }
+
+                return false;
+            }
+        }
 
         public bool IsMoving
         {
@@ -173,6 +208,28 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
                 validItems,
                 this
             );
+        }
+
+        public void PlayBuyAnimation()
+        {
+            buyAnimation.gameObject.SetActive(true);
+            buyAnimation.Play("Animation_Shopper_Money");
+        }
+
+        public void StopBuyAnimation()
+        {
+            buyAnimation.gameObject.SetActive(false);
+        }
+
+        public void PlayPunchAnimation()
+        {
+            punchAnimation.gameObject.SetActive(true);
+            punchAnimation.Play("Animation_Shopper_Fist");
+        }
+
+        public void StopPunchAnimation()
+        {
+            punchAnimation.gameObject.SetActive(false);
         }
 
         private Transform GetOriginPoint()

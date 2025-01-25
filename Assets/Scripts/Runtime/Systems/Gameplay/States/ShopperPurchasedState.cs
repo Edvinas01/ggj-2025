@@ -18,17 +18,32 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay.States
 
         protected override void OnEntered(GameplayStateContext context)
         {
+            var shopper = context.ActiveShopper;
+            var player = playerSystem.Player;
+
+            shopper?.PlayBuyAnimation();
+
+            if (context.CurrentItem)
+            {
+                player.PlayGiveAnimation(context.CurrentItem);
+            }
         }
 
         protected override void OnExited(GameplayStateContext context)
         {
+            var shopper = context.ActiveShopper;
+            var player = playerSystem.Player;
+
+            shopper?.StopBuyAnimation();
+            player.StopGiveAnimation();
+
             var item = context.CurrentItem;
             if (item == false)
             {
                 return;
             }
 
-            var player = playerSystem.Player;
+
             player.Cents += item.Cents;
 
             context.CurrentItem = default;
@@ -36,6 +51,17 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay.States
 
         protected override Status OnUpdated(GameplayStateContext context)
         {
+            var shopper = context.ActiveShopper;
+            if (shopper == default)
+            {
+                return Status.Completed;
+            }
+
+            if (shopper.IsBuying)
+            {
+                return Status.Working;
+            }
+
             return Status.Completed;
         }
     }

@@ -26,10 +26,20 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
 
         [Header("Rendering")]
         [SerializeField]
+        private Renderer itemRenderer;
+
+        [SerializeField]
+        private string itemTexturePropertyId = "_BaseMap";
+
+        [SerializeField]
         private Renderer bodyRenderer;
 
         [SerializeField]
         private string bodyTexturePropertyId = "_BaseMap";
+
+        [Header("UI")]
+        [SerializeField]
+        private Animator giveAnimation;
 
         [Header("UI")]
         [FormerlySerializedAs("gameplayViewController")]
@@ -156,7 +166,6 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         private void OnCurrentHealthChanged()
         {
             var texture = settings.GetHealthTexture(Health);
-            Debug.Log(texture);
 
             var block = new MaterialPropertyBlock();
             block.SetTexture(bodyTexturePropertyId, texture);
@@ -180,6 +189,21 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         public void ShowPurchase(PurchaseRequest purchase)
         {
             chatViewController.ShowPurchase(purchase);
+        }
+
+        public void PlayGiveAnimation(ItemData item)
+        {
+            giveAnimation.gameObject.SetActive(true);
+            giveAnimation.Play("Animation_Player_Give");
+
+            var block = new MaterialPropertyBlock();
+            block.SetTexture(itemTexturePropertyId, item.Image);
+            itemRenderer.SetPropertyBlock(block);
+        }
+
+        public void StopGiveAnimation()
+        {
+            giveAnimation.gameObject.SetActive(false);
         }
 
         public void HidePurchase()
