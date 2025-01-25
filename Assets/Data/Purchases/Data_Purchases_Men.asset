@@ -12,4 +12,206 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f59ee02a435643b2afce271386728791, type: 3}
   m_Name: Data_Purchases_Men
   m_EditorClassIdentifier: 
-  purchases: []
+  purchases:
+  - templateText: "Labas! \u0160iandien nusprend\u017Eiau praleisti ${KEYWORD}, nes
+      nor\u0117jau pab\u0117gti nuo kasdienyb\u0117s. Pama\u010Diau \u0161\u012F
+      kiosk\u0105 ir pagalvojau, kad galb\u016Bt gal\u0117\u010Diau ka\u017Ek\u0105
+      nusipirkti?"
+    keywords:
+    - text: "gerai laik\u0105"
+      items:
+      - {fileID: 11400000, guid: ce3cbe4343c90ee4485704202b12d020, type: 2}
+      - {fileID: 11400000, guid: 2d273ff84cb579548baa8e619de975db, type: 2}
+      - {fileID: 11400000, guid: 384e0a13927803f46bd3943a3f8ee317, type: 2}
+    - text: "laik\u0105 su moterimi"
+      items:
+      - {fileID: 11400000, guid: 384e0a13927803f46bd3943a3f8ee317, type: 2}
+      - {fileID: 11400000, guid: ce3cbe4343c90ee4485704202b12d020, type: 2}
+      - {fileID: 11400000, guid: 04fcf23ca0a9cbe458eb42e6f9338b1a, type: 2}
+  - templateText: "Sveiki! Suknistas taksistas sugadino dien\u0105, nor\u0117\u010Diau
+      ${KEYWORD}. Gal turite k\u0105 pasi\u016Blyti?"
+    keywords:
+    - text: nuraminti nervus
+      items:
+      - {fileID: 11400000, guid: ce3cbe4343c90ee4485704202b12d020, type: 2}
+      - {fileID: 11400000, guid: 2d273ff84cb579548baa8e619de975db, type: 2}
+    - text: "sugadint jam nuotaik\u0105 atgal"
+      items:
+      - {fileID: 11400000, guid: 384e0a13927803f46bd3943a3f8ee317, type: 2}
+    - text: "grei\u010Dio"
+      items:
+      - {fileID: 11400000, guid: 359ee535b4d02194eab0ae7d01dad32d, type: 2}
+      - {fileID: 11400000, guid: 2a3629b18e96c9044aa19fcc5d8e3892, type: 2}
+  - templateText: "Laba! Esu ne vietinis ir ${KEYWORD}. Gal turite k\u0105 pasi\u016Blyti?"
+    keywords:
+    - text: teko ilgai keliauti autobusu
+      items:
+      - {fileID: 11400000, guid: ea65881a8ba18f04cbe706e7ac7e4458, type: 2}
+      - {fileID: 11400000, guid: 9b4bda098ea53224ba2474e72c92c44e, type: 2}
+    - text: "planuoju \u0161\u012F vakar\u0105 pasilinksminti"
+      items:
+      - {fileID: 11400000, guid: ce3cbe4343c90ee4485704202b12d020, type: 2}
+      - {fileID: 11400000, guid: 2d273ff84cb579548baa8e619de975db, type: 2}
+      - {fileID: 11400000, guid: 359ee535b4d02194eab0ae7d01dad32d, type: 2}
+  - templateText: "Sveiki! Vakar buvo u\u017Ebaliavota ir ${KEYWORD}. Gal turite
+      k\u0105 pasi\u016Blyti?"
+    keywords:
+    - text: "galv\u0105 skauda, galv\u0105 skauda!"
+      items:
+      - {fileID: 11400000, guid: 2a3629b18e96c9044aa19fcc5d8e3892, type: 2}
+      - {fileID: 11400000, guid: ce3cbe4343c90ee4485704202b12d020, type: 2}
+      - {fileID: 11400000, guid: 2d273ff84cb579548baa8e619de975db, type: 2}
+      - {fileID: 11400000, guid: b221a383fdb858548b47265abe5f242d, type: 2}
+    - text: "norisi \u0161iandien v\u0117l pajud\u0117ti"
+      items:
+      - {fileID: 11400000, guid: 2d273ff84cb579548baa8e619de975db, type: 2}
+      - {fileID: 11400000, guid: ce3cbe4343c90ee4485704202b12d020, type: 2}
+      - {fileID: 11400000, guid: 359ee535b4d02194eab0ae7d01dad32d, type: 2}
+    - text: "pana\u0161u, kad po devyni\u0173 m\u0117nesi\u0173 bus problem\u0173"
+      items:
+      - {fileID: 11400000, guid: 384e0a13927803f46bd3943a3f8ee317, type: 2}
+      - {fileID: 11400000, guid: cc8debb0c78630c409b8981a3f871247, type: 2}
+  - templateText: "Sveiki. Ar dirbate? Sprogo automobilio padanga ir ${KEYWORD}.
+      Gal turite k\u0105 pasi\u016Blyti?"
+    keywords:
+    - text: "reikia u\u017Eklijuoti ka\u017Ekuo"
+      items:
+      - {fileID: 11400000, guid: 991c5a7d90ea3894d8f9d2e34245e903, type: 2}
+      - {fileID: 11400000, guid: 9fc2dd80897834440a05db55254b115e, type: 2}
+      - {fileID: 11400000, guid: 04fcf23ca0a9cbe458eb42e6f9338b1a, type: 2}
+    - text: nelaiko nervai
+      items:
+      - {fileID: 11400000, guid: 2d273ff84cb579548baa8e619de975db, type: 2}
+      - {fileID: 11400000, guid: ce3cbe4343c90ee4485704202b12d020, type: 2}
+    - text: "pana\u0161u, kad po devyni\u0173 m\u0117nesi\u0173 bus problem\u0173"
+      items:
+      - {fileID: 11400000, guid: 384e0a13927803f46bd3943a3f8ee317, type: 2}
+      - {fileID: 11400000, guid: 04fcf23ca0a9cbe458eb42e6f9338b1a, type: 2}
+      - {fileID: 11400000, guid: ce3cbe4343c90ee4485704202b12d020, type: 2}
+  - templateText: "Labas! U\u017Eklydau \u010Dia visai nety\u010Dia, bet ka\u017Ekaip
+      ${KEYWORD}. Gal turite k\u0105 pasi\u016Blyti?"
+    keywords:
+    - text: pasijutau kaip vaikas
+      items:
+      - {fileID: 11400000, guid: 4ccaf46165f472e4299669290d88a41d, type: 2}
+      - {fileID: 11400000, guid: 9fc2dd80897834440a05db55254b115e, type: 2}
+      - {fileID: 11400000, guid: cc8debb0c78630c409b8981a3f871247, type: 2}
+      - {fileID: 11400000, guid: 6728c2cb1e80d7845b9607613420df69, type: 2}
+      - {fileID: 11400000, guid: 991c5a7d90ea3894d8f9d2e34245e903, type: 2}
+      - {fileID: 11400000, guid: 04fcf23ca0a9cbe458eb42e6f9338b1a, type: 2}
+      - {fileID: 11400000, guid: 8023b9585305f5e44880ea79b48cd89b, type: 2}
+      - {fileID: 11400000, guid: 01909233e3340f242affdc824f410b46, type: 2}
+    - text: "noriu ka\u017Eko \u012Fdomesnio vakarui"
+      items:
+      - {fileID: 11400000, guid: 2d273ff84cb579548baa8e619de975db, type: 2}
+      - {fileID: 11400000, guid: ce3cbe4343c90ee4485704202b12d020, type: 2}
+      - {fileID: 11400000, guid: 384e0a13927803f46bd3943a3f8ee317, type: 2}
+      - {fileID: 11400000, guid: 359ee535b4d02194eab0ae7d01dad32d, type: 2}
+  - templateText: "Sveiki! Rytinis susitikimas pra\u0117jo prastai, tod\u0117l dabar
+      ${KEYWORD}. Gal turite k\u0105 pasi\u016Blyti?"
+    keywords:
+    - text: "noriu pralinksm\u0117ti"
+      items:
+      - {fileID: 11400000, guid: ce3cbe4343c90ee4485704202b12d020, type: 2}
+      - {fileID: 11400000, guid: 2d273ff84cb579548baa8e619de975db, type: 2}
+    - text: reikia atsigaivinti
+      items:
+      - {fileID: 11400000, guid: b221a383fdb858548b47265abe5f242d, type: 2}
+      - {fileID: 11400000, guid: 8023b9585305f5e44880ea79b48cd89b, type: 2}
+  - templateText: "Sveiki! Prisiva\u017Ein\u0117jau po miest\u0105 ir ${KEYWORD}.
+      Gal turite k\u0105 pasi\u016Blyti?"
+    keywords:
+    - text: reikia atsigaivinti
+      items:
+      - {fileID: 11400000, guid: b221a383fdb858548b47265abe5f242d, type: 2}
+      - {fileID: 11400000, guid: 2d273ff84cb579548baa8e619de975db, type: 2}
+      - {fileID: 11400000, guid: ce3cbe4343c90ee4485704202b12d020, type: 2}
+    - text: "prireik\u0117 ka\u017Eko prakti\u0161ko"
+      items:
+      - {fileID: 11400000, guid: 9b4bda098ea53224ba2474e72c92c44e, type: 2}
+      - {fileID: 11400000, guid: ea65881a8ba18f04cbe706e7ac7e4458, type: 2}
+  - templateText: "Laba diena! Art\u0117ja draugo gimtadienis ir ${KEYWORD}. Gal
+      turite k\u0105 pasi\u016Blyti?"
+    keywords:
+    - text: "noriu nustebinti j\u012F smulkmena"
+      items:
+      - {fileID: 11400000, guid: 6728c2cb1e80d7845b9607613420df69, type: 2}
+      - {fileID: 11400000, guid: 4ccaf46165f472e4299669290d88a41d, type: 2}
+      - {fileID: 11400000, guid: 384e0a13927803f46bd3943a3f8ee317, type: 2}
+      - {fileID: 11400000, guid: 04fcf23ca0a9cbe458eb42e6f9338b1a, type: 2}
+    - text: "reik\u0117s pasir\u016Bpinti vakaro nuotaika"
+      items:
+      - {fileID: 11400000, guid: ce3cbe4343c90ee4485704202b12d020, type: 2}
+      - {fileID: 11400000, guid: 2d273ff84cb579548baa8e619de975db, type: 2}
+      - {fileID: 11400000, guid: 384e0a13927803f46bd3943a3f8ee317, type: 2}
+      - {fileID: 11400000, guid: 359ee535b4d02194eab0ae7d01dad32d, type: 2}
+  - templateText: "Labas! Ka\u017Ekaip burbuliuoju viduje, o draugai sako \u2013
+      geriau burbuliuot i\u0161 i\u0161or\u0117s. Turit kok\u012F ${KEYWORD}?"
+    keywords:
+    - text: "burbul\u0173 skyst\u012F"
+      items:
+      - {fileID: 11400000, guid: 72020ec0dfe286a429a66e4a2e94ee62, type: 2}
+      - {fileID: 11400000, guid: ce3cbe4343c90ee4485704202b12d020, type: 2}
+      - {fileID: 11400000, guid: 8023b9585305f5e44880ea79b48cd89b, type: 2}
+      - {fileID: 11400000, guid: b221a383fdb858548b47265abe5f242d, type: 2}
+      - {fileID: 11400000, guid: 4ccaf46165f472e4299669290d88a41d, type: 2}
+      - {fileID: 11400000, guid: 2a3629b18e96c9044aa19fcc5d8e3892, type: 2}
+      - {fileID: 11400000, guid: 359ee535b4d02194eab0ae7d01dad32d, type: 2}
+    - text: "kok\u012F skyst\u012F atkim\u0161imui"
+      items:
+      - {fileID: 11400000, guid: b221a383fdb858548b47265abe5f242d, type: 2}
+  - templateText: "Sveiki! Mano mergina pyksta, kad gr\u012F\u017Eau be nieko \u012Fdomaus.
+      Gal turit ${KEYWORD}?"
+    keywords:
+    - text: "kok\u012F rimtesn\u012F argument\u0105"
+      items:
+      - {fileID: 11400000, guid: 384e0a13927803f46bd3943a3f8ee317, type: 2}
+      - {fileID: 11400000, guid: ce3cbe4343c90ee4485704202b12d020, type: 2}
+      - {fileID: 11400000, guid: 2d273ff84cb579548baa8e619de975db, type: 2}
+    - text: "ka\u017Ek\u0105 saldaus"
+      items:
+      - {fileID: 11400000, guid: 01909233e3340f242affdc824f410b46, type: 2}
+      - {fileID: 11400000, guid: 04fcf23ca0a9cbe458eb42e6f9338b1a, type: 2}
+      - {fileID: 11400000, guid: 9fc2dd80897834440a05db55254b115e, type: 2}
+      - {fileID: 11400000, guid: 6728c2cb1e80d7845b9607613420df69, type: 2}
+  - templateText: "Ka\u017Ekaip \u0161iandien viskas krenta i\u0161 rank\u0173, o
+      dar ir ${KEYWORD}. Turit k\u0105 nors padedan\u010Dio?"
+    keywords:
+    - text: "galva ply\u0161ta"
+      items:
+      - {fileID: 11400000, guid: 2a3629b18e96c9044aa19fcc5d8e3892, type: 2}
+    - text: "\u017Emona pyksta"
+      items:
+      - {fileID: 11400000, guid: ce3cbe4343c90ee4485704202b12d020, type: 2}
+      - {fileID: 11400000, guid: 2d273ff84cb579548baa8e619de975db, type: 2}
+    - text: atrodo, kad reikia profilaktikos
+      items:
+      - {fileID: 11400000, guid: ea65881a8ba18f04cbe706e7ac7e4458, type: 2}
+      - {fileID: 11400000, guid: 9b4bda098ea53224ba2474e72c92c44e, type: 2}
+  - templateText: "Esu Vitalijus, man dvide\u0161imt. M\u0117gstu pa\u010Die\u0161inti
+      panas. Jeigu pana baisi, bent pabazarinu. Nu k\u0105 ma\u017Eyte, tuoj padainuosiu
+      ${KEYWORD}"
+    keywords:
+    - text: "K\u016B K\u0105 R\u0117 K\u0173"
+      items:
+      - {fileID: 11400000, guid: 2a3629b18e96c9044aa19fcc5d8e3892, type: 2}
+    - text: Y ga ga
+      items:
+      - {fileID: 11400000, guid: 2a3629b18e96c9044aa19fcc5d8e3892, type: 2}
+    - text: "M\u016B\u016B\u016B\u016B\u016B\u016B\u016B\u016B"
+      items:
+      - {fileID: 11400000, guid: 2a3629b18e96c9044aa19fcc5d8e3892, type: 2}
+  - templateText: "A\u0161 nieko neg\u0117riau. ${KEYWORD}"
+    keywords:
+    - text: "Darbe, bi\u0161k\u012F, truput\u012F i\u0161g\u0117riau ir va\u017Eiavau
+        namo. Ir degtin, vyn\u0105 i\u0161g\u0117riau ir degtin\u0117l\u0117s vien\u0105
+        \u010Derkel\u012F"
+      items:
+      - {fileID: 11400000, guid: 2d273ff84cb579548baa8e619de975db, type: 2}
+      - {fileID: 11400000, guid: ce3cbe4343c90ee4485704202b12d020, type: 2}
+    - text: "Visai nor\u0117\u010Diau ka\u017Eko saldaus"
+      items:
+      - {fileID: 11400000, guid: 8023b9585305f5e44880ea79b48cd89b, type: 2}
+    - text: "Gal turite ko vyri\u0161ko?"
+      items:
+      - {fileID: 11400000, guid: 2d273ff84cb579548baa8e619de975db, type: 2}
