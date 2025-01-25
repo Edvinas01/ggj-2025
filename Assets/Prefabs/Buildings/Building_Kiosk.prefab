@@ -808,7 +808,7 @@ ReflectionProbe:
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 129
   m_IntensityMultiplier: 1
   m_BlendDistance: 1
   m_HDR: 0
@@ -1483,15 +1483,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3218382398447647909, guid: d8dc78811f8df8c42886b05287facb24, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.721
+      value: -0.74
       objectReference: {fileID: 0}
     - target: {fileID: 3218382398447647909, guid: d8dc78811f8df8c42886b05287facb24, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.016
+      value: 1.26
       objectReference: {fileID: 0}
     - target: {fileID: 3218382398447647909, guid: d8dc78811f8df8c42886b05287facb24, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.519
+      value: 2.481
       objectReference: {fileID: 0}
     - target: {fileID: 3218382398447647909, guid: d8dc78811f8df8c42886b05287facb24, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1520,14 +1520,6 @@ PrefabInstance:
     - target: {fileID: 3218382398447647909, guid: d8dc78811f8df8c42886b05287facb24, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3327101523269102690, guid: d8dc78811f8df8c42886b05287facb24, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.1894
-      objectReference: {fileID: 0}
-    - target: {fileID: 3327101523269102690, guid: d8dc78811f8df8c42886b05287facb24, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.0556
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
