@@ -12,5 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79fe642011dc4bf4a9a62b45432de49e, type: 3}
   m_Name: Settings_Player
   m_EditorClassIdentifier: 
-  zoomInSpeed: 3
-  zoomInFov: 50
+  zoomInSpeed: 7
+  zoomInFov: 40
+  data:
+    raycastDistance: 5
+    raycastRadius: 0.05
+    raycastLayer:
+      serializedVersion: 2
+      m_Bits: 64
+    queryTriggerInteraction: 1
+    raycastColor: {r: 1, g: 0, b: 0, a: 1}
+  healthStateTextures:
+  - {fileID: 2800000, guid: e9e7e5b237cc9a64cb8cf5d07c337a85, type: 3}
+  - {fileID: 2800000, guid: ff9ff36bc2d81f34a87009bf7f4207cd, type: 3}
+  - {fileID: 2800000, guid: f58d2c9aedd88fd4eb5d38bd4df4912a, type: 3}
+  - {fileID: 2800000, guid: 65a2d72eb6cb15841bed198c5062a99d, type: 3}

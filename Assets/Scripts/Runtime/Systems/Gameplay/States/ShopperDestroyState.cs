@@ -6,6 +6,10 @@
         {
         }
 
+        protected override void OnDisposed()
+        {
+        }
+
         protected override void OnEntered(GameplayStateContext context)
         {
             var shopper = context.ActiveShopper;

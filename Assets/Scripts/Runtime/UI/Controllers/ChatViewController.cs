@@ -4,7 +4,7 @@ using UABPetelnia.GGJ2025.Runtime.UI.Views;
 
 namespace UABPetelnia.GGJ2025.Runtime.UI.Controllers
 {
-    internal sealed class GameplayViewController : ViewController<GameplayView>
+    internal sealed class ChatViewController : ViewController<ChatView>
     {
         public void ShowPurchase(PurchaseRequest purchase)
         {

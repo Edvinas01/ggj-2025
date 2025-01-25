@@ -3,6 +3,7 @@ using UABPetelnia.GGJ2025.Runtime.Systems.Audio;
 using UABPetelnia.GGJ2025.Runtime.Systems.Cursors;
 using UABPetelnia.GGJ2025.Runtime.Systems.Gameplay;
 using UABPetelnia.GGJ2025.Runtime.Systems.Input;
+using UABPetelnia.GGJ2025.Runtime.Systems.Interaction;
 using UABPetelnia.GGJ2025.Runtime.Systems.Pausing;
 using UABPetelnia.GGJ2025.Runtime.Systems.Players;
 using UABPetelnia.GGJ2025.Runtime.Systems.Scenes;
@@ -49,6 +50,7 @@ namespace UABPetelnia.GGJ2025.Runtime
             AddSystem(new PlayerSystem());
             AddSystem(shopperSystem);
             AddSystem(new GameplaySystem());
+            AddSystem(new InteractionSystem());
         }
 
         protected override void OnAfterInitializeSystems()

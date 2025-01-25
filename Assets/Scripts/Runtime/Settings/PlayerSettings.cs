@@ -1,14 +1,16 @@
-﻿using UABPetelnia.GGJ2025.Runtime.Constants;
+﻿using System.Collections.Generic;
+using UABPetelnia.GGJ2025.Runtime.Components.Interaction.Interactors;
+using UABPetelnia.GGJ2025.Runtime.Constants;
 using UnityEngine;
 
-namespace UABPetelnia.GGJ2025.Runtime.Actors
+namespace UABPetelnia.GGJ2025.Runtime.Settings
 {
     [CreateAssetMenu(
         fileName = CreateAssetMenuConstants.BaseFileName + nameof(PlayerSettings),
         menuName = CreateAssetMenuConstants.BaseMenuName + "/Player Settings",
         order = CreateAssetMenuConstants.BaseOrder
     )]
-    internal sealed class PlayerSettings : ScriptableObject
+    internal sealed class PlayerSettings : ScriptableObject, IRaycastInteractorSettings
     {
         [Header("Camera")]
         [SerializeField]
@@ -19,8 +21,33 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         [Min(0f)]
         private float zoomInFov = 20f;
 
+        [Header("Interaction")]
+        [SerializeField]
+        private RaycastInteractorData data;
+
+        [Header("Health")]
+        [SerializeField]
+        private List<Texture2D> healthStateTextures;
+
+        public int MaxHealth => healthStateTextures.Count;
+
         public float ZoomInSpeed => zoomInSpeed;
 
         public float ZoomInFov => zoomInFov;
+
+        public float RaycastDistance => data.RaycastDistance;
+
+        public float RaycastRadius => data.RaycastRadius;
+
+        public LayerMask RaycastLayer => data.RaycastLayer;
+
+        public QueryTriggerInteraction QueryTriggerInteraction => data.QueryTriggerInteraction;
+
+        public Color RaycastColor => data.RaycastColor;
+
+        public Texture2D GetHealthTexture(int health)
+        {
+            return healthStateTextures[Mathf.Max(0, MaxHealth - health)];
+        }
     }
 }

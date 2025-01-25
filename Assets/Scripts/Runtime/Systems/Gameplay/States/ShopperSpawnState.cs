@@ -12,6 +12,10 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay.States
             shopperSystem = GameManager.GetSystem<IShopperSystem>();
         }
 
+        protected override void OnDisposed()
+        {
+        }
+
         protected override void OnEntered(GameplayStateContext context)
         {
             var shopper = shopperSystem.SpawnRandomShopper(shopperSystem.RandomSpawnPoint);

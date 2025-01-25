@@ -40,13 +40,13 @@ namespace UABPetelnia.GGJ2025.Runtime.Utilities
             {
                 return true;
 
-                const string key = nameof(GizmoLocations) + "." + nameof(IsDraw3DLabelGizmos);
-                if (GameManager.TryReadEditorData(key, out bool value))
-                {
-                    return value;
-                }
-
-                return false;
+                // const string key = nameof(GizmoLocations) + "." + nameof(IsDraw3DLabelGizmos);
+                // if (GameManager.TryReadEditorData(key, out bool value))
+                // {
+                //     return value;
+                // }
+                //
+                // return false;
             }
             set
             {

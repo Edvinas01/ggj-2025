@@ -23,6 +23,9 @@ MonoBehaviour:
       items:
       - {fileID: 11400000, guid: 72020ec0dfe286a429a66e4a2e94ee62, type: 2}
     - text: visko
-      items: []
+      items:
+      - {fileID: 11400000, guid: ce3cbe4343c90ee4485704202b12d020, type: 2}
+      - {fileID: 11400000, guid: 72020ec0dfe286a429a66e4a2e94ee62, type: 2}
+      - {fileID: 11400000, guid: 2d273ff84cb579548baa8e619de975db, type: 2}
     - text: nieko
       items: []
