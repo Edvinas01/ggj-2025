@@ -604,16 +604,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ImpulseDefinition:
     ImpulseChannel: 1
-    ImpulseShape: 1
+    ImpulseShape: 3
     CustomImpulseShape:
       serializedVersion: 2
       m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    ImpulseDuration: 0.7
-    ImpulseType: 0
-    DissipationRate: 0.25
+    ImpulseDuration: 0.4
+    ImpulseType: 1
+    DissipationRate: 0.05
     RawSignal: {fileID: 0}
     AmplitudeGain: 1
     FrequencyGain: 1
@@ -642,7 +642,7 @@ MonoBehaviour:
     DissipationMode: 2
     DissipationDistance: 100
     PropagationSpeed: 343
-  DefaultVelocity: {x: 0, y: 0, z: 0}
+  DefaultVelocity: {x: 0, y: 0, z: -0.3}
 --- !u!1 &3430353481848518315
 GameObject:
   m_ObjectHideFlags: 0
