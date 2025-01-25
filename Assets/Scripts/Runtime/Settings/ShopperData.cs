@@ -1,7 +1,6 @@
 ﻿using UABPetelnia.GGJ2025.Runtime.Actors;
 using UABPetelnia.GGJ2025.Runtime.Constants;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace UABPetelnia.GGJ2025.Runtime.Settings
 {
@@ -20,6 +19,19 @@ namespace UABPetelnia.GGJ2025.Runtime.Settings
 
         [SerializeField]
         private PurchaseCollection purchases;
+
+        public string Id
+        {
+            get
+            {
+                if (image)
+                {
+                    return image.name;
+                }
+
+                return name;
+            }
+        }
 
         public ShopperActor ShopperPrefab => shopperPrefab;
 

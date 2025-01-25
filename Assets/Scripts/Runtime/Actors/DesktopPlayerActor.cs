@@ -1,5 +1,4 @@
-﻿using System;
-using CHARK.GameManagement;
+﻿using CHARK.GameManagement;
 using UABPetelnia.GGJ2025.Runtime.Components.Input;
 using UABPetelnia.GGJ2025.Runtime.Components.Interaction.Interactors;
 using UABPetelnia.GGJ2025.Runtime.Settings;
@@ -9,6 +8,7 @@ using UABPetelnia.GGJ2025.Runtime.Systems.Players;
 using UABPetelnia.GGJ2025.Runtime.UI.Controllers;
 using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Serialization;
 
 namespace UABPetelnia.GGJ2025.Runtime.Actors
@@ -57,6 +57,13 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         [SerializeField]
         private ButtonInputActionListener selectListener;
 
+        [Header("Events")]
+        [SerializeField]
+        private UnityEvent onHealthChanged;
+
+        [SerializeField]
+        private UnityEvent onCentsChanged;
+
         private IGameplaySystem gameplaySystem;
         private IPlayerSystem playerSystem;
         private ICursorSystem cursorSystem;
@@ -87,6 +94,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
             {
                 currentCents = value;
                 GameManager.Publish(new PlayerCentsChanged(this));
+                onCentsChanged.Invoke();
             }
         }
 
@@ -190,6 +198,8 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
             Debug.Log($"Health: {Health}", this);
 
             GameManager.Publish(new PlayerHealthChanged(this));
+
+            onHealthChanged.Invoke();
         }
 
         private void StartZoomingIn()
