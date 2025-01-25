@@ -64,6 +64,9 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         [SerializeField]
         private UnityEvent onCentsChanged;
 
+        [SerializeField]
+        private UnityEvent onItemsDisappear;
+
         private IGameplaySystem gameplaySystem;
         private IPlayerSystem playerSystem;
         private ICursorSystem cursorSystem;
@@ -235,6 +238,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         public void HidePurchase()
         {
             chatViewController.Hide();
+            onItemsDisappear.Invoke();
         }
     }
 }
