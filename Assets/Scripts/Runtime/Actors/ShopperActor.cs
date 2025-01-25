@@ -217,23 +217,23 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
                 .Distinct()
                 .ToList();
 
+            var availableItems = shopperSystem.AvailableItems;
+            var invalidItems = availableItems
+                .Where(item => validKeywordItems.Contains(item) == false)
+                .Shuffle()
+                .Take(Random.Range(invalidItemRange.x, invalidItemRange.y))
+                .ToList();
+
             var validItems = validKeywordItems
                 .Shuffle()
                 .Take(1)
                 .ToList();
 
-            var availableItems = shopperSystem.AvailableItems;
-            var invalidItems = availableItems
-                .Where(item => validItems.Contains(item) == false)
-                .Shuffle()
-                .Take(Random.Range(invalidItemRange.x, invalidItemRange.y))
-                .ToList();
-
             return new PurchaseRequest(
-                text,
-                invalidItems,
-                validItems,
-                this
+                text: text,
+                invalidItems: invalidItems,
+                validItems: validItems,
+                shopper: this
             );
         }
 
