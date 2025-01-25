@@ -1,0 +1,267 @@
+﻿[
+  {
+    "text": "Sveikutis! Ar žiūrėjai vakar laukinukę? Omg, įsivaizduok, Rosaura įžengia į Arismendžių dvarą, ką tik iš Panoramos. Plaukai – tobulai tiesūs, makiažas prabangus, o suknele tikra stiliaus bomba! Arismendžiai nustėrę žiūri, Luisas Marius vos neapsiverkia iš šoko. Rosaura su šaltu žvilgsniu sako: „Dabar aš valdau, o jūs? Jūs esate niekas. ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Gumos man",
+        "items": [
+          "Item_GumLoveIs",
+          "Item_GumHubbaBubba"
+        ]
+      },
+      {
+        "text": "Item_Zozole man",
+        "items": [
+          "Item_Zozole"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Labas! Nesuprantu kas per bukis gali žiūrėti tą laukinukę. Rosaura visą laiką vaidina tą perdėtą auką, o visa drama – nerealistiška ir per daug teatrališka. Tas jos kerštas ir meilė… labai pigaus lygio. ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Nekaloringos gumos man",
+        "items": [
+          "Item_GumDbz"
+        ]
+      },
+      {
+        "text": "Pėdukę man",
+        "items": [
+          "Item_CrazyDips"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Šviesiat? Šviečiat? ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Šviečiat? Šviečiat?",
+        "items": [
+          "Item_Alita"
+        ]
+      },
+      {
+        "text": "Šviečiat? Haha. Gražiai šviečiat",
+        "items": [
+          "Item_Alita"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Sveiki. Einu į draugės gimtadienį, ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "gal pasiūlysite ką dovanų nunešti?",
+        "items": [
+          "Item_Alita",
+          "Item_Balloon",
+          "Item_Zozole",
+          "Item_GumLoveIs"
+        ]
+      },
+      {
+        "text": "gal kokią juokingą dovaną pasiūlysite?",
+        "items": [
+          "Item_Colgate",
+          "Item_SoapUkinis"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Sveikutis. Vakar ragavau tokį kokteilį įdomų. Sprite ir sirupas nuo kosulio. ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "gal pasiūlysite kažką panašaus?",
+        "items": [
+          "Item_Alita",
+          "Item_Selita",
+          "Item_Aspirin"
+        ]
+      },
+      {
+        "text": "gal galima Item_Aspirino?",
+        "items": [
+          "Item_Aspirin"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Labas. Girdėjau, kad TicTac tik dvi kalorijos. Norėtųsi kažko maistingesnio ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "gal turite kažką su 5-15 kalorijų?",
+        "items": [
+          "Item_GumDbz"
+        ]
+      },
+      {
+        "text": "gal turite kažką su 10-20 kalorijų?",
+        "items": [
+          "Item_GumLoveIs"
+        ]
+      },
+      {
+        "text": "gal turite kažką su 25-30 kalorijų?",
+        "items": [
+          "Item_GumHubbaBubba"
+        ]
+      },
+      {
+        "text": "gal turite kažką su 50-70 kalorijų?",
+        "items": [
+          "Item_CrazyDips",
+          "Item_Zozole"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Labas. Žinai skaičiau vakar savo horoskopą ir supratau, kad privalau kai ką nusipirkti ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Vėžys",
+        "items": [
+          "Item_GumLoveIs",
+          "Item_Selita",
+          "Item_Durex"
+        ]
+      },
+      {
+        "text": "Skorpionas?",
+        "items": [
+          "Item_Durex",
+          "Item_Alus",
+          "Item_Alita"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Labas. Žinai skaičiau vakar savo horoskopą ir supratau, kad privalau kai ką nusipirkti ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Vėžys",
+        "items": [
+          "Item_GumLoveIs",
+          "Item_Selita",
+          "Item_Durex"
+        ]
+      },
+      {
+        "text": "Skorpionas?",
+        "items": [
+          "Item_Durex",
+          "Item_Alus",
+          "Item_Alita"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Sveikas. Išvariau vyrą iš namų. ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Gal nori užsukt?",
+        "items": [
+          "Item_Durex",
+          "Item_Alita"
+        ]
+      },
+      {
+        "text": "Skauda galvą, lindo vaflis.",
+        "items": [
+          "Item_Aspirin",
+          "Item_Alus"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Sveikas. Išvariau vyrą iš namų. ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Gal nori užsukt?",
+        "items": [
+          "Item_Durex",
+          "Item_Alita"
+        ]
+      },
+      {
+        "text": "Skauda galvą, lindo vaflis.",
+        "items": [
+          "Item_Aspirin",
+          "Item_Alus"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Problema. Užtrukau turguje ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "ir nepadaryta vyrui valgyt",
+        "items": [
+          "Item_Alus",
+          "Item_Durex"
+        ]
+      },
+      {
+        "text": "ir vaikams blemba nenupirkau nieko",
+        "items": [
+          "Item_Balloon",
+          "Item_GumDbz",
+          "Item_BubbleTubeBlower",
+          "Item_CrazyDips",
+          "Item_GumHubbaBubba",
+          "Item_GumLoveIs",
+          "Item_SodaBuratinas",
+          "Item_Zozole"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Sveikas. Ar ateisi į laiptinės pasitarimą? ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Baigėsi muilas",
+        "items": [
+          "Item_SoapUkinis"
+        ]
+      },
+      {
+        "text": "Aš tavęs trokštu",
+        "items": [
+          "Item_Durex",
+          "Item_GumLoveIs"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Nu gruzas, pasimatymas veliop, ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "sakė smirda iš burnos",
+        "items": [
+          "Item_SoapUkinis",
+          "Item_Colgate"
+        ]
+      },
+      {
+        "text": "gal paguodai kažką...",
+        "items": [
+          "Item_Durex",
+          "Item_Alita",
+          "Item_Alus"
+        ]
+      }
+    ]
+  }
+]

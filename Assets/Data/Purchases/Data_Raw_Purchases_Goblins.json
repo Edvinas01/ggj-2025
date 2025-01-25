@@ -1,0 +1,138 @@
+﻿[
+  {
+    "text": "Laukinis žaliasis goblinas apsireiškė. ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Jis nori meilės",
+        "items": [
+          "Item_GumLoveIs",
+          "Item_Durex"
+        ]
+      },
+      {
+        "text": "Jis nori pačiulpt",
+        "items": [
+          "Item_Zozole",
+          "Item_ACC",
+          "Item_CrazyDips"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Laukinis žaliasis goblinas apsireiškė. ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Atspėk ko jis nori.",
+        "items": [
+          "Item_Aspirin",
+          "Item_Selita",
+          "Item_ACC",
+          "Item_Alita",
+          "Item_Alus",
+          "Item_Balloon",
+          "Item_BubbleTubeBlower",
+          "Item_Colgate",
+          "Item_CrazyDips",
+          "Item_Durex",
+          "Item_GumDbz",
+          "Item_GumHubbaBubba",
+          "Item_GumLoveIs",
+          "Item_SoapUkinis",
+          "Item_SodaBuratinas",
+          "Item_SodaVytautas",
+          "Item_Zozole"
+        ]
+      },
+      {
+        "text": "Jis nori pripučiamo draugo.",
+        "items": [
+          "Item_Balloon",
+          "Item_Durex"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Laukinis žaliasis goblinas apsireiškė. ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Žalias, bet ne žolė, su uodega, bet ne pelė.",
+        "items": [
+          "Item_Durex"
+        ]
+      },
+      {
+        "text": "Jei tau žalia akyse, dar nereiškia, kad atėjo pavasaris.",
+        "items": [
+          "Item_Aspirin",
+          "Item_Selita",
+          "Item_ACC",
+          "Item_Alita",
+          "Item_Alus",
+          "Item_Balloon",
+          "Item_BubbleTubeBlower",
+          "Item_Colgate",
+          "Item_CrazyDips",
+          "Item_Durex",
+          "Item_GumDbz",
+          "Item_GumHubbaBubba",
+          "Item_GumLoveIs",
+          "Item_SoapUkinis",
+          "Item_SodaBuratinas",
+          "Item_SodaVytautas",
+          "Item_Zozole"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Laukinis žaliasis goblinas apsireiškė. ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Hehehehehe",
+        "items": [
+          "Item_Aspirin",
+          "Item_Selita",
+          "Item_ACC",
+          "Item_Alita",
+          "Item_Alus",
+          "Item_Balloon",
+          "Item_BubbleTubeBlower",
+          "Item_Colgate",
+          "Item_CrazyDips",
+          "Item_Durex",
+          "Item_GumDbz",
+          "Item_GumHubbaBubba",
+          "Item_GumLoveIs",
+          "Item_SoapUkinis",
+          "Item_SodaBuratinas",
+          "Item_SodaVytautas",
+          "Item_Zozole"
+        ]
+      },
+      {
+        "text": "Aš agurkas.",
+        "items": [
+          "Item_Aspirin",
+          "Item_Selita",
+          "Item_ACC",
+          "Item_Alita",
+          "Item_Alus",
+          "Item_Balloon",
+          "Item_BubbleTubeBlower",
+          "Item_Colgate",
+          "Item_CrazyDips",
+          "Item_Durex",
+          "Item_GumDbz",
+          "Item_GumHubbaBubba",
+          "Item_GumLoveIs",
+          "Item_SoapUkinis",
+          "Item_SodaBuratinas",
+          "Item_SodaVytautas",
+          "Item_Zozole"
+        ]
+      }
+    ]
+  }
+]
