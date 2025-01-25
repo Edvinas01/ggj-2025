@@ -36,6 +36,8 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay.States
                 return;
             }
 
+            shopper.PlayWalkAnimation();
+
             switch (moveTo)
             {
                 case MoveTo.SpawnPoint:
@@ -53,6 +55,8 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay.States
 
         protected override void OnExited(GameplayStateContext context)
         {
+            var shopper = context.ActiveShopper;
+            shopper?.StopWalkAnimation();
         }
 
         protected override Status OnUpdated(GameplayStateContext context)

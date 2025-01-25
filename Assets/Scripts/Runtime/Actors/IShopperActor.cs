@@ -31,6 +31,10 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
 
         public void StopPunchAnimation();
 
+        public void PlayWalkAnimation();
+
+        public void StopWalkAnimation();
+
         public void ShowPurchase(PurchaseRequest purchase);
 
         public void HidePurchase();
