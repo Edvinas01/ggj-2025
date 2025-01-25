@@ -345,6 +345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigidBody: {fileID: 6504261872927204324}
   pullForce: 0.1
+  maxSpeed: 1
   imageRenderer: {fileID: 3925832911841189971}
   texturePropertyId: _BaseMap
   scaleUpTween:

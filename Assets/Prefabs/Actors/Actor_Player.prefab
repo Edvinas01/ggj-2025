@@ -611,9 +611,9 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    ImpulseDuration: 0.4
+    ImpulseDuration: 0.8
     ImpulseType: 1
-    DissipationRate: 0.05
+    DissipationRate: 0.001
     RawSignal: {fileID: 0}
     AmplitudeGain: 1
     FrequencyGain: 1
