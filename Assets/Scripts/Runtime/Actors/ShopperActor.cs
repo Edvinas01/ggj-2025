@@ -48,6 +48,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         private string texturePropertyId = "_BaseMap";
 
         private IShopperSystem shopperSystem;
+        private Camera mainCamera;
         private readonly List<IChoiceBubbleActor> choices = new();
 
         public string Name => name;
@@ -114,6 +115,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         private void Awake()
         {
             shopperSystem = GameManager.GetSystem<IShopperSystem>();
+            mainCamera = Camera.main;
         }
 
         private void OnEnable()
@@ -128,12 +130,16 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
 
         private void Update()
         {
+            Vector3 dir;
             if (IsMoving == false)
             {
-                return;
+                dir = mainCamera.transform.position - transform.position;
+            }
+            else
+            {
+                dir = agent.destination - transform.position;
             }
 
-            var dir = agent.destination - transform.position;
             dir.y = 0;
 
             if (dir == Vector3.zero)
