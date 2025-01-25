@@ -62,6 +62,12 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         public UnityEvent OnBuyStop;
 
         [SerializeField]
+        public UnityEvent OnMoveStart;
+
+        [SerializeField]
+        public UnityEvent OnMoveStop;
+
+        [SerializeField]
         private string texturePropertyId = "_BaseMap";
 
         private IShopperSystem shopperSystem;
@@ -263,6 +269,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         {
             walkAnimation.enabled = true;
             walkAnimation.Play("Animation_Shooper_Walk_Jump", -1, 0f);
+            OnMoveStart.Invoke();
         }
 
         public void StopWalkAnimation()
@@ -270,6 +277,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
             walkAnimation.Play(walkAnimation.GetCurrentAnimatorStateInfo(0).fullPathHash, 0, 0f);
             walkAnimation.Update(0f);
             walkAnimation.enabled = false;
+            OnMoveStop.Invoke();
         }
 
         private Transform GetOriginPoint()
