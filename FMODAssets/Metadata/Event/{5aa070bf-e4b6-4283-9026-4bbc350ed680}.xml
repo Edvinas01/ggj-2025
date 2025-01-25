@@ -93,7 +93,7 @@
 	<object class="MixerBusPanner" id="{868a5add-74c3-45e3-9ab6-fd69517df5a1}" />
 	<object class="MultiSound" id="{b7801c26-04c3-4965-8c4b-d5a44fce8456}">
 		<property name="length">
-			<value>2</value>
+			<value>0.55000000000000004</value>
 		</property>
 		<relationship name="sounds">
 			<destination>{2469ad73-efb7-461f-9b5d-5ddcb6574821}</destination>
@@ -108,6 +108,9 @@
 		<property name="name">
 			<value>Audio 2</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{fe859e92-7d93-4268-9549-a311bd59280f}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{a1e65d5a-31ae-429e-bf9a-bc8ca67bfcfa}</destination>
 		</relationship>
@@ -173,12 +176,41 @@
 			<destination>{cb240e75-1d8c-45c9-bcc1-4655dc887d31}</destination>
 		</relationship>
 	</object>
+	<object class="ADSRModulator" id="{fe859e92-7d93-4268-9549-a311bd59280f}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>0</value>
+		</property>
+		<property name="releaseTime">
+			<value>2800</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{a1e65d5a-31ae-429e-bf9a-bc8ca67bfcfa}">
 		<relationship name="effects">
 			<destination>{6a6c44c2-c29c-4f7a-b327-772a20230e03}</destination>
+			<destination>{10d268cf-0038-4733-aac7-315b15375039}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{80ea68b1-6613-41cd-8a08-0e9fd2940fca}" />
 	<object class="MixerBusFader" id="{db9ea22a-70e1-4708-87ab-e7782b6a9b83}" />
 	<object class="MixerBusFader" id="{6a6c44c2-c29c-4f7a-b327-772a20230e03}" />
+	<object class="SFXReverbEffect" id="{10d268cf-0038-4733-aac7-315b15375039}">
+		<property name="decayTime">
+			<value>400</value>
+		</property>
+		<property name="HFDecayRatio">
+			<value>39.5</value>
+		</property>
+		<property name="wetLevel">
+			<value>-15</value>
+		</property>
+	</object>
 </objects>
