@@ -1,0 +1,272 @@
+[
+  {
+    "text": "Labas dėde! Šiandien mama vėl neatsikėlė į darbą. ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Kodėl nelikote nakvoti?",
+        "items": []
+      },
+      {
+        "text": "Tėtė atsiuntė nupirkti atsigerti pagirioms",
+        "items": [
+          "Item_Alus",
+          "Item_Aspirin",
+          "Item_SodaVytautas",
+          "Item_Alita"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Sveiki. Norėčiau Dragonball Z gumos. ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Duokite už visus kiek išeina",
+        "items": [
+          "Item_GumDbz"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Labas dėde! Mama liepė nupirkti ploviklio. ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Reikia plauti indus, jei dar liks – ir brolį nuplausim.",
+        "items": [
+          "Item_SoapUkinis"
+        ]
+      },
+      {
+        "text": "Ne bet kokio, bet su burbuliukais",
+        "items": [
+          "Item_Selita",
+          "Item_Alita",
+          "Item_Alus",
+          "Item_BubbleTubeBlower",
+          "Item_SodaBuratinas",
+          "Item_SodaVytautas"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Labas dėde! Mama liepė nupirkti ploviklio. ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Reikia plauti indus, jei dar liks – ir brolį nuplausim.",
+        "items": [
+          "Item_SoapUkinis"
+        ]
+      },
+      {
+        "text": "Ne bet kokio, bet su burbuliukais",
+        "items": [
+          "Item_Selita",
+          "Item_Alita",
+          "Item_Alus",
+          "Item_BubbleTubeBlower",
+          "Item_SodaBuratinas",
+          "Item_SodaVytautas"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Sveiki dėde. Kodėl kioskas vakar nedirbo? ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Norėčiau papūsti. Atrodo aš nuo to priklausomas",
+        "items": [
+          "Item_Balloon",
+          "Item_BubbleTubeBlower",
+          "Item_GumHubbaBubba",
+          "Item_GumLoveIs"
+        ]
+      },
+      {
+        "text": "Mama su tėte nesikelia iš lovos jau natra diena. Davė lapelį ką nupirkti",
+        "items": [
+          "Item_Alus",
+          "Item_Aspirin",
+          "Item_SodaVytautas",
+          "Item_Alita"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Labas dėde. Man reikia ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "penki už litą, viens magaryčių. Užkvėpins visą gryčia. Už litą, už litą, kvepės kas rytą. Kiaušininis, kad dukterys ištekėtų. Degutinis, kad visi mylėtų. Terpentinis, kad kandys kailio neėstų. Ar žinai mielasis vaike, ko tau trūksta, ko tau reikia, kad užaugtum vyras sveikas.",
+        "items": [
+          "Item_SoapUkinis"
+        ]
+      },
+      {
+        "text": "Ahoi, pone bebre!",
+        "items": [
+          "Item_Colgate"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Ko čia žiūri ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "obuoly",
+        "items": []
+      },
+      {
+        "text": "snargly",
+        "items": []
+      }
+    ]
+  },
+  {
+    "text": "Labas dėde! Negavai dar šiandien skūron? ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Parduok man išgert ir nemušiu.",
+        "items": [
+          "Item_Alus",
+          "Item_Alita"
+        ]
+      },
+      {
+        "text": "Tuoj gausi",
+        "items": []
+      }
+    ]
+  },
+  {
+    "text": "Karšta diena sakyčiau. Atsigert šiandien ko turite? ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Item_Selita?",
+        "items": [
+          "Item_Selita"
+        ]
+      },
+      {
+        "text": "Item_Alus?",
+        "items": [
+          "Item_Alus"
+        ]
+      },
+      {
+        "text": "Šampanas??",
+        "items": [
+          "Item_Alita"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Karšta diena sakyčiau. Atsigert šiandien ko turite? ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Item_Selita?",
+        "items": [
+          "Item_Selita"
+        ]
+      },
+      {
+        "text": "Item_Alus?",
+        "items": [
+          "Item_Alus"
+        ]
+      },
+      {
+        "text": "Šampanas??",
+        "items": [
+          "Item_Alita"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Ar turite klijų? ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Ar ko pauostyt?",
+        "items": [
+          "Item_Zozole"
+        ]
+      },
+      {
+        "text": "O gal ko papūsti?",
+        "items": [
+          "Item_Balloon",
+          "Item_BubbleTubeBlower"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Laba diena su vištiena. Norėčiau kramtomosios gumos ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Iš Amerikos",
+        "items": [
+          "Item_GumHubbaBubba"
+        ]
+      },
+      {
+        "text": "Iš Ispanijos",
+        "items": [
+          "Item_CrazyDips"
+        ]
+      },
+      {
+        "text": "Iš Lenkijos",
+        "items": [
+          "Item_Zozole"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Laba diena su vištiena. Norėčiau saldumyno ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Iš Amerikos",
+        "items": [
+          "Item_GumHubbaBubba"
+        ]
+      },
+      {
+        "text": "Iš Ispanijos",
+        "items": [
+          "Item_CrazyDips"
+        ]
+      },
+      {
+        "text": "Iš Lenkijos",
+        "items": [
+          "Item_Zozole"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Labas rytas suraitytas. Norėčiau ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "nekaloringos gumos",
+        "items": [
+          "Item_GumDbz"
+        ]
+      },
+      {
+        "text": "kaloringo saldainio nuotaikai pakelti",
+        "items": [
+          "Item_Zozole",
+          "Item_CrazyDips"
+        ]
+      }
+    ]
+  }
+]

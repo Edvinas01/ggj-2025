@@ -1,0 +1,399 @@
+[
+  {
+    "text": "Labas! Šiandien nusprendžiau praleisti ${KEYWORD}, nes norėjau pabėgti nuo kasdienybės. Pamačiau šį kioską ir pagalvojau, kad galbūt galėčiau kažką nusipirkti?",
+    "keywords": [
+      {
+        "text": "gerai laika",
+        "items": [
+          "Item_Alita",
+          "Item_Alus",
+          "Item_Durex"
+        ]
+      },
+      {
+        "text": "laiką su moterimi",
+        "items": [
+          "Item_Durex",
+          "Item_Alita",
+          "Item_GumLoveIs"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Sveiki! Suknistas taksistas sugadino dieną, norėčiau ${KEYWORD}. Gal turite ką pasiūlyti?",
+    "keywords": [
+      {
+        "text": "nuraminti nervus",
+        "items": [
+          "Item_Alita",
+          "Item_Alus"
+        ]
+      },
+      {
+        "text": "sugadint jam nuotaiką atgal",
+        "items": [
+          "Item_Durex"
+        ]
+      },
+      {
+        "text": "greičio",
+        "items": [
+          "Item_Selita",
+          "Item_Aspirin"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Laba! Esu ne vietinis ir ${KEYWORD}. Gal turite ką pasiūlyti?",
+    "keywords": [
+      {
+        "text": "teko ilgai keliauti autobusu",
+        "items": [
+          "Item_Colgate",
+          "Item_SoapUkinis"
+        ]
+      },
+      {
+        "text": "planuoju šį vakarą pasilinksminti",
+        "items": [
+          "Item_Alita",
+          "Item_Alus",
+          "Item_Selita"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Sveiki! Vakar buvo užbaliavota ir ${KEYWORD}. Gal turite ką pasiūlyti?",
+    "keywords": [
+      {
+        "text": "galvą skauda, galvą skauda!",
+        "items": [
+          "Item_Aspirin",
+          "Item_Alita",
+          "Item_Alus",
+          "Item_SodaVytautas"
+        ]
+      },
+      {
+        "text": "norisi šiandien vėl pajudėti",
+        "items": [
+          "Item_Alus",
+          "Item_Alita",
+          "Item_Selita"
+        ]
+      },
+      {
+        "text": "panašu, kad po devynių mėnesių bus problemų",
+        "items": [
+          "Item_Durex",
+          "Item_Balloon"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Sveiki. Ar dirbate? Sprogo automobilio padanga ir ${KEYWORD}. Gal turite ką pasiūlyti?",
+    "keywords": [
+      {
+        "text": "reikia užklijuoti kažkuo",
+        "items": [
+          "Item_GumDbz",
+          "Item_GumHubbaBubba",
+          "Item_GumLoveIs"
+        ]
+      },
+      {
+        "text": "nelaiko nervai",
+        "items": [
+          "Item_Alus",
+          "Item_Alita"
+        ]
+      },
+      {
+        "text": "panašu, kad po devynių mėnesių bus problemų",
+        "items": [
+          "Item_Durex",
+          "Item_GumLoveIs",
+          "Item_Alita"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Sveiki. Ar dirbate? Sprogo automobilio padanga ir ${KEYWORD}. Gal turite ką pasiūlyti?",
+    "keywords": [
+      {
+        "text": "reikia užklijuoti kažkuo",
+        "items": [
+          "Item_GumDbz",
+          "Item_GumHubbaBubba",
+          "Item_GumLoveIs"
+        ]
+      },
+      {
+        "text": "nelaiko nervai",
+        "items": [
+          "Item_Alus",
+          "Item_Alita"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Labas! Užklydau čia visai netyčia, bet kažkaip ${KEYWORD}. Gal turite ką pasiūlyti?",
+    "keywords": [
+      {
+        "text": "pasijutau kaip vaikas",
+        "items": [
+          "Item_BubbleTubeBlower",
+          "Item_GumHubbaBubba",
+          "Item_Balloon",
+          "Item_CrazyDips",
+          "Item_GumDbz",
+          "Item_GumLoveIs",
+          "Item_SodaBuratinas",
+          "Item_Zozole"
+        ]
+      },
+      {
+        "text": "noriu kažko įdomesnio vakarui",
+        "items": [
+          "Item_Alus",
+          "Item_Alita",
+          "Item_Durex",
+          "Item_Selita"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Sveiki! Rytinis susitikimas praėjo prastai, todėl dabar ${KEYWORD}. Gal turite ką pasiūlyti?",
+    "keywords": [
+      {
+        "text": "noriu pralinksmėti",
+        "items": [
+          "Item_Alita",
+          "Item_Alus"
+        ]
+      },
+      {
+        "text": "reikia atsigaivinti",
+        "items": [
+          "Item_SodaVytautas",
+          "Item_SodaBuratinas"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Sveiki! Prisivažinėjau po miestą ir ${KEYWORD}. Gal turite ką pasiūlyti?",
+    "keywords": [
+      {
+        "text": "reikia atsigaivinti",
+        "items": [
+          "Item_SodaVytautas",
+          "Item_Alus",
+          "Item_Alita"
+        ]
+      },
+      {
+        "text": "prireikė kažko praktiško",
+        "items": [
+          "Item_SoapUkinis",
+          "Item_Colgate"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Laba diena! Artėja draugo gimtadienis ir ${KEYWORD}. Gal turite ką pasiūlyti?",
+    "keywords": [
+      {
+        "text": "noriu nustebinti jį smulkmena",
+        "items": [
+          "Item_CrazyDips",
+          "Item_BubbleTubeBlower",
+          "Item_Durex",
+          "Item_GumLoveIs"
+        ]
+      },
+      {
+        "text": "reikės pasirūpinti vakaro nuotaika",
+        "items": [
+          "Item_Alita",
+          "Item_Alus",
+          "Item_Durex",
+          "Item_Selita"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Labas! Kažkaip burbuliuoju viduje, o draugai sako – geriau burbuliuot iš išorės. Turit kokį ${KEYWORD}?",
+    "keywords": [
+      {
+        "text": "burbulų skystį",
+        "items": [
+          "Item_ACC",
+          "Item_Alita",
+          "Item_SodaBuratinas",
+          "Item_SodaVytautas",
+          "Item_BubbleTubeBlower",
+          "Item_Aspirin",
+          "Item_Selita"
+        ]
+      },
+      {
+        "text": "kokį skystį atkimšimui",
+        "items": [
+          "Item_SodaVytautas"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Sveiki! Mano mergina pyksta, kad grįžau be nieko įdomaus. Gal turit ${KEYWORD}?",
+    "keywords": [
+      {
+        "text": "kokį rimtesnį argumentą",
+        "items": [
+          "Item_Durex",
+          "Item_Alita",
+          "Item_Alus"
+        ]
+      },
+      {
+        "text": "kažką saldaus",
+        "items": [
+          "Item_Zozole",
+          "Item_GumLoveIs",
+          "Item_GumHubbaBubba",
+          "Item_CrazyDips"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Sveiki! Kažkaip šiandien viskas krenta iš rankų, o dar ir ${KEYWORD}. Turit ką nors padedančio?",
+    "keywords": [
+      {
+        "text": "galva plyšta",
+        "items": [
+          "Item_Aspirin"
+        ]
+      },
+      {
+        "text": "žmona pyksta",
+        "items": [
+          "Item_Alita",
+          "Item_Alus"
+        ]
+      },
+      {
+        "text": "atrodo, kad reikia profilaktikos",
+        "items": [
+          "Item_Colgate",
+          "Item_SoapUkinis"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Kažkaip šiandien viskas krenta iš rankų, o dar ir ${KEYWORD}. Turit ką nors padedančio?",
+    "keywords": [
+      {
+        "text": "galva plyšta",
+        "items": [
+          "Item_Aspirin"
+        ]
+      },
+      {
+        "text": "žmona pyksta",
+        "items": [
+          "Item_Alita",
+          "Item_Alus"
+        ]
+      },
+      {
+        "text": "atrodo, kad reikia profilaktikos",
+        "items": [
+          "Item_Colgate",
+          "Item_SoapUkinis"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Esu Vitalijus, man dvidešimt. Mėgstu pačiešinti panas. Jeigu pana baisi, bent pabazarinu. Nu ką mažyte, tuoj padainuosiu ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Kū Ką Rė Kų",
+        "items": [
+          "Item_Aspirin"
+        ]
+      },
+      {
+        "text": "Y ga ga",
+        "items": [
+          "Item_Aspirin"
+        ]
+      },
+      {
+        "text": "Mūūūūūūūū",
+        "items": [
+          "Item_Aspirin"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Esu Vitalijus, man dvidešimt. Mėgstu pačiešinti panas. Jeigu pana baisi, bent pabazarinu. Nu ką mažyte, tuoj padainuosiu ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Kū Ką Rė Kų",
+        "items": [
+          "Item_Aspirin"
+        ]
+      },
+      {
+        "text": "Y ga ga",
+        "items": [
+          "Item_Aspirin"
+        ]
+      },
+      {
+        "text": "Mūūūūūūūū",
+        "items": [
+          "Item_Aspirin"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Aš nieko negėriau. ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Darbe, biškį, truputį išgėriau ir važiavau namo. Ir degtin, vyną išgėriau ir degtinėlės vieną čerkelį",
+        "items": [
+          "Item_Alus",
+          "Item_Alita"
+        ]
+      },
+      {
+        "text": "Visai norėčiau kažko saldaus",
+        "items": [
+          "Item_SodaBuratinas"
+        ]
+      },
+      {
+        "text": "Gal turite ko vyriško?",
+        "items": [
+          "Item_Alus"
+        ]
+      }
+    ]
+  }
+]
