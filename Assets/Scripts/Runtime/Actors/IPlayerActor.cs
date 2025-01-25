@@ -2,6 +2,8 @@
 {
     internal interface IPlayerActor
     {
+        public void ShowText(string text);
 
+        public void HideText();
     }
 }

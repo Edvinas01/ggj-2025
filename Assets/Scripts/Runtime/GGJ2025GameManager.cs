@@ -1,10 +1,13 @@
 ﻿using CHARK.GameManagement;
 using UABPetelnia.GGJ2025.Runtime.Systems.Audio;
 using UABPetelnia.GGJ2025.Runtime.Systems.Cursors;
+using UABPetelnia.GGJ2025.Runtime.Systems.Gameplay;
 using UABPetelnia.GGJ2025.Runtime.Systems.Input;
 using UABPetelnia.GGJ2025.Runtime.Systems.Pausing;
+using UABPetelnia.GGJ2025.Runtime.Systems.Players;
 using UABPetelnia.GGJ2025.Runtime.Systems.Scenes;
 using UABPetelnia.GGJ2025.Runtime.Systems.Settings;
+using UABPetelnia.GGJ2025.Runtime.Systems.Shoppers;
 using UnityEngine;
 
 namespace UABPetelnia.GGJ2025.Runtime
@@ -31,6 +34,9 @@ namespace UABPetelnia.GGJ2025.Runtime
         [SerializeField]
         private SceneSystem sceneSystem;
 
+        [SerializeField]
+        private ShopperSystem shopperSystem;
+
         protected override void OnBeforeInitializeSystems()
         {
             AddSystem(audioSystem);
@@ -39,6 +45,10 @@ namespace UABPetelnia.GGJ2025.Runtime
             AddSystem(pauseSystem);
             AddSystem(settingsSystem);
             AddSystem(sceneSystem);
+
+            AddSystem(new PlayerSystem());
+            AddSystem(shopperSystem);
+            AddSystem(new GameplaySystem());
         }
 
         protected override void OnAfterInitializeSystems()
