@@ -21,6 +21,9 @@ namespace UABPetelnia.GGJ2025.Runtime.Settings
         [Min(0f)]
         private float zoomInFov = 20f;
 
+        [SerializeField]
+        private Vector3 cameraShakeForce = new(0f, 0f, -1f);
+
         [Header("Interaction")]
         [SerializeField]
         private RaycastInteractorData data;
@@ -44,6 +47,8 @@ namespace UABPetelnia.GGJ2025.Runtime.Settings
         public QueryTriggerInteraction QueryTriggerInteraction => data.QueryTriggerInteraction;
 
         public Color RaycastColor => data.RaycastColor;
+
+        public Vector3 CameraShakeForce => cameraShakeForce;
 
         public Texture2D GetHealthTexture(int health)
         {

@@ -19,10 +19,14 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         private PlayerSettings settings;
 
         [SerializeField]
+        private Interactor choiceInteractor;
+
+        [Header("Cameras")]
+        [SerializeField]
         private CinemachineCamera cinemachineCamera;
 
         [SerializeField]
-        private Interactor choiceInteractor;
+        private CinemachineImpulseSource cinemachineImpulse;
 
         [Header("Rendering")]
         [SerializeField]
@@ -170,6 +174,8 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
             var block = new MaterialPropertyBlock();
             block.SetTexture(bodyTexturePropertyId, texture);
             bodyRenderer.SetPropertyBlock(block);
+
+            cinemachineImpulse.GenerateImpulse(settings.CameraShakeForce);
 
             Debug.Log($"Health: {Health}", this);
 
