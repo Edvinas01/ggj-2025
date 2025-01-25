@@ -20,6 +20,12 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay
             set => targetNextState = value;
         }
 
+        protected GameplayStateContext Context
+        {
+            get;
+            private set;
+        }
+
         public void Initialize(GameplayState nextState)
         {
             OnInitialized();
@@ -33,6 +39,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay
 
         public void Enter(GameplayStateContext context)
         {
+            Context = context;
             OnEntered(context);
         }
 

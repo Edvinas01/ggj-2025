@@ -21,7 +21,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Settings
 
         public string Id => id;
 
-        public int Price => price;
+        public int Cents => price;
 
         public Texture2D Image => image;
     }

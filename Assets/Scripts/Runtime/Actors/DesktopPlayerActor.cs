@@ -8,6 +8,7 @@ using UABPetelnia.GGJ2025.Runtime.Systems.Players;
 using UABPetelnia.GGJ2025.Runtime.UI.Controllers;
 using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace UABPetelnia.GGJ2025.Runtime.Actors
 {
@@ -24,8 +25,9 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         private Interactor choiceInteractor;
 
         [Header("UI")]
+        [FormerlySerializedAs("gameplayViewController")]
         [SerializeField]
-        private GameplayViewController gameplayViewController;
+        private ChatViewController chatViewController;
 
         [Header("Input")]
         [SerializeField]
@@ -41,6 +43,31 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         private float initialFov;
         private float currentFov;
         private float targetFov;
+
+        private int currentHealth;
+        private int currentCents;
+
+        public int Health
+        {
+            get => currentHealth;
+            set
+            {
+                currentHealth = value;
+                currentHealth = Mathf.Max(currentHealth, 0);
+
+                GameManager.Publish(new PlayerHealthChanged(this));
+            }
+        }
+
+        public int Cents
+        {
+            get => currentCents;
+            set
+            {
+                currentCents = value;
+                GameManager.Publish(new PlayerCentsChanged(this));
+            }
+        }
 
         private void Awake()
         {
@@ -106,7 +133,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         {
             choiceInteractor.Select();
         }
-        
+
         private void OnSelectCanceled(bool value)
         {
             choiceInteractor.Deselect();
@@ -129,12 +156,12 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
 
         public void ShowPurchase(PurchaseRequest purchase)
         {
-            gameplayViewController.ShowPurchase(purchase);
+            chatViewController.ShowPurchase(purchase);
         }
 
         public void HidePurchase()
         {
-            gameplayViewController.Hide();
+            chatViewController.Hide();
         }
     }
 }

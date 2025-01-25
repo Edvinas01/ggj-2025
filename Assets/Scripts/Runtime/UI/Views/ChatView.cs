@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace UABPetelnia.GGJ2025.Runtime.UI.Views
 {
-    internal sealed class GameplayView : View
+    internal sealed class ChatView : View
     {
         [Header("Text")]
         [SerializeField]

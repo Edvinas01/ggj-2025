@@ -11,6 +11,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay.States
     {
         private IShopperSystem shopperSystem;
         private IPlayerSystem playerSystem;
+
         private bool isFinishedChatting;
 
         private readonly GameplayState successState;
@@ -83,10 +84,12 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay.States
         {
             if (message.Bubble.IsCorrect)
             {
+                Context.CurrentItem = message.Bubble.Item;
                 NextState = successState;
             }
             else
             {
+                Context.CurrentItem = default;
                 NextState = failreState;
             }
 

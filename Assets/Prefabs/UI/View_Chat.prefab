@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 1610616925692107171}
   - component: {fileID: 1437040298000398267}
   m_Layer: 0
-  m_Name: View_Gameplay
+  m_Name: View_Chat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

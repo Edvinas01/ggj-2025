@@ -11,4 +11,24 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
             Bubble = bubble;
         }
     }
+
+    internal sealed class PlayerCentsChanged : IMessage
+    {
+        public IPlayerActor Player { get; }
+
+        public PlayerCentsChanged(IPlayerActor player)
+        {
+            Player = player;
+        }
+    }
+
+    internal sealed class PlayerHealthChanged : IMessage
+    {
+        public IPlayerActor Player { get; }
+
+        public PlayerHealthChanged(IPlayerActor player)
+        {
+            Player = player;
+        }
+    }
 }
