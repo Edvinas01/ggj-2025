@@ -11,15 +11,23 @@ namespace UABPetelnia.GGJ2025.Runtime.Settings
     internal sealed class ItemData : ScriptableObject
     {
         [SerializeField]
-        private string id;
-
-        [SerializeField]
         private int price;
 
         [SerializeField]
         private Texture2D image;
 
-        public string Id => id;
+        public string Id
+        {
+            get
+            {
+                if (image)
+                {
+                    return image.name;
+                }
+
+                return name;
+            }
+        }
 
         public int Cents => price;
 
