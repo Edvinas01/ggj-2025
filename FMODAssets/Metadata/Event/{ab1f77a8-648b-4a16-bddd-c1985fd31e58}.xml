@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{ab1f77a8-648b-4a16-bddd-c1985fd31e58}">
+		<property name="color">
+			<value>Blue</value>
+		</property>
 		<property name="name">
 			<value>S_PlayerDeath</value>
 		</property>
@@ -30,6 +33,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{b408c307-edef-4c03-95fd-e75d508716ce}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{742bf108-f345-460e-965b-0b7a6ce3d610}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{4415c765-6ad7-4e53-a01d-ae54baaa5d58}">

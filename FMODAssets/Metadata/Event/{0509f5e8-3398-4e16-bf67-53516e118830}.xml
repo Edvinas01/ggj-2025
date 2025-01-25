@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{0509f5e8-3398-4e16-bf67-53516e118830}">
+		<property name="color">
+			<value>Green</value>
+		</property>
 		<property name="name">
 			<value>Amb_Wind</value>
 		</property>
@@ -30,6 +33,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{426ba165-f112-4dec-ba93-40a5f4b34c02}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{0d4f6807-72ba-4ca1-a47d-c13e44dec595}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{7fc3c19a-eaf2-473e-9652-691a3c25ea31}">

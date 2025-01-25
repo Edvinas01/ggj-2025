@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{2d472f79-ff40-4c84-a18a-6b923a758b36}">
+		<property name="color">
+			<value>Magenta</value>
+		</property>
 		<property name="name">
 			<value>VO_Gaidziai</value>
 		</property>
@@ -30,6 +33,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{2c32719b-ad48-432d-a6f8-205ff578b023}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{5b564738-5c56-4f66-9885-23aeb25ec429}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{64dc9294-d796-4732-9fb2-209fb8250b90}">

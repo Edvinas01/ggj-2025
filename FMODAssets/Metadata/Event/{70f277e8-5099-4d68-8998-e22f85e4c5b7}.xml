@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{70f277e8-5099-4d68-8998-e22f85e4c5b7}">
 		<property name="color">
-			<value>Cyan</value>
+			<value>Green</value>
 		</property>
 		<property name="name">
 			<value>Amb_Radija</value>
@@ -34,6 +34,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{c66550c4-f1ef-424a-8a01-16625741770a}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{0d4f6807-72ba-4ca1-a47d-c13e44dec595}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{aff87581-5364-484c-b755-aeb0923ed098}">
