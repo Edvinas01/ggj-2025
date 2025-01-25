@@ -20,6 +20,11 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay
             targetState = nextState;
         }
 
+        public void Dispose()
+        {
+            OnDisposed();
+        }
+
         public void Enter(GameplayStateContext context)
         {
             OnEntered(context);
@@ -42,6 +47,8 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay
         }
 
         protected abstract void OnInitialized();
+
+        protected abstract void OnDisposed();
 
         protected abstract void OnEntered(GameplayStateContext context);
 

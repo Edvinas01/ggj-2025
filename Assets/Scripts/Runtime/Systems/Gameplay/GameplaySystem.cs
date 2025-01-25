@@ -1,4 +1,5 @@
-﻿using CHARK.GameManagement;
+﻿using System.Collections.Generic;
+using CHARK.GameManagement;
 using CHARK.GameManagement.Systems;
 using UABPetelnia.GGJ2025.Runtime.Systems.Gameplay.States;
 using UABPetelnia.GGJ2025.Runtime.Systems.Shoppers;
@@ -14,6 +15,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay
 
         private GameplayState startingState;
         private GameplayState currentState;
+        private readonly List<GameplayState> states = new();
 
         private GameplayState State
         {
@@ -62,6 +64,20 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay
             destroyState.Initialize(spawnState);
 
             startingState = spawnState;
+
+            states.Add(spawnState);
+            states.Add(moveToKioskState);
+            states.Add(chattingState);
+            states.Add(moveToSpawnPointState);
+            states.Add(destroyState);
+        }
+
+        public override void OnDisposed()
+        {
+            foreach (var state in states)
+            {
+                state.Dispose();
+            }
         }
 
         public void OnUpdated(float deltaTime)

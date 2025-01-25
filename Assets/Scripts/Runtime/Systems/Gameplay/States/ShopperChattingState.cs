@@ -1,4 +1,6 @@
-﻿using CHARK.GameManagement;
+﻿using System.Linq;
+using CHARK.GameManagement;
+using UABPetelnia.GGJ2025.Runtime.Actors;
 using UABPetelnia.GGJ2025.Runtime.Systems.Players;
 using UABPetelnia.GGJ2025.Runtime.Systems.Shoppers;
 using UnityEngine;
@@ -9,18 +11,25 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay.States
     {
         private IShopperSystem shopperSystem;
         private IPlayerSystem playerSystem;
-
-        // TODO: test
-        private float expiresTime;
+        private bool isFinishedChatting;
 
         protected override void OnInitialized()
         {
             shopperSystem = GameManager.GetSystem<IShopperSystem>();
             playerSystem = GameManager.GetSystem<IPlayerSystem>();
+
+            GameManager.AddListener<ChoiceBubbleClickedMessage>(OnChoiceBubbleClicked);
+        }
+
+        protected override void OnDisposed()
+        {
+            GameManager.RemoveListener<ChoiceBubbleClickedMessage>(OnChoiceBubbleClicked);
         }
 
         protected override void OnEntered(GameplayStateContext context)
         {
+            isFinishedChatting = false;
+
             var shopper = context.ActiveShopper;
             if (shopper == default)
             {
@@ -28,16 +37,20 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay.States
             }
 
             var purchase = shopper.PopPurchaseRequest();
+
+            Debug.Log("Invalid Items: " + string.Join(", ", purchase.InvalidItems.Select(i => i.name)));
+            Debug.Log("Valid Items: " + string.Join(", ", purchase.ValidItems.Select(i => i.name)));
+
             var player = playerSystem.Player;
 
             shopper.ShowPurchase(purchase);
             player.ShowPurchase(purchase);
-
-            expiresTime = Time.time + 2f;
         }
 
         protected override void OnExited(GameplayStateContext context)
         {
+            isFinishedChatting = true;
+
             var shopper = context.ActiveShopper;
             if (shopper == default)
             {
@@ -57,14 +70,18 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay.States
             shopperSystem.RemoveAvailableShopper(shopper);
         }
 
+        private void OnChoiceBubbleClicked(ChoiceBubbleClickedMessage message)
+        {
+            isFinishedChatting = true;
+        }
+
         protected override Status OnUpdated(GameplayStateContext context)
         {
-            if (Time.time > expiresTime)
+            if (isFinishedChatting)
             {
                 return Status.Completed;
             }
 
-            // TODO: interrupt
             return Status.Working;
         }
     }

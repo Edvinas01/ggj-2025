@@ -22,6 +22,13 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         [SerializeField]
         private Transform choiceOrigin;
 
+        [Min(0f)]
+        [SerializeField]
+        private float choiceOffset = 0.2f;
+
+        [SerializeField]
+        private Vector2Int invalidItemRange = new(2, 4);
+
         [Header("Text")]
         [SerializeField]
         private string keywordToken = "${KEYWORD}";
@@ -84,6 +91,25 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
             shopperSystem.RemoveShopper(this);
         }
 
+        private void Update()
+        {
+            if (IsMoving == false)
+            {
+                return;
+            }
+
+            var dir = agent.destination - transform.position;
+            dir.y = 0;
+
+            if (dir == Vector3.zero)
+            {
+                return;
+            }
+
+            var rot = Quaternion.LookRotation(dir);
+            transform.rotation = rot;
+        }
+
         public void Initialize(ShopperData data)
         {
             // Data is a mutable clone, so can modify
@@ -110,22 +136,35 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
             var purchases = purchaseCollection.Purchases;
             var purchase = purchases.GetRandom();
 
-            var keywords = purchase.Keywords;
-            var keyword = keywords.GetRandom();
+            var allKeywords = purchase.Keywords.ToList();
+            var unusedKeywords = allKeywords.Where(k => k.IsUsed == false).ToList();
+            var keyword = unusedKeywords.GetRandom();
 
-            keywords.Remove(keyword);
+            keyword.IsUsed = true;
 
-            if (keywords.Count <= 0)
+            if (unusedKeywords.Count <= 1)
             {
                 purchases.Remove(purchase);
             }
 
             var text = purchase.TemplateText.Replace(keywordToken, keyword.Text);
 
-            var validItems = keyword.Items;
-            var invalidItems = keywords
-                .SelectMany(invalidKeyword => invalidKeyword.Items)
-                .Where(invalidKeyword => validItems.Contains(invalidKeyword) == false)
+            var validKeywordItems = keyword.Items
+                .Distinct()
+                .ToList();
+
+            var validItems = validKeywordItems
+                .Shuffle()
+                .Take(1)
+                .ToList();
+
+            var invalidItems = allKeywords
+                .Where(k => k != keyword)
+                .SelectMany(k => k.Items)
+                .Where(invalidKeyword => validKeywordItems.Contains(invalidKeyword) == false)
+                .Take(Random.Range(invalidItemRange.x, invalidItemRange.y))
+                .Distinct()
+                .Shuffle()
                 .ToList();
 
             return new PurchaseRequest(
@@ -136,6 +175,19 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
             );
         }
 
+        private Vector3 GetOriginPoint()
+        {
+            for (var index = 0; index < choiceOrigin.childCount; index++)
+            {
+                if (Random.value > 0.5f)
+                {
+                    return choiceOrigin.GetChild(index).position;
+                }
+            }
+
+            return choiceOrigin.position;
+        }
+
         public void ShowPurchase(PurchaseRequest purchase)
         {
             // TODO: move spawn logic to a system and use some spawn point for bubbles
@@ -144,36 +196,28 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
 
             foreach (var invalidItem in purchase.InvalidItems)
             {
+                var origin = GetOriginPoint();
                 var choice = Instantiate(
                     choicePrefab,
-                    choiceOrigin.position
-                    // TODO: scuffed offset
-                    + new Vector3(
-                        Random.Range(-0.2f, 0.2f),
-                        Random.Range(-0.2f, 0.2f),
-                        Random.Range(-0.2f, 0.2f)
-                    ) - choiceOrigin.forward * 0.3f,
+                    origin + GetRandomChoiceOffset(),
                     Quaternion.identity
                 );
 
-                choice.Initialize(invalidItem, isCorrect: false);
+                choice.PullPoint = origin + GetRandomChoiceOffset();
+                choice.Initialize(invalidItem, isCorrect: true);
                 choices.Add(choice);
             }
 
             foreach (var validItem in purchase.ValidItems)
             {
+                var origin = GetOriginPoint();
                 var choice = Instantiate(
                     choicePrefab,
-                    choiceOrigin.position
-                    // TODO: scuffed offset
-                    + new Vector3(
-                        Random.Range(-0.2f, 0.2f),
-                        Random.Range(-0.2f, 0.2f),
-                        Random.Range(-0.2f, 0.2f)
-                    ) - choiceOrigin.forward * 0.3f,
+                    origin + GetRandomChoiceOffset(),
                     Quaternion.identity
                 );
 
+                choice.PullPoint = origin + GetRandomChoiceOffset();
                 choice.Initialize(validItem, isCorrect: false);
                 choices.Add(choice);
             }
@@ -187,6 +231,15 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
             }
 
             choices.Clear();
+        }
+
+        private Vector3 GetRandomChoiceOffset()
+        {
+            return new Vector3(
+                Random.Range(-choiceOffset, +choiceOffset),
+                Random.Range(-choiceOffset, +choiceOffset),
+                Random.Range(0f, 0f)
+            );
         }
     }
 }

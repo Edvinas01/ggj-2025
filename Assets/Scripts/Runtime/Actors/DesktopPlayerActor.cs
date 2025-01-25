@@ -1,5 +1,7 @@
 ﻿using CHARK.GameManagement;
 using UABPetelnia.GGJ2025.Runtime.Components.Input;
+using UABPetelnia.GGJ2025.Runtime.Components.Interaction.Interactors;
+using UABPetelnia.GGJ2025.Runtime.Settings;
 using UABPetelnia.GGJ2025.Runtime.Systems.Cursors;
 using UABPetelnia.GGJ2025.Runtime.Systems.Gameplay;
 using UABPetelnia.GGJ2025.Runtime.Systems.Players;
@@ -18,6 +20,9 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         [SerializeField]
         private CinemachineCamera cinemachineCamera;
 
+        [SerializeField]
+        private Interactor choiceInteractor;
+
         [Header("UI")]
         [SerializeField]
         private GameplayViewController gameplayViewController;
@@ -25,6 +30,9 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         [Header("Input")]
         [SerializeField]
         private ButtonInputActionListener zoomInputListener;
+
+        [SerializeField]
+        private ButtonInputActionListener selectListener;
 
         private IGameplaySystem gameplaySystem;
         private IPlayerSystem playerSystem;
@@ -56,6 +64,9 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
 
             zoomInputListener.OnPerformed += OnZoomPerformed;
             zoomInputListener.OnCanceled += OnZoomCanceled;
+
+            selectListener.OnPerformed += OnSelectPerformed;
+            selectListener.OnCanceled += OnSelectCanceled;
         }
 
         private void OnDisable()
@@ -64,6 +75,9 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
 
             zoomInputListener.OnPerformed -= OnZoomPerformed;
             zoomInputListener.OnCanceled -= OnZoomCanceled;
+
+            selectListener.OnPerformed -= OnSelectPerformed;
+            selectListener.OnCanceled -= OnSelectCanceled;
         }
 
         private void Update()
@@ -86,6 +100,16 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         private void OnZoomPerformed(bool value)
         {
             StartZoomingIn();
+        }
+
+        private void OnSelectPerformed(bool value)
+        {
+            choiceInteractor.Select();
+        }
+        
+        private void OnSelectCanceled(bool value)
+        {
+            choiceInteractor.Deselect();
         }
 
         private void OnZoomCanceled(bool value)

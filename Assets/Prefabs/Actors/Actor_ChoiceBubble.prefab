@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2685197179157301599}
   - component: {fileID: 7131823584468391835}
   - component: {fileID: 2369464582130398601}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4200427434547998433}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 6ad156c13db55b340a1d827bcde9c480, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -81,7 +81,7 @@ GameObject:
   - component: {fileID: 6561466136461372179}
   - component: {fileID: 3925832911841189971}
   - component: {fileID: 2192574879770294161}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 8858093514946872365}
   - component: {fileID: 203088792209438766}
   - component: {fileID: 4454004187501071949}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278,8 +278,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1440916609080266648}
+  - component: {fileID: 6504261872927204324}
   - component: {fileID: 5902009459534679401}
-  m_Layer: 0
+  - component: {fileID: 5460311269785404981}
+  m_Layer: 6
   m_Name: Actor_ChoiceBubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302,6 +304,33 @@ Transform:
   - {fileID: 2685197179157301599}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &6504261872927204324
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8004781724894111638}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0.3
+  m_AngularDrag: 0.1
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 120
+  m_CollisionDetection: 0
 --- !u!114 &5902009459534679401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,5 +343,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1877b79149ac4344932bdf887574f1a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rigidBody: {fileID: 6504261872927204324}
+  pullForce: 0.1
   imageRenderer: {fileID: 3925832911841189971}
   texturePropertyId: _BaseMap
+  scaleUpTween:
+    duration: 1
+    ease: 24
+    customEase:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    cycles: 1
+    cycleMode: 0
+    startDelay: 0
+    endDelay: 0
+    useUnscaledTime: 0
+    useFixedUpdate: 0
+--- !u!114 &5460311269785404981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8004781724894111638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9f7a566d104d3b9f3751f61528c75d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  onSelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5902009459534679401}
+        m_TargetAssemblyTypeName: UABPetelnia.GGJ2025.Runtime.Actors.ChoiceBubbleActor,
+          UABPetelnia.GGJ2025
+        m_MethodName: Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
