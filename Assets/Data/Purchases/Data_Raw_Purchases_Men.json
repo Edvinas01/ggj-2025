@@ -3,7 +3,7 @@
     "text": "Labas! Šiandien nusprendžiau praleisti ${KEYWORD}, nes norėjau pabėgti nuo kasdienybės. Pamačiau šį kioską ir pagalvojau, kad galbūt galėčiau kažką nusipirkti?",
     "keywords": [
       {
-        "text": "gerai laika",
+        "text": "gerai laiką",
         "items": [
           "Item_Alita",
           "Item_Alus",
@@ -117,26 +117,6 @@
         "items": [
           "Item_Durex",
           "Item_GumLoveIs",
-          "Item_Alita"
-        ]
-      }
-    ]
-  },
-  {
-    "text": "Sveiki. Ar dirbate? Sprogo automobilio padanga ir ${KEYWORD}. Gal turite ką pasiūlyti?",
-    "keywords": [
-      {
-        "text": "reikia užklijuoti kažkuo",
-        "items": [
-          "Item_GumDbz",
-          "Item_GumHubbaBubba",
-          "Item_GumLoveIs"
-        ]
-      },
-      {
-        "text": "nelaiko nervai",
-        "items": [
-          "Item_Alus",
           "Item_Alita"
         ]
       }
@@ -277,31 +257,6 @@
     ]
   },
   {
-    "text": "Sveiki! Kažkaip šiandien viskas krenta iš rankų, o dar ir ${KEYWORD}. Turit ką nors padedančio?",
-    "keywords": [
-      {
-        "text": "galva plyšta",
-        "items": [
-          "Item_Aspirin"
-        ]
-      },
-      {
-        "text": "žmona pyksta",
-        "items": [
-          "Item_Alita",
-          "Item_Alus"
-        ]
-      },
-      {
-        "text": "atrodo, kad reikia profilaktikos",
-        "items": [
-          "Item_Colgate",
-          "Item_SoapUkinis"
-        ]
-      }
-    ]
-  },
-  {
     "text": "Kažkaip šiandien viskas krenta iš rankų, o dar ir ${KEYWORD}. Turit ką nors padedančio?",
     "keywords": [
       {
@@ -322,29 +277,6 @@
         "items": [
           "Item_Colgate",
           "Item_SoapUkinis"
-        ]
-      }
-    ]
-  },
-  {
-    "text": "Esu Vitalijus, man dvidešimt. Mėgstu pačiešinti panas. Jeigu pana baisi, bent pabazarinu. Nu ką mažyte, tuoj padainuosiu ${KEYWORD}",
-    "keywords": [
-      {
-        "text": "Kū Ką Rė Kų",
-        "items": [
-          "Item_Aspirin"
-        ]
-      },
-      {
-        "text": "Y ga ga",
-        "items": [
-          "Item_Aspirin"
-        ]
-      },
-      {
-        "text": "Mūūūūūūūū",
-        "items": [
-          "Item_Aspirin"
         ]
       }
     ]
