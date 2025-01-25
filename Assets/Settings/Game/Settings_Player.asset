@@ -22,3 +22,8 @@ MonoBehaviour:
       m_Bits: 64
     queryTriggerInteraction: 1
     raycastColor: {r: 1, g: 0, b: 0, a: 1}
+  healthStateTextures:
+  - {fileID: 2800000, guid: e9e7e5b237cc9a64cb8cf5d07c337a85, type: 3}
+  - {fileID: 2800000, guid: ff9ff36bc2d81f34a87009bf7f4207cd, type: 3}
+  - {fileID: 2800000, guid: f58d2c9aedd88fd4eb5d38bd4df4912a, type: 3}
+  - {fileID: 2800000, guid: 65a2d72eb6cb15841bed198c5062a99d, type: 3}

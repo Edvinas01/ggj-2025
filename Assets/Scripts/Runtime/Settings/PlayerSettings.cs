@@ -1,4 +1,5 @@
-﻿using UABPetelnia.GGJ2025.Runtime.Components.Interaction.Interactors;
+﻿using System.Collections.Generic;
+using UABPetelnia.GGJ2025.Runtime.Components.Interaction.Interactors;
 using UABPetelnia.GGJ2025.Runtime.Constants;
 using UnityEngine;
 
@@ -24,6 +25,12 @@ namespace UABPetelnia.GGJ2025.Runtime.Settings
         [SerializeField]
         private RaycastInteractorData data;
 
+        [Header("Health")]
+        [SerializeField]
+        private List<Texture2D> healthStateTextures;
+
+        public int MaxHealth => healthStateTextures.Count + 1;
+
         public float ZoomInSpeed => zoomInSpeed;
 
         public float ZoomInFov => zoomInFov;
@@ -37,5 +44,10 @@ namespace UABPetelnia.GGJ2025.Runtime.Settings
         public QueryTriggerInteraction QueryTriggerInteraction => data.QueryTriggerInteraction;
 
         public Color RaycastColor => data.RaycastColor;
+
+        public Texture2D GetHealthTexture(int health)
+        {
+            return healthStateTextures[Mathf.Max(0, MaxHealth - health)];
+        }
     }
 }

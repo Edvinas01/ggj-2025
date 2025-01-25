@@ -24,6 +24,13 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         [SerializeField]
         private Interactor choiceInteractor;
 
+        [Header("Rendering")]
+        [SerializeField]
+        private Renderer bodyRenderer;
+
+        [SerializeField]
+        private string bodyTexturePropertyId = "_BaseMap";
+
         [Header("UI")]
         [FormerlySerializedAs("gameplayViewController")]
         [SerializeField]
@@ -55,7 +62,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
                 currentHealth = value;
                 currentHealth = Mathf.Max(currentHealth, 0);
 
-                GameManager.Publish(new PlayerHealthChanged(this));
+                OnCurrentHealthChanged();
             }
         }
 
@@ -71,6 +78,8 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
 
         private void Awake()
         {
+            currentHealth = settings.MaxHealth;
+
             gameplaySystem = GameManager.GetSystem<IGameplaySystem>();
             playerSystem = GameManager.GetSystem<IPlayerSystem>();
             cursorSystem = GameManager.GetSystem<ICursorSystem>();
@@ -142,6 +151,20 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         private void OnZoomCanceled(bool value)
         {
             StopZoomingIn();
+        }
+
+        private void OnCurrentHealthChanged()
+        {
+            var texture = settings.GetHealthTexture(Health);
+            Debug.Log(texture);
+
+            var block = new MaterialPropertyBlock();
+            block.SetTexture(bodyTexturePropertyId, texture);
+            bodyRenderer.SetPropertyBlock(block);
+
+            Debug.Log($"Health: {Health}", this);
+
+            GameManager.Publish(new PlayerHealthChanged(this));
         }
 
         private void StartZoomingIn()

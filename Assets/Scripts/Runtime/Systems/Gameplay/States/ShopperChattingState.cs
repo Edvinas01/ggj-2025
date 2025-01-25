@@ -82,6 +82,8 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay.States
 
         private void OnChoiceBubbleClicked(ChoiceBubbleClickedMessage message)
         {
+            isFinishedChatting = true;
+
             if (message.Bubble.IsCorrect)
             {
                 Context.CurrentItem = message.Bubble.Item;
@@ -92,8 +94,6 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay.States
                 Context.CurrentItem = default;
                 NextState = failreState;
             }
-
-            isFinishedChatting = true;
         }
 
         protected override Status OnUpdated(GameplayStateContext context)
