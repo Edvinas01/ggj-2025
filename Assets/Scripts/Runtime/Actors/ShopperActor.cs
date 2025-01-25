@@ -175,17 +175,17 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
             );
         }
 
-        private Vector3 GetOriginPoint()
+        private Transform GetOriginPoint()
         {
             for (var index = 0; index < choiceOrigin.childCount; index++)
             {
                 if (Random.value > 0.5f)
                 {
-                    return choiceOrigin.GetChild(index).position;
+                    return choiceOrigin.GetChild(index);
                 }
             }
 
-            return choiceOrigin.position;
+            return choiceOrigin;
         }
 
         public void ShowPurchase(PurchaseRequest purchase)
@@ -199,12 +199,13 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
                 var origin = GetOriginPoint();
                 var choice = Instantiate(
                     choicePrefab,
-                    origin + GetRandomChoiceOffset(),
-                    Quaternion.identity
+                    origin.position + GetRandomChoiceOffset(),
+                    Quaternion.identity,
+                    origin
                 );
 
-                choice.PullPoint = origin + GetRandomChoiceOffset();
-                choice.Initialize(invalidItem, isCorrect: true);
+                choice.PullPoint = origin.position + GetRandomChoiceOffset();
+                choice.Initialize(invalidItem, isCorrect: false);
                 choices.Add(choice);
             }
 
@@ -213,12 +214,13 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
                 var origin = GetOriginPoint();
                 var choice = Instantiate(
                     choicePrefab,
-                    origin + GetRandomChoiceOffset(),
-                    Quaternion.identity
+                    origin.position + GetRandomChoiceOffset(),
+                    Quaternion.identity,
+                    origin
                 );
 
-                choice.PullPoint = origin + GetRandomChoiceOffset();
-                choice.Initialize(validItem, isCorrect: false);
+                choice.PullPoint = origin.position + GetRandomChoiceOffset();
+                choice.Initialize(validItem, isCorrect: true);
                 choices.Add(choice);
             }
         }

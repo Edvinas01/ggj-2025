@@ -13,6 +13,15 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay.States
         private IPlayerSystem playerSystem;
         private bool isFinishedChatting;
 
+        private readonly GameplayState successState;
+        private readonly GameplayState failreState;
+
+        public ShopperChattingState(GameplayState successState, GameplayState failreState)
+        {
+            this.successState = successState;
+            this.failreState = failreState;
+        }
+
         protected override void OnInitialized()
         {
             shopperSystem = GameManager.GetSystem<IShopperSystem>();
@@ -72,6 +81,15 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay.States
 
         private void OnChoiceBubbleClicked(ChoiceBubbleClickedMessage message)
         {
+            if (message.Bubble.IsCorrect)
+            {
+                NextState = successState;
+            }
+            else
+            {
+                NextState = failreState;
+            }
+
             isFinishedChatting = true;
         }
 

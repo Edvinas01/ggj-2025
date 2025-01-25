@@ -45,7 +45,11 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay
             var spawnState = new ShopperSpawnState();
             var moveToKioskState = new ShopperMoveState(ShopperMoveState.MoveTo.KioskPoint);
             var moveToSpawnPointState = new ShopperMoveState(ShopperMoveState.MoveTo.SpawnPoint);
-            var chattingState = new ShopperChattingState();
+
+            var purchasedState = new ShopperPurchasedState();
+            var punchingState = new ShopperPunchingState();
+
+            var chattingState = new ShopperChattingState(purchasedState, punchingState);
             var destroyState = new ShopperDestroyState();
 
             // 1. Spawn player and move to kiosk after spawning
@@ -54,13 +58,17 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay
             // 2. Reaching kiosk, start chatting
             moveToKioskState.Initialize(chattingState);
 
-            // 3. Finishing the chat, move back to spawn point
-            chattingState.Initialize(moveToSpawnPointState);
+            // 3. Finishing the chat, success or failure (no target state needed)
+            chattingState.Initialize(default);
 
-            // 4. Destroy on reaching the spawn point
+            // 4. On success or failure, move back to spawn
+            purchasedState.Initialize(moveToSpawnPointState);
+            punchingState.Initialize(moveToSpawnPointState);
+
+            // 5. Destroy on reaching the spawn point
             moveToSpawnPointState.Initialize(destroyState);
 
-            // 5. Restart.
+            // 6. Restart.
             destroyState.Initialize(spawnState);
 
             startingState = spawnState;
@@ -70,6 +78,8 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay
             states.Add(chattingState);
             states.Add(moveToSpawnPointState);
             states.Add(destroyState);
+            states.Add(purchasedState);
+            states.Add(punchingState);
         }
 
         public override void OnDisposed()
