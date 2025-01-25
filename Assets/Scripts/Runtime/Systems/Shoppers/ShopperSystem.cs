@@ -56,6 +56,8 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Shoppers
             }
         }
 
+        public IEnumerable<ItemData> AvailableItems => gameplaySettings.AvailableItems;
+
         public override void OnInitialized()
         {
             GameManager.AddListener<SceneLoadEnteredMessage>(OnSceneLoadEntered);

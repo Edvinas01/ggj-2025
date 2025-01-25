@@ -222,13 +222,11 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
                 .Take(1)
                 .ToList();
 
-            var invalidItems = allKeywords
-                .Where(k => k != keyword)
-                .SelectMany(k => k.Items)
-                .Where(invalidKeyword => validKeywordItems.Contains(invalidKeyword) == false)
-                .Take(Random.Range(invalidItemRange.x, invalidItemRange.y))
-                .Distinct()
+            var availableItems = shopperSystem.AvailableItems;
+            var invalidItems = availableItems
+                .Where(item => validItems.Contains(item) == false)
                 .Shuffle()
+                .Take(Random.Range(invalidItemRange.x, invalidItemRange.y))
                 .ToList();
 
             return new PurchaseRequest(

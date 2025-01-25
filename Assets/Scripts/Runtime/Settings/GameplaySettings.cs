@@ -14,6 +14,11 @@ namespace UABPetelnia.GGJ2025.Runtime.Settings
         [SerializeField]
         private List<ShopperData> availableShoppers;
 
+        [SerializeField]
+        private List<ItemData> availableItems;
+
         public IReadOnlyCollection<ShopperData> AvailableShoppers => availableShoppers;
+
+        public IReadOnlyCollection<ItemData> AvailableItems => availableItems;
     }
 }
