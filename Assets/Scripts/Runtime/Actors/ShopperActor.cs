@@ -6,6 +6,7 @@ using UABPetelnia.GGJ2025.Runtime.Systems.Shoppers;
 using UABPetelnia.GGJ2025.Runtime.Utilities;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 namespace UABPetelnia.GGJ2025.Runtime.Actors
 {
@@ -46,6 +47,13 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         [Header("Rendering")]
         [SerializeField]
         private Renderer bodyRenderer;
+
+        [Header("Events")]
+        [SerializeField]
+        public UnityEvent onPunchStart;
+        
+        [SerializeField]
+        public UnityEvent onPunchStop;
 
         [SerializeField]
         private string texturePropertyId = "_BaseMap";
@@ -234,11 +242,13 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         {
             punchAnimation.gameObject.SetActive(true);
             punchAnimation.Play("Animation_Shopper_Fist");
+            onPunchStart.Invoke();
         }
 
         public void StopPunchAnimation()
         {
             punchAnimation.gameObject.SetActive(false);
+            onPunchStop.Invoke();
         }
 
         public void PlayWalkAnimation()
