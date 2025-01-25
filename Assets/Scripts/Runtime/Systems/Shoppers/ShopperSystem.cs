@@ -13,8 +13,11 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Shoppers
         [SerializeField]
         private GameplaySettings gameplaySettings;
 
+        private List<ShopperData> availableShoppers = new();
         private readonly List<IDestinationActor> destinations = new();
         private readonly List<IShopperActor> spawnedShoppers = new();
+
+        public bool IsShoppersAvailable => availableShoppers.Count > 0;
 
         public Vector3 RandomSpawnPoint
         {
@@ -36,6 +39,11 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Shoppers
             }
         }
 
+        public override void OnInitialized()
+        {
+            availableShoppers = gameplaySettings.AvailableShoppers.Select(data => data.Copy()).ToList();
+        }
+
         public bool TryGetShopper(out IShopperActor shopper)
         {
             shopper = spawnedShoppers.FirstOrDefault();
@@ -44,7 +52,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Shoppers
 
         public IShopperActor SpawnRandomShopper(Vector3 position)
         {
-            var randomShopperData = gameplaySettings.AvailableShoppers.GetRandom();
+            var randomShopperData = availableShoppers.GetRandom();
             var shopperPrefab = randomShopperData.ShopperPrefab;
             var shopper = Instantiate(shopperPrefab, position, Quaternion.identity);
             shopper.Initialize(randomShopperData);
@@ -75,6 +83,11 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Shoppers
             }
 
             destinations.Add(destination);
+        }
+
+        public void RemoveAvailableShopper(IShopperActor shopper)
+        {
+            availableShoppers.Remove(shopper.Data);
         }
 
         public void RemoveDestination(IDestinationActor destination)

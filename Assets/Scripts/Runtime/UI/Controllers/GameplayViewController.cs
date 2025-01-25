@@ -1,19 +1,15 @@
 ﻿using CHARK.SimpleUI;
+using UABPetelnia.GGJ2025.Runtime.Actors;
 using UABPetelnia.GGJ2025.Runtime.UI.Views;
 
 namespace UABPetelnia.GGJ2025.Runtime.UI.Controllers
 {
     internal sealed class GameplayViewController : ViewController<GameplayView>
     {
-        public void ShowChatText(string text)
+        public void ShowPurchase(PurchaseRequest purchase)
         {
-            View.ChatText = text;
+            View.ChatText = purchase.Text;
             View.Show();
-        }
-
-        public void HideChatText()
-        {
-            View.Hide();
         }
     }
 }

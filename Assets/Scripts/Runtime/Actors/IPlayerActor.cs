@@ -2,8 +2,8 @@
 {
     internal interface IPlayerActor
     {
-        public void ShowText(string text);
+        public void ShowPurchase(PurchaseRequest text);
 
-        public void HideText();
+        public void HidePurchase();
     }
 }

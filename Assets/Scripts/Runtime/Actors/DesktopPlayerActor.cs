@@ -103,14 +103,14 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
             targetFov = initialFov;
         }
 
-        public void ShowText(string text)
+        public void ShowPurchase(PurchaseRequest purchase)
         {
-            gameplayViewController.ShowChatText(text);
+            gameplayViewController.ShowPurchase(purchase);
         }
 
-        public void HideText()
+        public void HidePurchase()
         {
-            gameplayViewController.HideChatText();
+            gameplayViewController.Hide();
         }
     }
 }

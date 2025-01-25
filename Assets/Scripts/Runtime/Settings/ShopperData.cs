@@ -1,6 +1,7 @@
 ﻿using UABPetelnia.GGJ2025.Runtime.Actors;
 using UABPetelnia.GGJ2025.Runtime.Constants;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace UABPetelnia.GGJ2025.Runtime.Settings
 {
@@ -17,8 +18,20 @@ namespace UABPetelnia.GGJ2025.Runtime.Settings
         [SerializeField]
         private Texture2D image;
 
+        [SerializeField]
+        private PurchaseCollection purchases;
+
         public ShopperActor ShopperPrefab => shopperPrefab;
 
         public Texture2D Image => image;
+
+        public PurchaseCollection PurchaseCollection => purchases;
+
+        public ShopperData Copy()
+        {
+            var copy = Instantiate(this);
+            copy.purchases = purchases.Copy();
+            return copy;
+        }
     }
 }

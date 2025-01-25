@@ -6,6 +6,8 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Shoppers
 {
     internal interface IShopperSystem : ISystem
     {
+        public bool IsShoppersAvailable { get; }
+
         public Vector3 RandomSpawnPoint { get; }
 
         public Vector3 KioskPoint { get; }
@@ -21,5 +23,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Shoppers
         public void RemoveDestination(IDestinationActor destination);
 
         public void AddDestination(IDestinationActor destination);
+
+        public void RemoveAvailableShopper(IShopperActor shopper);
     }
 }
