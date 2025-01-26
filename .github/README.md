@@ -17,7 +17,7 @@ You are a kiosk keeper in a sprawling apartment complex, constantly observing an
 - [Download latest release (Windows)](https://github.com/Edvinas01/ggj-2025/releases/latest)
 - [Download from itch.io (Windows)](https://uab-petelnia.itch.io/zalio-kiosko-patirtis)
 - [Global Game Jam 2025 Page](https://globalgamejam.org/games/2025/green-kiosk-experience-zalio-kiosko-patirtis-0)
-- Trailer: TDB
+- [Watch Trailer On YouTube](https://www.youtube.com/watch?v=9QybWqN1ttU)
 
 ## Development
 
