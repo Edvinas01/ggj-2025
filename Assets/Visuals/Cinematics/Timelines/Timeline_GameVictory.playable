@@ -24,6 +24,151 @@ MonoBehaviour:
   m_Markers:
     m_Objects:
     - {fileID: -4922094623104714001}
+--- !u!114 &-8010920284519588072
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 987a467495df9d942b56b1b51381d095, type: 3}
+  m_Name: FMODEventPlayable
+  m_EditorClassIdentifier: 
+  Template:
+    EventReference:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+    StopType: 0
+    Parameters: []
+    ParameterLinks: []
+    ParameterAutomation:
+      Slot00: 0
+      Slot01: 0
+      Slot02: 0
+      Slot03: 0
+      Slot04: 0
+      Slot05: 0
+      Slot06: 0
+      Slot07: 0
+      Slot08: 0
+      Slot09: 0
+      Slot10: 0
+      Slot11: 0
+      Slot12: 0
+      Slot13: 0
+      Slot14: 0
+      Slot15: 0
+  EventLength: 215.066
+  eventName: 
+  EventReference:
+    Guid:
+      Data1: -1289785371
+      Data2: 1233606351
+      Data3: -527163997
+      Data4: -384436903
+    Path: event:/Ambience/Amb_Kernagis
+  StopType: 0
+  Parameters: []
+--- !u!114 &-6362310084081441814
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 133253f56854570409c222a87786b263, type: 3}
+  m_Name: FMOD Event Track (3)
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips:
+  - m_Version: 1
+    m_Start: 0
+    m_ClipIn: 0
+    m_Asset: {fileID: -1773018326460296334}
+    m_Duration: 2.6
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: -6362310084081441814}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: S_Footsteps
+  m_Markers:
+    m_Objects: []
+  template:
+    volume: 1
 --- !u!114 &-4922094623104714001
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -133,6 +278,296 @@ MonoBehaviour:
   m_Markers:
     m_Objects: []
   m_PostPlaybackState: 3
+--- !u!114 &-2722907540499119345
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 987a467495df9d942b56b1b51381d095, type: 3}
+  m_Name: FMODEventPlayable
+  m_EditorClassIdentifier: 
+  Template:
+    EventReference:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+    StopType: 0
+    Parameters: []
+    ParameterLinks: []
+    ParameterAutomation:
+      Slot00: 0
+      Slot01: 0
+      Slot02: 0
+      Slot03: 0
+      Slot04: 0
+      Slot05: 0
+      Slot06: 0
+      Slot07: 0
+      Slot08: 0
+      Slot09: 0
+      Slot10: 0
+      Slot11: 0
+      Slot12: 0
+      Slot13: 0
+      Slot14: 0
+      Slot15: 0
+  EventLength: 22.182
+  eventName: 
+  EventReference:
+    Guid:
+      Data1: 382831115
+      Data2: 1089728513
+      Data3: -660199257
+      Data4: 206428314
+    Path: event:/SFX/S_CarEngineDrive
+  StopType: 0
+  Parameters: []
+--- !u!114 &-1773018326460296334
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 987a467495df9d942b56b1b51381d095, type: 3}
+  m_Name: FMODEventPlayable(Clone)(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  Template:
+    EventReference:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+    StopType: 0
+    Parameters: []
+    ParameterLinks: []
+    ParameterAutomation:
+      Slot00: 0
+      Slot01: 0
+      Slot02: 0
+      Slot03: 0
+      Slot04: 0
+      Slot05: 0
+      Slot06: 0
+      Slot07: 0
+      Slot08: 0
+      Slot09: 0
+      Slot10: 0
+      Slot11: 0
+      Slot12: 0
+      Slot13: 0
+      Slot14: 0
+      Slot15: 0
+  EventLength: Infinity
+  eventName: 
+  EventReference:
+    Guid:
+      Data1: 635918265
+      Data2: 1086084429
+      Data3: 1381362352
+      Data4: -696399666
+    Path: event:/SFX/S_Footsteps
+  StopType: 0
+  Parameters: []
+--- !u!114 &-1766677896311675654
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 133253f56854570409c222a87786b263, type: 3}
+  m_Name: FMOD Event Track (4)
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips:
+  - m_Version: 1
+    m_Start: 0
+    m_ClipIn: 0
+    m_Asset: {fileID: -8010920284519588072}
+    m_Duration: 7.166666666666667
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: -1766677896311675654}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: Amb_Kernagis
+  m_Markers:
+    m_Objects: []
+  template:
+    volume: 1
+--- !u!114 &-174904872696925680
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 133253f56854570409c222a87786b263, type: 3}
+  m_Name: FMOD Event Track
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips:
+  - m_Version: 1
+    m_Start: 3.1666666666666674
+    m_ClipIn: 0
+    m_Asset: {fileID: -2722907540499119345}
+    m_Duration: 4
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: -174904872696925680}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: S_CarEngineDrive
+  m_Markers:
+    m_Objects: []
+  template:
+    volume: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,12 +588,111 @@ MonoBehaviour:
   - {fileID: -3133477964739090293}
   - {fileID: 4692139507660300706}
   - {fileID: -9075223634478316848}
+  - {fileID: -174904872696925680}
+  - {fileID: 9068222769704023205}
+  - {fileID: 871698640967288343}
+  - {fileID: -6362310084081441814}
+  - {fileID: -1766677896311675654}
   m_FixedDuration: 0
   m_EditorSettings:
     m_Framerate: 60
     m_ScenePreview: 1
   m_DurationMode: 0
   m_MarkerTrack: {fileID: 0}
+--- !u!114 &871698640967288343
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 133253f56854570409c222a87786b263, type: 3}
+  m_Name: FMOD Event Track (2)
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips:
+  - m_Version: 1
+    m_Start: 2.6
+    m_ClipIn: 0
+    m_Asset: {fileID: 4116229093316407030}
+    m_Duration: 1.35
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 871698640967288343}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: S_CarDoorOpenClose
+  m_Markers:
+    m_Objects: []
+  template:
+    volume: 1
 --- !u!114 &1087762044769052272
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -212,6 +746,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fde0d25a170598d46a0b9dc16b4527a5, type: 3}
   m_Name: ActivationPlayableAsset
   m_EditorClassIdentifier: 
+--- !u!114 &1485666458381613119
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 987a467495df9d942b56b1b51381d095, type: 3}
+  m_Name: FMODEventPlayable(Clone)
+  m_EditorClassIdentifier: 
+  Template:
+    EventReference:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+    StopType: 0
+    Parameters: []
+    ParameterLinks: []
+    ParameterAutomation:
+      Slot00: 0
+      Slot01: 0
+      Slot02: 0
+      Slot03: 0
+      Slot04: 0
+      Slot05: 0
+      Slot06: 0
+      Slot07: 0
+      Slot08: 0
+      Slot09: 0
+      Slot10: 0
+      Slot11: 0
+      Slot12: 0
+      Slot13: 0
+      Slot14: 0
+      Slot15: 0
+  EventLength: 4.46
+  eventName: 
+  EventReference:
+    Guid:
+      Data1: 1842140777
+      Data2: 1097308003
+      Data3: -671397970
+      Data4: 518968897
+    Path: event:/SFX/S_CarExplosion
+  StopType: 0
+  Parameters: []
 --- !u!114 &3353717476638363002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -224,6 +809,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fde0d25a170598d46a0b9dc16b4527a5, type: 3}
   m_Name: ActivationPlayableAsset
   m_EditorClassIdentifier: 
+--- !u!114 &4116229093316407030
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 987a467495df9d942b56b1b51381d095, type: 3}
+  m_Name: FMODEventPlayable(Clone)(Clone)
+  m_EditorClassIdentifier: 
+  Template:
+    EventReference:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+    StopType: 0
+    Parameters: []
+    ParameterLinks: []
+    ParameterAutomation:
+      Slot00: 0
+      Slot01: 0
+      Slot02: 0
+      Slot03: 0
+      Slot04: 0
+      Slot05: 0
+      Slot06: 0
+      Slot07: 0
+      Slot08: 0
+      Slot09: 0
+      Slot10: 0
+      Slot11: 0
+      Slot12: 0
+      Slot13: 0
+      Slot14: 0
+      Slot15: 0
+  EventLength: 2.5
+  eventName: 
+  EventReference:
+    Guid:
+      Data1: -2123811795
+      Data2: 1337974406
+      Data3: 797433004
+      Data4: 64699621
+    Path: event:/SFX/S_CarDoorOpenClose
+  StopType: 0
+  Parameters: []
 --- !u!114 &4692139507660300706
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -339,10 +975,10 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 2.95
+    m_Start: 2.933333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 1112581975626110581}
-    m_Duration: 4
+    m_Duration: 4.0166666666666675
     m_TimeScale: 1
     m_ParentTrack: {fileID: 5539651141141712615}
     m_EaseInDuration: 0
@@ -1015,3 +1651,97 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fde0d25a170598d46a0b9dc16b4527a5, type: 3}
   m_Name: ActivationPlayableAsset
   m_EditorClassIdentifier: 
+--- !u!114 &9068222769704023205
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 133253f56854570409c222a87786b263, type: 3}
+  m_Name: FMOD Event Track (1)
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips:
+  - m_Version: 1
+    m_Start: 7.166666666666667
+    m_ClipIn: 0
+    m_Asset: {fileID: 1485666458381613119}
+    m_Duration: 4
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 9068222769704023205}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: S_CarExplosion
+  m_Markers:
+    m_Objects: []
+  template:
+    volume: 1

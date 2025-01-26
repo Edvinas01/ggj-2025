@@ -3689,6 +3689,16 @@ PlayableDirector:
     value: {fileID: 470991149}
   - key: {fileID: -9075223634478316848, guid: 5d1f053c7044ee343a32f78aa90190bc, type: 2}
     value: {fileID: 571583958}
+  - key: {fileID: -174904872696925680, guid: 5d1f053c7044ee343a32f78aa90190bc, type: 2}
+    value: {fileID: 1143189786}
+  - key: {fileID: 9068222769704023205, guid: 5d1f053c7044ee343a32f78aa90190bc, type: 2}
+    value: {fileID: 1143189786}
+  - key: {fileID: 871698640967288343, guid: 5d1f053c7044ee343a32f78aa90190bc, type: 2}
+    value: {fileID: 1143189786}
+  - key: {fileID: -6362310084081441814, guid: 5d1f053c7044ee343a32f78aa90190bc, type: 2}
+    value: {fileID: 1143189786}
+  - key: {fileID: -1766677896311675654, guid: 5d1f053c7044ee343a32f78aa90190bc, type: 2}
+    value: {fileID: 1143189786}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &302312099
@@ -9024,7 +9034,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Edvinas Danevi\u010Dius\r\nDovdydas Reitelaitis\r\nRokas Sutkus\r\nTeres\u0117
+  m_text: "Edvinas Danevi\u010Dius\r\nDovydas Reitelaitis\r\nRokas Sutkus\r\nTeres\u0117
     \u017Dvinakevi\u010Di\u016Bt\u0117"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dfbc880057fcd614cb64f3c9ebea9c5d, type: 2}
