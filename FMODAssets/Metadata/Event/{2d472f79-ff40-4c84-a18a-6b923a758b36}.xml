@@ -8,7 +8,7 @@
 			<value>VO_Gaidziai</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{f9c010ed-5e4b-4544-90b9-080d7b4ff3ab}</destination>
@@ -123,7 +123,6 @@
 	<object class="MixerBusEffectChain" id="{ca098e9d-6111-4983-8ba8-b1eca357c44e}">
 		<relationship name="effects">
 			<destination>{a93970bb-f02c-426e-8f9a-c35954bb6a1e}</destination>
-			<destination>{8ab50c41-875b-444e-8d10-85ff832622bf}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{c74ab095-83d2-416a-90ae-22a7afe8459b}" />
@@ -197,7 +196,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{182d54a1-20f9-4ae7-ba24-a9e500c99a2b}" />
 	<object class="MixerBusFader" id="{a93970bb-f02c-426e-8f9a-c35954bb6a1e}" />
-	<object class="SpatialiserEffect" id="{8ab50c41-875b-444e-8d10-85ff832622bf}" />
 	<object class="MixerBusFader" id="{140af618-c186-4a9c-a0a8-0b6068deaa3c}" />
 	<object class="PitchShifterEffect" id="{1cec5ebd-9f8d-4528-9513-63d5fb674aec}">
 		<property name="pitch">

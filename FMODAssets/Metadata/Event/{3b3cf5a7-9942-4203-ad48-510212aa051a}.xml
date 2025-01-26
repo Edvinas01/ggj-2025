@@ -8,7 +8,7 @@
 			<value>VO_Man</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{f9c010ed-5e4b-4544-90b9-080d7b4ff3ab}</destination>
@@ -93,7 +93,7 @@
 	<object class="MixerBusPanner" id="{fb91d4de-0b22-4abe-aee9-8cab6766b1fb}" />
 	<object class="MultiSound" id="{ec32319d-604a-40f3-9ebc-183407afcec8}">
 		<property name="length">
-			<value>4.5</value>
+			<value>4</value>
 		</property>
 		<relationship name="fadeOutCurve">
 			<destination>{9e08ae29-b7bb-4511-9426-d65b919446d2}</destination>
@@ -122,10 +122,16 @@
 	<object class="MixerBusEffectChain" id="{f9edb942-a743-4215-8cfd-586b91a0cfc1}">
 		<relationship name="effects">
 			<destination>{1d4cdca3-8e96-4d55-bd05-86d5b5ddaac7}</destination>
-			<destination>{a18a2a73-3ef4-4d56-97bd-8705a69a1e59}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{98c44a8f-a13a-42c0-8aa7-9c7e6555e605}" />
+	<object class="MixerBusPanner" id="{98c44a8f-a13a-42c0-8aa7-9c7e6555e605}">
+		<property name="surroundPanDirection">
+			<value>55.0079803</value>
+		</property>
+		<property name="surroundPanExtent">
+			<value>342.291168</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{394912a7-db95-4e2d-8d73-640abf5d9172}" />
 	<object class="FadeCurve" id="{9e08ae29-b7bb-4511-9426-d65b919446d2}">
 		<relationship name="startPoint">
@@ -171,10 +177,9 @@
 	</object>
 	<object class="MixerBusPanner" id="{d6b80453-7050-4907-9a20-e041a9d10266}" />
 	<object class="MixerBusFader" id="{1d4cdca3-8e96-4d55-bd05-86d5b5ddaac7}" />
-	<object class="SpatialiserEffect" id="{a18a2a73-3ef4-4d56-97bd-8705a69a1e59}" />
 	<object class="AutomationPoint" id="{bab69858-56e8-40d6-bf3f-49795c8ea61f}">
 		<property name="position">
-			<value>2</value>
+			<value>1.5999999999999996</value>
 		</property>
 		<property name="value">
 			<value>1</value>
@@ -185,7 +190,7 @@
 	</object>
 	<object class="AutomationPoint" id="{12306b63-9914-4a05-8228-93808fc4e238}">
 		<property name="position">
-			<value>4.5</value>
+			<value>4</value>
 		</property>
 		<property name="value">
 			<value>0</value>

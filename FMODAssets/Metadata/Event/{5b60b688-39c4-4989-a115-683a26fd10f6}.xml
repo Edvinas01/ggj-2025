@@ -8,7 +8,7 @@
 			<value>VO_Kid</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{f9c010ed-5e4b-4544-90b9-080d7b4ff3ab}</destination>
@@ -119,7 +119,6 @@
 	<object class="MixerBusEffectChain" id="{01d0c91e-6b14-4293-a96f-dd2b2839a436}">
 		<relationship name="effects">
 			<destination>{42b0102e-1e03-4075-8803-32e396e10668}</destination>
-			<destination>{b283892a-b255-412e-9736-39f8d349b1a0}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{1ae82338-6174-42eb-9e22-98a611a0be69}" />
@@ -140,7 +139,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{1969605f-ab27-40d8-9f0b-a690a5bdd24c}" />
 	<object class="MixerBusFader" id="{42b0102e-1e03-4075-8803-32e396e10668}" />
-	<object class="SpatialiserEffect" id="{b283892a-b255-412e-9736-39f8d349b1a0}" />
 	<object class="AutomationPoint" id="{a0147aa1-03c7-4ccb-8190-f02db463112c}">
 		<property name="position">
 			<value>4</value>
