@@ -313,34 +313,14 @@ MonoBehaviour:
       m_Calls: []
   OnStartWriter:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3020260085149917193}
-        m_TargetAssemblyTypeName: CHARK.ScriptableAudio.AudioEmitter, CHARK.ScriptableAudio
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: [{m_Target: {fileID: 3020260085149917193}, m_TargetAssemblyTypeName: 'CHARK.ScriptableAudio.AudioEmitter,
+            CHARK.ScriptableAudio', m_MethodName: Play, m_Mode: 1, m_Arguments: {m_ObjectArgument: {fileID: 0}, m_ObjectArgumentAssemblyTypeName: 'UnityEngine.Object,
+              UnityEngine', m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: '', m_BoolArgument: 0}, m_CallState: 2}]
   OnStopWriter:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3020260085149917193}
-        m_TargetAssemblyTypeName: CHARK.ScriptableAudio.AudioEmitter, CHARK.ScriptableAudio
-        m_MethodName: Stop
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: [{m_Target: {fileID: 3020260085149917193}, m_TargetAssemblyTypeName: 'CHARK.ScriptableAudio.AudioEmitter,
+            CHARK.ScriptableAudio', m_MethodName: Stop, m_Mode: 1, m_Arguments: {m_ObjectArgument: {fileID: 0}, m_ObjectArgumentAssemblyTypeName: 'UnityEngine.Object,
+              UnityEngine', m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: '', m_BoolArgument: 0}, m_CallState: 2}]
   OnWaitStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -586,6 +566,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   chatText: {fileID: 4727581546786938632}
+  tmpWriter: {fileID: 763380279417229693}
 --- !u!1 &5673505670879942674
 GameObject:
   m_ObjectHideFlags: 0

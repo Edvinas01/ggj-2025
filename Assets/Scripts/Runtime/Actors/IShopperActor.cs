@@ -38,5 +38,9 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         public void ShowPurchase(PurchaseRequest purchase);
 
         public void HidePurchase();
+
+        public void PlaySpeech();
+
+        public void StopSpeech();
     }
 }
