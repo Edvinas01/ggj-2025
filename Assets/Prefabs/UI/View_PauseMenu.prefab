@@ -137,12 +137,6 @@ MonoBehaviour:
   hideAnimationAsset: {fileID: 0}
   onShowEntered:
     m_PersistentCalls:
-      m_Calls: []
-  onShowExited:
-    m_PersistentCalls:
-      m_Calls: []
-  onHideEntered:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4472129978670492620}
         m_TargetAssemblyTypeName: CHARK.ScriptableAudio.AudioEmitter, CHARK.ScriptableAudio
@@ -156,6 +150,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onShowExited:
+    m_PersistentCalls:
+      m_Calls: []
+  onHideEntered:
+    m_PersistentCalls:
+      m_Calls: []
   onHideExited:
     m_PersistentCalls:
       m_Calls:
