@@ -113,7 +113,3 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 8023b9585305f5e44880ea79b48cd89b, type: 2}
       - {fileID: 11400000, guid: b221a383fdb858548b47265abe5f242d, type: 2}
       - {fileID: 11400000, guid: 01909233e3340f242affdc824f410b46, type: 2}
-  - templateText: ${KEYWORD}
-    keywords:
-    - text: Skibidi Dom Dom Dom Yes Yes Yes
-      items: []
