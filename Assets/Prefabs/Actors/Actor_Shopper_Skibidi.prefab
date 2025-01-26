@@ -112,6 +112,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7521200843629131009, guid: d7df9776e0969cc4f9f4f520ad8d97cd, type: 3}
+      propertyPath: walkAnimation
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7521200843629131009, guid: d7df9776e0969cc4f9f4f520ad8d97cd, type: 3}
       propertyPath: onTalkExited.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -132,9 +136,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8793801426294214595}
     - target: {fileID: 7521200843629131009, guid: d7df9776e0969cc4f9f4f520ad8d97cd, type: 3}
+      propertyPath: OnMoveStop.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7521200843629131009, guid: d7df9776e0969cc4f9f4f520ad8d97cd, type: 3}
       propertyPath: onTalkEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8793801426294214595}
+    - target: {fileID: 7521200843629131009, guid: d7df9776e0969cc4f9f4f520ad8d97cd, type: 3}
+      propertyPath: OnMoveStart.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7521200843629131009, guid: d7df9776e0969cc4f9f4f520ad8d97cd, type: 3}
       propertyPath: onTalkExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -167,7 +179,8 @@ PrefabInstance:
       propertyPath: onTalkEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5749574115430480141, guid: d7df9776e0969cc4f9f4f520ad8d97cd, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7357024523354059134, guid: d7df9776e0969cc4f9f4f520ad8d97cd, type: 3}

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shopperPrefab: {fileID: 1568678881271510012, guid: 3d395686e39d15d47aceda40eea162b3, type: 3}
   image: {fileID: 2800000, guid: dc3e4b99ba10dde4483be78d0f12d8a6, type: 3}
-  purchases: {fileID: 11400000, guid: 0f4f7bafdbcd0054eb68a48025ef1b86, type: 2}
+  purchases: {fileID: 11400000, guid: 68b37121e76ce1e4d80c5c493e21809e, type: 2}
