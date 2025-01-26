@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using CHARK.GameManagement;
+using CHARK.ScriptableAudio;
 using UABPetelnia.GGJ2025.Runtime.Settings;
 using UABPetelnia.GGJ2025.Runtime.Systems.Shoppers;
 using UABPetelnia.GGJ2025.Runtime.Utilities;
@@ -51,6 +52,10 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         [SerializeField]
         private Renderer bodyRenderer;
 
+        [Header("Audio")]
+        [SerializeField]
+        private AudioEmitter speechAudioEmitter;
+
         [Header("Events")]
         [SerializeField]
         public UnityEvent onPunchStart;
@@ -69,6 +74,12 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
 
         [SerializeField]
         public UnityEvent OnMoveStop;
+
+        [SerializeField]
+        private UnityEvent onTalkEntered;
+
+        [SerializeField]
+        private UnityEvent onTalkExited;
 
         [SerializeField]
         private string texturePropertyId = "_BaseMap";
@@ -289,6 +300,16 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
             walkAnimation.Update(0f);
             walkAnimation.enabled = false;
             OnMoveStop.Invoke();
+        }
+
+        public void PlaySpeech()
+        {
+            speechAudioEmitter.Play();
+        }
+
+        public void StopSpeech()
+        {
+            speechAudioEmitter.Stop();
         }
 
         private Transform GetOriginPoint()

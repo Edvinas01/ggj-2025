@@ -5,6 +5,7 @@ using UABPetelnia.GGJ2025.Runtime.Settings;
 using UABPetelnia.GGJ2025.Runtime.Systems.Cursors;
 using UABPetelnia.GGJ2025.Runtime.Systems.Gameplay;
 using UABPetelnia.GGJ2025.Runtime.Systems.Players;
+using UABPetelnia.GGJ2025.Runtime.Systems.Shoppers;
 using UABPetelnia.GGJ2025.Runtime.UI.Controllers;
 using Unity.Cinemachine;
 using UnityEngine;
@@ -67,6 +68,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         [SerializeField]
         private UnityEvent onItemsDisappear;
 
+        private IShopperSystem shopperSystem;
         private IGameplaySystem gameplaySystem;
         private IPlayerSystem playerSystem;
         private ICursorSystem cursorSystem;
@@ -107,6 +109,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         {
             currentHealth = settings.MaxHealth;
 
+            shopperSystem = GameManager.GetSystem<IShopperSystem>();
             gameplaySystem = GameManager.GetSystem<IGameplaySystem>();
             playerSystem = GameManager.GetSystem<IPlayerSystem>();
             cursorSystem = GameManager.GetSystem<ICursorSystem>();
@@ -130,6 +133,9 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
 
             selectListener.OnPerformed += OnSelectPerformed;
             selectListener.OnCanceled += OnSelectCanceled;
+
+            chatViewController.OnSpeechEntered += OnSpeechEntered;
+            chatViewController.OnSpeechExited += OnSpeechExited;
         }
 
         private void OnDisable()
@@ -141,6 +147,9 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
 
             selectListener.OnPerformed -= OnSelectPerformed;
             selectListener.OnCanceled -= OnSelectCanceled;
+
+            chatViewController.OnSpeechEntered -= OnSpeechEntered;
+            chatViewController.OnSpeechExited -= OnSpeechExited;
         }
 
         private void OnDestroy()
@@ -183,6 +192,22 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         private void OnZoomCanceled(bool value)
         {
             StopZoomingIn();
+        }
+
+        private void OnSpeechEntered()
+        {
+            if (shopperSystem.TryGetShopper(out var shopper))
+            {
+                shopper.PlaySpeech();
+            }
+        }
+
+        private void OnSpeechExited()
+        {
+            if (shopperSystem.TryGetShopper(out var shopper))
+            {
+                shopper.StopSpeech();
+            }
         }
 
         private void OnCurrentHealthChanged()

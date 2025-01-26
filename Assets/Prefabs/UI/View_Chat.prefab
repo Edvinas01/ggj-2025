@@ -384,6 +384,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   chatText: {fileID: 4727581546786938632}
+  tmpWriter: {fileID: 763380279417229693}
 --- !u!1 &7882583757661092047
 GameObject:
   m_ObjectHideFlags: 0
