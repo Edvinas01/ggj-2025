@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{d9ed081e-62cf-4c13-8b3e-b6358d19dd64}">
+		<property name="color">
+			<value>Green</value>
+		</property>
 		<property name="name">
 			<value>Amb_Menu</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{54831a41-d381-4e34-923d-ceb29a704de4}</destination>
@@ -39,6 +42,9 @@
 		<relationship name="parameters">
 			<destination>{374ab5c4-e29a-415d-bb26-ef50f6132874}</destination>
 			<destination>{87d7fae3-9600-4b4d-af32-71af444c2fe0}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{0d4f6807-72ba-4ca1-a47d-c13e44dec595}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{5075fb8c-194d-4057-a202-1419db263d1f}">
@@ -1534,7 +1540,6 @@
 	<object class="MixerBusEffectChain" id="{c54367f6-d9bd-41b9-8e79-bd5c30bd5e40}">
 		<relationship name="effects">
 			<destination>{f2f87f95-9765-4050-9256-5fba7a6e94b0}</destination>
-			<destination>{1b980fd0-67be-4800-91f8-eefc5fbc99c4}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{7139c030-53bf-4270-8889-030b82757258}" />
@@ -3125,7 +3130,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{917c67bb-4081-4224-bf8a-28b1c7592d6c}" />
 	<object class="MixerBusFader" id="{f2f87f95-9765-4050-9256-5fba7a6e94b0}" />
-	<object class="SpatialiserEffect" id="{1b980fd0-67be-4800-91f8-eefc5fbc99c4}" />
 	<object class="MixerBusFader" id="{93832ae4-cc47-4c05-a39c-11cb945a4104}" />
 	<object class="Automator" id="{dec388e2-5a19-4775-9ab8-e5d5b2435eba}">
 		<property name="nameOfPropertyBeingAutomated">
