@@ -134,7 +134,7 @@ MonoBehaviour:
       items:
       - {fileID: 11400000, guid: 384e0a13927803f46bd3943a3f8ee317, type: 2}
       - {fileID: 11400000, guid: 04fcf23ca0a9cbe458eb42e6f9338b1a, type: 2}
-  - templateText: Nu gruzas, pasimatymas veliop, ${KEYWORD}
+  - templateText: Nu gruzas, pasimatymas velniop, ${KEYWORD}
     keywords:
     - text: "sak\u0117 smirda i\u0161 burnos"
       items:
