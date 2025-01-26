@@ -38,6 +38,9 @@ namespace UABPetelnia.GGJ2025.Runtime
         [SerializeField]
         private ShopperSystem shopperSystem;
 
+        [SerializeField]
+        private GameplaySystem gameplaySystem;
+
         protected override void OnBeforeInitializeSystems()
         {
             AddSystem(audioSystem);
@@ -49,7 +52,7 @@ namespace UABPetelnia.GGJ2025.Runtime
 
             AddSystem(new PlayerSystem());
             AddSystem(shopperSystem);
-            AddSystem(new GameplaySystem());
+            AddSystem(gameplaySystem);
             AddSystem(new InteractionSystem());
         }
 

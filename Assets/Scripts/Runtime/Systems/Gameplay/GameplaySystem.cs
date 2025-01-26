@@ -1,14 +1,18 @@
 ﻿using System.Collections.Generic;
 using CHARK.GameManagement;
 using CHARK.GameManagement.Systems;
+using UABPetelnia.GGJ2025.Runtime.Settings;
 using UABPetelnia.GGJ2025.Runtime.Systems.Gameplay.States;
 using UABPetelnia.GGJ2025.Runtime.Systems.Scenes;
 using UnityEngine;
 
 namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay
 {
-    internal sealed class GameplaySystem : SimpleSystem, IGameplaySystem
+    internal sealed class GameplaySystem : MonoSystem, IGameplaySystem
     {
+        [SerializeField]
+        private GameplaySettings gameplaySettings;
+
         private readonly GameplayStateContext context = new();
 
         private GameplayState startingState;
@@ -81,14 +85,18 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay
 
         private void InitializeStateMachine()
         {
-            var spawnState = new ShopperSpawnState();
+            var spawnState = new ShopperSpawnState(gameplaySettings);
             var moveToKioskState = new ShopperMoveState(ShopperMoveState.MoveTo.KioskPoint);
             var moveToSpawnPointState = new ShopperMoveState(ShopperMoveState.MoveTo.SpawnPoint);
 
             var purchasedState = new ShopperPurchasedState();
             var punchingState = new ShopperPunchingState();
 
-            var chattingState = new ShopperChattingState(purchasedState, punchingState);
+            var chattingState = new ShopperChattingState(
+                gameplaySettings: gameplaySettings,
+                successState: purchasedState,
+                failureState: punchingState
+            );
             var destroyState = new ShopperDestroyState();
 
             var gameOverCheckState = new GameOverCheckState();

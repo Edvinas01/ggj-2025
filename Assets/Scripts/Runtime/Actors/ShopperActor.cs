@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using CHARK.GameManagement;
 using UABPetelnia.GGJ2025.Runtime.Settings;
@@ -7,6 +8,8 @@ using UABPetelnia.GGJ2025.Runtime.Utilities;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
+using Object = UnityEngine.Object;
+using Random = UnityEngine.Random;
 
 namespace UABPetelnia.GGJ2025.Runtime.Actors
 {
@@ -213,8 +216,25 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
 
             var text = purchase.TemplateText.Replace(keywordToken, keyword.Text);
 
+            if (unusedKeywords.Count(k => k.Items.Count <= 0) == unusedKeywords.Count)
+            {
+                return new PurchaseRequest(
+                    text: text,
+                    invalidItems: Array.Empty<ItemData>(),
+                    validItems: Array.Empty<ItemData>(),
+                    shopper: this
+                );
+            }
+
             var validKeywordItems = keyword.Items
                 .Distinct()
+                .ToList();
+
+            var availableItems = shopperSystem.AvailableItems;
+            var invalidItems = availableItems
+                .Where(item => validKeywordItems.Contains(item) == false)
+                .Shuffle()
+                .Take(Random.Range(invalidItemRange.x, invalidItemRange.y))
                 .ToList();
 
             var validItems = validKeywordItems
@@ -222,20 +242,11 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
                 .Take(1)
                 .ToList();
 
-            var invalidItems = allKeywords
-                .Where(k => k != keyword)
-                .SelectMany(k => k.Items)
-                .Where(invalidKeyword => validKeywordItems.Contains(invalidKeyword) == false)
-                .Take(Random.Range(invalidItemRange.x, invalidItemRange.y))
-                .Distinct()
-                .Shuffle()
-                .ToList();
-
             return new PurchaseRequest(
-                text,
-                invalidItems,
-                validItems,
-                this
+                text: text,
+                invalidItems: invalidItems,
+                validItems: validItems,
+                shopper: this
             );
         }
 

@@ -1,5 +1,7 @@
-﻿using CHARK.GameManagement.Systems;
+﻿using System.Collections.Generic;
+using CHARK.GameManagement.Systems;
 using UABPetelnia.GGJ2025.Runtime.Actors;
+using UABPetelnia.GGJ2025.Runtime.Settings;
 using UnityEngine;
 
 namespace UABPetelnia.GGJ2025.Runtime.Systems.Shoppers
@@ -11,6 +13,8 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Shoppers
         public Vector3 RandomSpawnPoint { get; }
 
         public Vector3 KioskPoint { get; }
+
+        public IEnumerable<ItemData> AvailableItems { get; }
 
         public bool TryGetShopper(out IShopperActor shopper);
 
