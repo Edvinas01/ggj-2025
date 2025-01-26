@@ -41,6 +41,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a4596b657d4c1f840872ffe0861b4922, type: 2}
   - {fileID: 11400000, guid: e6ee8b11071123441978a284aa375340, type: 2}
   - {fileID: 11400000, guid: b80c89f2d9aa2a14e901ce15d93874ac, type: 2}
+  - {fileID: 11400000, guid: 92887a270124155478df27d5927d2149, type: 2}
   availableItems:
   - {fileID: 11400000, guid: 72020ec0dfe286a429a66e4a2e94ee62, type: 2}
   - {fileID: 11400000, guid: ce3cbe4343c90ee4485704202b12d020, type: 2}
@@ -59,3 +60,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8023b9585305f5e44880ea79b48cd89b, type: 2}
   - {fileID: 11400000, guid: b221a383fdb858548b47265abe5f242d, type: 2}
   - {fileID: 11400000, guid: 01909233e3340f242affdc824f410b46, type: 2}
+  spawnDelayRange: {x: 1, y: 3}
+  rantDurationRange: {x: 1.5, y: 3}
