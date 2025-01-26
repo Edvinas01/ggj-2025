@@ -73,8 +73,14 @@
 		<relationship name="modules">
 			<destination>{bba80ed1-d218-4647-bc09-fdfcf326a579}</destination>
 		</relationship>
+		<relationship name="markers">
+			<destination>{c3632198-a6f4-45ac-8bbb-1fe126235fc3}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{bb498a41-b5b2-4694-9247-ee85e0f01691}">
+		<relationship name="modulators">
+			<destination>{1b95cc77-195e-4ee5-92e5-d439adf0471b}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{fc4d99ed-2f80-4345-b0e8-de0f72e36b69}</destination>
 		</relationship>
@@ -92,6 +98,9 @@
 	</object>
 	<object class="MixerBusPanner" id="{e5b902e6-ba2d-498e-8fb9-b3932db8e178}" />
 	<object class="MultiSound" id="{bba80ed1-d218-4647-bc09-fdfcf326a579}">
+		<property name="start">
+			<value>16.400000000000002</value>
+		</property>
 		<property name="length">
 			<value>4.5</value>
 		</property>
@@ -120,6 +129,37 @@
 		<relationship name="output">
 			<destination>{bb498a41-b5b2-4694-9247-ee85e0f01691}</destination>
 		</relationship>
+	</object>
+	<object class="LoopRegion" id="{c3632198-a6f4-45ac-8bbb-1fe126235fc3}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="length">
+			<value>21.600000000000001</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{3d97c9d2-88c6-4a87-bde2-3c39c80a3036}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{09108f57-0357-4c22-93cc-e6b4f032b406}</destination>
+		</relationship>
+	</object>
+	<object class="ADSRModulator" id="{1b95cc77-195e-4ee5-92e5-d439adf0471b}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>80</value>
+		</property>
+		<property name="releaseTime">
+			<value>940</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{fc4d99ed-2f80-4345-b0e8-de0f72e36b69}">
 		<relationship name="effects">
@@ -193,7 +233,7 @@
 	<object class="SpatialiserEffect" id="{fcd99852-d860-4f2f-8c1c-6dc5db1270c4}" />
 	<object class="AutomationPoint" id="{a86b312e-245a-46df-b44a-58946256fb50}">
 		<property name="position">
-			<value>3</value>
+			<value>19.400000000000002</value>
 		</property>
 		<property name="value">
 			<value>1</value>
@@ -204,7 +244,7 @@
 	</object>
 	<object class="AutomationPoint" id="{020f1784-c56d-4ba9-828f-516b7a413485}">
 		<property name="position">
-			<value>4.5</value>
+			<value>20.899999999999999</value>
 		</property>
 		<property name="value">
 			<value>0</value>

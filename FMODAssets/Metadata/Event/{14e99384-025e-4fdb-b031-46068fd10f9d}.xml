@@ -78,6 +78,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{f09c3866-cebe-420c-974b-d156b88f046a}">
+		<relationship name="modulators">
+			<destination>{857a0b51-55b7-4ed8-a41d-cd28c3fdc0de}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{09a00b5e-1d03-41ef-a799-4d9e4222d4b0}</destination>
 		</relationship>
@@ -139,6 +142,23 @@
 			<destination>{63ec0ce9-dfcc-4b6d-9d5a-4aa568b51583}</destination>
 		</relationship>
 	</object>
+	<object class="ADSRModulator" id="{857a0b51-55b7-4ed8-a41d-cd28c3fdc0de}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>80</value>
+		</property>
+		<property name="releaseTime">
+			<value>940</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{09a00b5e-1d03-41ef-a799-4d9e4222d4b0}">
 		<relationship name="effects">
 			<destination>{ccd07197-9931-476e-9772-03860bb6efb2}</destination>
@@ -159,6 +179,9 @@
 		<property name="startOffset">
 			<value>80</value>
 		</property>
+		<property name="volume">
+			<value>-5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{225d7064-9540-4535-939e-f3e84a2973fd}</destination>
 		</relationship>
@@ -177,6 +200,9 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{3f34757c-cd1c-4bf1-943c-cf1140d0d4e2}">
+		<property name="volume">
+			<value>-5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{225d7064-9540-4535-939e-f3e84a2973fd}</destination>
 		</relationship>
@@ -184,6 +210,9 @@
 	<object class="SingleSound" id="{98e137aa-7524-4bae-ac45-db9de6d039ad}">
 		<property name="startOffset">
 			<value>20</value>
+		</property>
+		<property name="volume">
+			<value>-5.5</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{225d7064-9540-4535-939e-f3e84a2973fd}</destination>
@@ -193,6 +222,9 @@
 		<property name="startOffset">
 			<value>40</value>
 		</property>
+		<property name="volume">
+			<value>-5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{225d7064-9540-4535-939e-f3e84a2973fd}</destination>
 		</relationship>
@@ -200,6 +232,9 @@
 	<object class="SingleSound" id="{f16aec36-f7ce-48d4-87fc-dc04469443a5}">
 		<property name="startOffset">
 			<value>60</value>
+		</property>
+		<property name="volume">
+			<value>-6</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{225d7064-9540-4535-939e-f3e84a2973fd}</destination>

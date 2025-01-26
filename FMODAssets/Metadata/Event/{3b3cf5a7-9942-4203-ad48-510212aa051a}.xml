@@ -75,6 +75,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{6e4a6b29-95a3-47e3-bf0f-54fd38c3fc52}">
+		<relationship name="modulators">
+			<destination>{b8bb9990-c472-4825-8ba5-a71bb3ec3d7a}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{f9edb942-a743-4215-8cfd-586b91a0cfc1}</destination>
 		</relationship>
@@ -106,6 +109,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{b6c82914-21f1-477f-b89a-7decaa30f6ca}">
+		<property name="volume">
+			<value>6.5</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -118,6 +124,23 @@
 		<relationship name="output">
 			<destination>{6e4a6b29-95a3-47e3-bf0f-54fd38c3fc52}</destination>
 		</relationship>
+	</object>
+	<object class="ADSRModulator" id="{b8bb9990-c472-4825-8ba5-a71bb3ec3d7a}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>80</value>
+		</property>
+		<property name="releaseTime">
+			<value>940</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{f9edb942-a743-4215-8cfd-586b91a0cfc1}">
 		<relationship name="effects">
@@ -173,6 +196,7 @@
 	<object class="MixerBusEffectChain" id="{7990593a-6356-450c-8f27-ae2de77a0f86}">
 		<relationship name="effects">
 			<destination>{178c4f8e-cc96-4396-a512-36659266c715}</destination>
+			<destination>{99d2d1a4-bebf-43d5-afa8-a7294aff5536}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{d6b80453-7050-4907-9a20-e041a9d10266}" />
@@ -197,4 +221,9 @@
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{178c4f8e-cc96-4396-a512-36659266c715}" />
+	<object class="GainEffect" id="{99d2d1a4-bebf-43d5-afa8-a7294aff5536}">
+		<property name="gain">
+			<value>10</value>
+		</property>
+	</object>
 </objects>
