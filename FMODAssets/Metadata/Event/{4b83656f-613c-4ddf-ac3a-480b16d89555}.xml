@@ -101,7 +101,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{c9bcfb63-6496-454a-b6f6-fbd2566b848b}">
 		<property name="volume">
-			<value>-3.5</value>
+			<value>-3</value>
 		</property>
 		<property name="name">
 			<value>Audio 2</value>
@@ -128,6 +128,7 @@
 			<destination>{8d84ade1-956c-4238-b44c-8c26abeb4f2c}</destination>
 			<destination>{47b34465-8836-4974-a55a-e30310dba893}</destination>
 			<destination>{f426b732-babe-4095-824e-d640698f091c}</destination>
+			<destination>{9c8475e1-ad2f-4382-8ca0-df2a5b2fd63f}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{32f013da-b578-4db7-992e-5923749ea088}" />
@@ -146,12 +147,20 @@
 			<destination>{35831fe8-4f77-45ba-a5bd-c116a6447ce3}</destination>
 		</relationship>
 	</object>
+	<object class="DelayEffect" id="{9c8475e1-ad2f-4382-8ca0-df2a5b2fd63f}">
+		<property name="delay">
+			<value>200</value>
+		</property>
+		<property name="level">
+			<value>-8.5</value>
+		</property>
+	</object>
 	<object class="RandomizerModulator" id="{35831fe8-4f77-45ba-a5bd-c116a6447ce3}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>pitch</value>
 		</property>
 		<property name="amount">
-			<value>18.5</value>
+			<value>13</value>
 		</property>
 	</object>
 </objects>
