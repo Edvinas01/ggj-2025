@@ -84,7 +84,7 @@
 	<object class="MixerBusPanner" id="{b6fa4e15-24a5-48ca-bc9d-bc00678adac2}" />
 	<object class="MultiSound" id="{32206099-56b1-475e-be0b-1f86556cfa96}">
 		<property name="length">
-			<value>35.5</value>
+			<value>5.5</value>
 		</property>
 		<relationship name="sounds">
 			<destination>{4675784c-6fda-4b7f-9238-f130dc42f9b4}</destination>
@@ -129,7 +129,7 @@
 	</object>
 	<object class="PlayPercentage" id="{b6dd91d4-52de-4c32-a83c-25d586d22544}">
 		<property name="percentage">
-			<value>0</value>
+			<value>90</value>
 		</property>
 		<relationship name="sound">
 			<destination>{4675784c-6fda-4b7f-9238-f130dc42f9b4}</destination>

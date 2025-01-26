@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{5a2a9664-e7ac-4a16-b7e8-8052d8a7d22a}">
+		<property name="color">
+			<value>Blue</value>
+		</property>
 		<property name="name">
 			<value>S_PressButton</value>
 		</property>
@@ -50,7 +53,7 @@
 			<destination>{7dfab1a5-849c-4507-859a-171b8f741c12}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{02343e66-ff8e-48a0-b719-55f13925023a}</destination>
+			<destination>{88f8a95c-7195-47a3-959c-34e92c803b42}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{4545e4ff-4785-4efb-9948-7237321482cb}" />
