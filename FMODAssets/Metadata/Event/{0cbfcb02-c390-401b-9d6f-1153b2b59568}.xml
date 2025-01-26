@@ -8,7 +8,7 @@
 			<value>Amb_Skibidi</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{54831a41-d381-4e34-923d-ceb29a704de4}</destination>
@@ -59,7 +59,14 @@
 			<destination>{2f976d51-ff4f-44f1-9b63-a5443602f63f}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{83012a08-2ff2-453e-b9d7-0fa6c9eb7c32}" />
+	<object class="EventAutomatableProperties" id="{83012a08-2ff2-453e-b9d7-0fa6c9eb7c32}">
+		<property name="minimumDistance">
+			<value>8.40000057</value>
+		</property>
+		<property name="maximumDistance">
+			<value>35</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{049b4c48-3724-481b-a388-6b3a027b4253}" />
 	<object class="GroupTrack" id="{602c077c-04d9-4bc4-b6c3-0e5a66adeaa7}">
 		<relationship name="modules">
@@ -116,6 +123,7 @@
 	<object class="MixerBusEffectChain" id="{5bafcae4-1544-4f0b-a7e6-f126b987374c}">
 		<relationship name="effects">
 			<destination>{9e35a0b3-a69b-4ad9-892f-ff7e095814be}</destination>
+			<destination>{83a08944-b5b2-4a07-8533-c03d7709dbc0}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{d5322451-77dc-4bf5-aca1-537a1baa405e}" />
@@ -127,5 +135,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{9abc7a4c-7d36-46d9-bc0d-ff6c36649c31}" />
 	<object class="MixerBusFader" id="{9e35a0b3-a69b-4ad9-892f-ff7e095814be}" />
+	<object class="SpatialiserEffect" id="{83a08944-b5b2-4a07-8533-c03d7709dbc0}" />
 	<object class="MixerBusFader" id="{d3b2b371-36bf-40ac-92de-f66b40b924d2}" />
 </objects>
