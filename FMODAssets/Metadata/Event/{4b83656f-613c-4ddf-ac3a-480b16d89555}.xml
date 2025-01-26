@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{4b83656f-613c-4ddf-ac3a-480b16d89555}">
+		<property name="color">
+			<value>Blue</value>
+		</property>
 		<property name="name">
 			<value>S_PressBubble</value>
 		</property>
@@ -50,7 +53,7 @@
 			<destination>{f6183619-1e0f-4267-831b-62a47127104a}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{02343e66-ff8e-48a0-b719-55f13925023a}</destination>
+			<destination>{88f8a95c-7195-47a3-959c-34e92c803b42}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{8b7c411a-cf52-4dfa-a9cd-5a3a7f7d4a73}" />

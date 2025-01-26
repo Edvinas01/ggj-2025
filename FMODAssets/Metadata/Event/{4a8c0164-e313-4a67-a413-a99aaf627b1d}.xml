@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{4a8c0164-e313-4a67-a413-a99aaf627b1d}">
+		<property name="color">
+			<value>Blue</value>
+		</property>
 		<property name="name">
 			<value>S_HoverButton</value>
 		</property>
@@ -50,7 +53,7 @@
 			<destination>{36c4ab1d-ea9e-4816-96b5-91a1e3d67a15}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{02343e66-ff8e-48a0-b719-55f13925023a}</destination>
+			<destination>{88f8a95c-7195-47a3-959c-34e92c803b42}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{b0fc99af-d3fe-41eb-8cd1-7635f9cb7b9e}" />

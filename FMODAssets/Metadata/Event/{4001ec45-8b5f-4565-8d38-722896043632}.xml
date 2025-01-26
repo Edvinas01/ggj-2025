@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{4001ec45-8b5f-4565-8d38-722896043632}">
+		<property name="color">
+			<value>Blue</value>
+		</property>
 		<property name="name">
 			<value>S_HoverBubble</value>
 		</property>
@@ -51,7 +54,7 @@
 			<destination>{dbc1fd13-d322-4e69-80a4-26e20dbcf117}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{02343e66-ff8e-48a0-b719-55f13925023a}</destination>
+			<destination>{88f8a95c-7195-47a3-959c-34e92c803b42}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{be4f645a-5828-4579-a9cb-3a984f604a4b}" />
