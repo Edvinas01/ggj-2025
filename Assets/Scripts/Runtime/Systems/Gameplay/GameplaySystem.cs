@@ -92,7 +92,11 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay
             var purchasedState = new ShopperPurchasedState();
             var punchingState = new ShopperPunchingState();
 
-            var chattingState = new ShopperChattingState(purchasedState, punchingState);
+            var chattingState = new ShopperChattingState(
+                gameplaySettings: gameplaySettings,
+                successState: purchasedState,
+                failureState: punchingState
+            );
             var destroyState = new ShopperDestroyState();
 
             var gameOverCheckState = new GameOverCheckState();

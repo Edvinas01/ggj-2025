@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using CHARK.GameManagement;
 using UABPetelnia.GGJ2025.Runtime.Settings;
@@ -7,6 +8,8 @@ using UABPetelnia.GGJ2025.Runtime.Utilities;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
+using Object = UnityEngine.Object;
+using Random = UnityEngine.Random;
 
 namespace UABPetelnia.GGJ2025.Runtime.Actors
 {
@@ -212,6 +215,16 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
             }
 
             var text = purchase.TemplateText.Replace(keywordToken, keyword.Text);
+
+            if (unusedKeywords.Count(k => k.Items.Count <= 0) == unusedKeywords.Count)
+            {
+                return new PurchaseRequest(
+                    text: text,
+                    invalidItems: Array.Empty<ItemData>(),
+                    validItems: Array.Empty<ItemData>(),
+                    shopper: this
+                );
+            }
 
             var validKeywordItems = keyword.Items
                 .Distinct()
