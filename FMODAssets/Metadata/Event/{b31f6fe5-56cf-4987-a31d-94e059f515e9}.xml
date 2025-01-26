@@ -8,7 +8,7 @@
 			<value>Amb_Kernagis</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{54831a41-d381-4e34-923d-ceb29a704de4}</destination>
@@ -56,17 +56,24 @@
 			<destination>{1bd25447-ff95-46c7-b288-9aaa24bdc447}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{02343e66-ff8e-48a0-b719-55f13925023a}</destination>
+			<destination>{2f976d51-ff4f-44f1-9b63-a5443602f63f}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{6624bf9b-415b-4fe5-be3a-014b9e13feab}" />
 	<object class="MarkerTrack" id="{e94638d0-d9c7-4984-9657-ae968c782e6b}" />
 	<object class="GroupTrack" id="{43ef5a10-9f3f-4558-afbe-586b174f816a}">
+		<relationship name="modules">
+			<destination>{6f89fb1c-2c08-4336-9e40-d2c8a455bc6c}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{b8dfea03-1df6-4ae4-94a5-cbd107dee0bb}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{eeb2ffc7-8856-482f-9434-7215e7d8d31c}" />
+	<object class="Timeline" id="{eeb2ffc7-8856-482f-9434-7215e7d8d31c}">
+		<relationship name="modules">
+			<destination>{6f89fb1c-2c08-4336-9e40-d2c8a455bc6c}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{4d0b0ce7-9e1d-4484-96d7-2626b3ba9dd2}">
 		<relationship name="effectChain">
 			<destination>{40c5166c-100f-4c87-b55a-25a75cf5842e}</destination>
@@ -84,6 +91,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{1bd25447-ff95-46c7-b288-9aaa24bdc447}" />
+	<object class="SingleSound" id="{6f89fb1c-2c08-4336-9e40-d2c8a455bc6c}">
+		<property name="length">
+			<value>215.0661224489796</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{af752988-fa08-41ee-a62d-13ed524e80fa}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{b8dfea03-1df6-4ae4-94a5-cbd107dee0bb}">
 		<property name="name">
 			<value>Audio 1</value>
