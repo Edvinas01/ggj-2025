@@ -17,8 +17,14 @@ namespace UABPetelnia.GGJ2025.Runtime.Settings
         [SerializeField]
         private List<ItemData> availableItems;
 
+        [Min(0f)]
+        [SerializeField]
+        private Vector2 spawnDelayRange = new(1f, 3f);
+
         public IReadOnlyCollection<ShopperData> AvailableShoppers => availableShoppers;
 
         public IReadOnlyCollection<ItemData> AvailableItems => availableItems;
+
+        public float SpawnDelaySeconds => Random.Range(spawnDelayRange.x, spawnDelayRange.y);
     }
 }

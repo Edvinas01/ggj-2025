@@ -1,5 +1,50 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1389274708760764157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3239094320659470212}
+  - component: {fileID: 2774814634874012782}
+  m_Layer: 0
+  m_Name: System_Gameplay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3239094320659470212
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389274708760764157}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3221272974359267740}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2774814634874012782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389274708760764157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30206126ccbe4a83aa9c696f9a613c36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameplaySettings: {fileID: 11400000, guid: 33ec3d4d6d4beed4387b85aeddf63c10, type: 2}
 --- !u!1 &1584595080776047213
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,6 +600,7 @@ Transform:
   - {fileID: 3811623661325391372}
   - {fileID: 6537423555849585742}
   - {fileID: 6968841158729181117}
+  - {fileID: 3239094320659470212}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2414066164427623163
@@ -576,6 +622,7 @@ MonoBehaviour:
   settingsSystem: {fileID: 3547041031277798156}
   sceneSystem: {fileID: 5655597156852245308}
   shopperSystem: {fileID: 333171564246476103}
+  gameplaySystem: {fileID: 2774814634874012782}
 --- !u!1 &5862995328743152836
 GameObject:
   m_ObjectHideFlags: 0
