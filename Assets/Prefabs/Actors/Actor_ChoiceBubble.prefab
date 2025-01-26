@@ -485,18 +485,6 @@ MonoBehaviour:
   onSelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4821803400373837427}
-        m_TargetAssemblyTypeName: CHARK.ScriptableAudio.AudioEmitter, CHARK.ScriptableAudio
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 5902009459534679401}
         m_TargetAssemblyTypeName: UABPetelnia.GGJ2025.Runtime.Actors.ChoiceBubbleActor,
           UABPetelnia.GGJ2025
@@ -512,7 +500,19 @@ MonoBehaviour:
         m_CallState: 2
   onSelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4821803400373837427}
+        m_TargetAssemblyTypeName: CHARK.ScriptableAudio.AudioEmitter, CHARK.ScriptableAudio
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8884880276251043724
 GameObject:
   m_ObjectHideFlags: 0

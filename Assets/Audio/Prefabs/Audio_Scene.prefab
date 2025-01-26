@@ -101,8 +101,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioEventAsset: {fileID: 11400000, guid: a306c0413c33b624daa86c263279d9a0, type: 2}
   rigidBody: {fileID: 0}
-  playMode: 0
-  stopMode: 2
+  playMode: 1
+  stopMode: 1
   isAllowFadeout: 1
   isTriggerOnce: 0
   isPreload: 0
@@ -303,7 +303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioEventAsset: {fileID: 11400000, guid: 247a4a0c25b4a2f4e8c14ba91a25769e, type: 2}
   rigidBody: {fileID: 0}
-  playMode: 0
+  playMode: 1
   stopMode: 1
   isAllowFadeout: 1
   isTriggerOnce: 0

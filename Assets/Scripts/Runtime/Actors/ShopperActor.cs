@@ -289,16 +289,24 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
 
         public void PlayWalkAnimation()
         {
-            walkAnimation.enabled = true;
-            walkAnimation.Play("Animation_Shooper_Walk_Jump", -1, 0f);
+            if (walkAnimation)
+            {
+                walkAnimation.enabled = true;
+                walkAnimation.Play("Animation_Shooper_Walk_Jump", -1, 0f);
+            }
+
             OnMoveStart.Invoke();
         }
 
         public void StopWalkAnimation()
         {
-            walkAnimation.Play(walkAnimation.GetCurrentAnimatorStateInfo(0).fullPathHash, 0, 0f);
-            walkAnimation.Update(0f);
-            walkAnimation.enabled = false;
+            if (walkAnimation)
+            {
+                walkAnimation.Play(walkAnimation.GetCurrentAnimatorStateInfo(0).fullPathHash, 0, 0f);
+                walkAnimation.Update(0f);
+                walkAnimation.enabled = false;
+            }
+
             OnMoveStop.Invoke();
         }
 
