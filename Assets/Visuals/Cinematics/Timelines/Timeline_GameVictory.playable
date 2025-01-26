@@ -64,7 +64,7 @@ MonoBehaviour:
       Slot13: 0
       Slot14: 0
       Slot15: 0
-  EventLength: 0
+  EventLength: 215.066
   eventName: 
   EventReference:
     Guid:
@@ -402,10 +402,10 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 1.5666666666666667
+    m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: -8010920284519588072}
-    m_Duration: 3.3000000000000003
+    m_Duration: 7.166666666666667
     m_TimeScale: 1
     m_ParentTrack: {fileID: -1766677896311675654}
     m_EaseInDuration: 0
@@ -496,7 +496,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 2.95
+    m_Start: 3.1666666666666674
     m_ClipIn: 0
     m_Asset: {fileID: -2722907540499119345}
     m_Duration: 4
@@ -1673,7 +1673,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 6.95
+    m_Start: 7.166666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 1485666458381613119}
     m_Duration: 4
