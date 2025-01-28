@@ -20,7 +20,7 @@
 - Selection cursor offset.
 - Made ray-casting more accurate.
 - Pause menu UI text to use LT.
-- Some typos in chat text.
+- Some typos and incorrect options in character texts.
 - Cursor being visible in victory scene.
 
 ### Removed

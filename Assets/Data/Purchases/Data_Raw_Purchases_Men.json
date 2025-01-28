@@ -163,7 +163,9 @@
         "text": "reikia atsigaivinti",
         "items": [
           "Item_SodaVytautas",
-          "Item_SodaBuratinas"
+          "Item_SodaBuratinas",
+          "Item_Alita",
+          "Item_Alus"
         ]
       }
     ]
@@ -175,6 +177,7 @@
         "text": "reikia atsigaivinti",
         "items": [
           "Item_SodaVytautas",
+          "Item_SodaBuratinas",
           "Item_Alus",
           "Item_Alita"
         ]
