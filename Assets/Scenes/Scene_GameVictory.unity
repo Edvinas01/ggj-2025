@@ -3660,6 +3660,7 @@ Transform:
   - {fileID: 1143189790}
   - {fileID: 1386477449}
   - {fileID: 571583957}
+  - {fileID: 303034033}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!320 &301432209
@@ -3810,6 +3811,51 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 302312099}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &303034032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 303034033}
+  - component: {fileID: 303034034}
+  m_Layer: 0
+  m_Name: CursorTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &303034033
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303034032}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 301432208}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &303034034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303034032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a7092b068df4e94a990951bac72800b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLockOnStart: 1
 --- !u!1 &316086660
 GameObject:
   m_ObjectHideFlags: 0
@@ -6331,7 +6377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e0322109902422fb3e37d6d3e17dcae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneCollection: {fileID: 11400000, guid: 4ded77bce1f4449449772934cbf79cdb, type: 2}
+  sceneCollection: {fileID: 11400000, guid: 31f756c216d01fb4d9deecbb4aa61e55, type: 2}
 --- !u!1001 &574424040
 PrefabInstance:
   m_ObjectHideFlags: 0

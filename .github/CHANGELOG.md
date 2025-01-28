@@ -13,6 +13,7 @@
 - Optimized the game by reducing shadow caster count and simplifying post FX.
 - Game over menu button will load the menu scene instead of exiting the game.
 - Test character data to make more sense.
+- Victory scene will reload the game instead of loading the main menu.
 
 ### Fixed
 
@@ -20,6 +21,7 @@
 - Made ray-casting more accurate.
 - Pause menu UI text to use LT.
 - Some typos in chat text.
+- Cursor being visible in victory scene.
 
 ### Removed
 
