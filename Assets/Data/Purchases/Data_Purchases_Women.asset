@@ -16,10 +16,10 @@ MonoBehaviour:
   - templateText: "Sveikutis! Ar \u017Ei\u016Br\u0117jai vakar laukinuk\u0119? Omg,
       \u012Fsivaizduok, Rosaura \u012F\u017Eengia \u012F Arismend\u017Ei\u0173 dvar\u0105,
       k\u0105 tik i\u0161 Panoramos. Plaukai \u2013 tobulai ties\u016Bs, makia\u017Eas
-      prabangus, o suknel\u0117 -  tikra stiliaus bomba! Arismend\u017Eiai nust\u0117r\u0119
+      prabangus, o suknel\u0117 - tikra stiliaus bomba! Arismend\u017Eiai nust\u0117r\u0119
       \u017Ei\u016Bri, Luisas Marius vos neapsiverkia i\u0161 \u0161oko. Rosaura
-      su \u0161altu \u017Evilgsniu sako: \u201EDabar a\u0161 valdau, o j\u016Bs?
-      J\u016Bs esate niekas. ${KEYWORD}"
+      su \u0161altu \u017Evilgsniu sako: Dabar a\u0161 valdau, o j\u016Bs? J\u016Bs
+      esate niekas. ${KEYWORD}"
     keywords:
     - text: Gumos man
       items:
@@ -30,7 +30,7 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 01909233e3340f242affdc824f410b46, type: 2}
   - templateText: "Labas! Nesuprantu kas per bukis gali \u017Ei\u016Br\u0117ti t\u0105
       laukinuk\u0119. Rosaura vis\u0105 laik\u0105 vaidina t\u0105 perd\u0117t\u0105
-      auk\u0105, o visa drama \u2013 nerealisti\u0161ka ir per daug teatrali\u0161ka.
+      auk\u0105, o visa drama - nerealisti\u0161ka ir per daug teatrali\u0161ka.
       Tas jos ker\u0161tas ir meil\u0117\u2026 labai pigaus lygio. ${KEYWORD}"
     keywords:
     - text: Nekaloringos gumos man
@@ -62,24 +62,24 @@ MonoBehaviour:
   - templateText: "Sveikutis. Vakar ragavau tok\u012F kokteil\u012F \u012Fdom\u0173.
       Sprite ir sirupas nuo kosulio. ${KEYWORD}"
     keywords:
-    - text: "gal pasi\u016Blysite ka\u017Ek\u0105 pana\u0161aus?"
+    - text: "Gal pasi\u016Blysite ka\u017Ek\u0105 pana\u0161aus?"
       items:
       - {fileID: 11400000, guid: ce3cbe4343c90ee4485704202b12d020, type: 2}
       - {fileID: 11400000, guid: 359ee535b4d02194eab0ae7d01dad32d, type: 2}
       - {fileID: 11400000, guid: 2a3629b18e96c9044aa19fcc5d8e3892, type: 2}
-    - text: gal galima Aspirino?
+    - text: Gal galima Aspirino?
       items:
       - {fileID: 11400000, guid: 2a3629b18e96c9044aa19fcc5d8e3892, type: 2}
   - templateText: "Labas. Gird\u0117jau, kad TicTac tik dvi kalorijos. Nor\u0117t\u0173si
       ka\u017Eko maistingesnio, ${KEYWORD}"
     keywords:
-    - text: "gal turite ka\u017Ek\u0105 su 5-15 kalorij\u0173?"
+    - text: "Gal turite ka\u017Ek\u0105 su 5-15 kalorij\u0173?"
       items:
       - {fileID: 11400000, guid: 991c5a7d90ea3894d8f9d2e34245e903, type: 2}
-    - text: "gal turite ka\u017Ek\u0105 su 10-20 kalorij\u0173?"
+    - text: "Gal turite ka\u017Ek\u0105 su 10-20 kalorij\u0173?"
       items:
       - {fileID: 11400000, guid: 04fcf23ca0a9cbe458eb42e6f9338b1a, type: 2}
-    - text: "gal turite ka\u017Ek\u0105 su 25-30 kalorij\u0173?"
+    - text: "Gal turite ka\u017Ek\u0105 su 25-30 kalorij\u0173?"
       items:
       - {fileID: 11400000, guid: 9fc2dd80897834440a05db55254b115e, type: 2}
     - text: "gal turite ka\u017Ek\u0105 su 50-70 kalorij\u0173?"

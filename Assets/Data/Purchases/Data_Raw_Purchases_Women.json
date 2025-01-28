@@ -1,6 +1,6 @@
 ﻿[
   {
-    "text": "Sveikutis! Ar žiūrėjai vakar laukinukę? Omg, įsivaizduok, Rosaura įžengia į Arismendžių dvarą, ką tik iš Panoramos. Plaukai – tobulai tiesūs, makiažas prabangus, o suknelė -  tikra stiliaus bomba! Arismendžiai nustėrę žiūri, Luisas Marius vos neapsiverkia iš šoko. Rosaura su šaltu žvilgsniu sako: „Dabar aš valdau, o jūs? Jūs esate niekas. ${KEYWORD}",
+    "text": "Sveikutis! Ar žiūrėjai vakar laukinukę? Omg, įsivaizduok, Rosaura įžengia į Arismendžių dvarą, ką tik iš Panoramos. Plaukai – tobulai tiesūs, makiažas prabangus, o suknelė - tikra stiliaus bomba! Arismendžiai nustėrę žiūri, Luisas Marius vos neapsiverkia iš šoko. Rosaura su šaltu žvilgsniu sako: Dabar aš valdau, o jūs? Jūs esate niekas. ${KEYWORD}",
     "keywords": [
       {
         "text": "Gumos man",
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "text": "Labas! Nesuprantu kas per bukis gali žiūrėti tą laukinukę. Rosaura visą laiką vaidina tą perdėtą auką, o visa drama – nerealistiška ir per daug teatrališka. Tas jos kerštas ir meilė… labai pigaus lygio. ${KEYWORD}",
+    "text": "Labas! Nesuprantu kas per bukis gali žiūrėti tą laukinukę. Rosaura visą laiką vaidina tą perdėtą auką, o visa drama - nerealistiška ir per daug teatrališka. Tas jos kerštas ir meilė… labai pigaus lygio. ${KEYWORD}",
     "keywords": [
       {
         "text": "Nekaloringos gumos man",
@@ -76,7 +76,7 @@
     "text": "Sveikutis. Vakar ragavau tokį kokteilį įdomų. Sprite ir sirupas nuo kosulio. ${KEYWORD}",
     "keywords": [
       {
-        "text": "gal pasiūlysite kažką panašaus?",
+        "text": "Gal pasiūlysite kažką panašaus?",
         "items": [
           "Item_Alita",
           "Item_Selita",
@@ -84,7 +84,7 @@
         ]
       },
       {
-        "text": "gal galima Aspirino?",
+        "text": "Gal galima Aspirino?",
         "items": [
           "Item_Aspirin"
         ]
@@ -95,19 +95,19 @@
     "text": "Labas. Girdėjau, kad TicTac tik dvi kalorijos. Norėtųsi kažko maistingesnio, ${KEYWORD}",
     "keywords": [
       {
-        "text": "gal turite kažką su 5-15 kalorijų?",
+        "text": "Gal turite kažką su 5-15 kalorijų?",
         "items": [
           "Item_GumDbz"
         ]
       },
       {
-        "text": "gal turite kažką su 10-20 kalorijų?",
+        "text": "Gal turite kažką su 10-20 kalorijų?",
         "items": [
           "Item_GumLoveIs"
         ]
       },
       {
-        "text": "gal turite kažką su 25-30 kalorijų?",
+        "text": "Gal turite kažką su 25-30 kalorijų?",
         "items": [
           "Item_GumHubbaBubba"
         ]
