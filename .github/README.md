@@ -6,6 +6,8 @@
 
 ## Description
 
+[Global Game Jam 2025](https://globalgamejam.org/) game entry, where the theme was "Bubbles".
+
 ### LT
 
 2008 m., Alytus. Jūs kaip Žalio kiosko pardavėjas dirbate Putinų mikrorajone. Ekonominei krizei rodant nagus kyla įtampa tarp kiosko klientų. Kiekvienas pardavimas sudėtingas – pirkėjai turi daug norų, bet juos suprasti sunku, o ne taip supratus galima gauti į snukį ir bankrutuoti. Visas darbas dėl svarbaus tikslo - uždirbti litų ir išvykti į Jamaiką.
@@ -20,8 +22,10 @@ A scrooge pays twice, a lazy man goes twice!
 
 ## Credits
 
-- Edvinas Danevičius
--
+- [Edvinas Danevičius](https://github.com/Edvinas01)
+- [Dovydas Reitelaitis](https://www.instagram.com/reitelaitis/)
+- [Rokas Sutkus](https://www.instagram.com/sutkusaudio/)
+- [Teresė Žvinakevičiūtė](https://www.instagram.com/teresesutkus/)
 
 ## Links
 
