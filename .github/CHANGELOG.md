@@ -32,6 +32,7 @@
 
 ### Removed
 
+- Pause menu from victory screen.
 - Choice bubble collision.
 
 ## [v1.0.0](https://github.com/Edvinas01/ggj-2025/compare/v0.0.1) - 2025-01-26
