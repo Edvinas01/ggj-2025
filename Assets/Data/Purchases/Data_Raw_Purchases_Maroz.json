@@ -1,0 +1,74 @@
+﻿[
+  {
+    "text": "Agirdž baibokas? ${KEYWORD}",
+    "keywords": [
+      {
+        "text": "Davai sumesk kažkuom užgesinti šachtą",
+        "items": [
+          "Item_Alus",
+          "Item_Alita"
+        ]
+      },
+      {
+        "text": "Reikia dūdą užpilti",
+        "items": [
+          "Item_Alus",
+          "Item_Alita"
+        ]
+      },
+      {
+        "text": "Kiešaro davai, reikia įpist į baką",
+        "items": [
+          "Item_GumDbz",
+          "Item_CrazyDips",
+          "Item_GumLoveIs",
+          "Item_Zozole"
+        ]
+      },
+      {
+        "text": "Paro savo fufla, bbž ko noriu",
+        "items": [
+          "Item_Aspirin",
+          "Item_Selita",
+          "Item_ACC",
+          "Item_Alita",
+          "Item_Alus",
+          "Item_Balloon",
+          "Item_BubbleTubeBlower",
+          "Item_Colgate",
+          "Item_CrazyDips",
+          "Item_Durex",
+          "Item_GumDbz",
+          "Item_GumHubbaBubba",
+          "Item_GumLoveIs",
+          "Item_SoapUkinis",
+          "Item_SodaBuratinas",
+          "Item_SodaVytautas",
+          "Item_Zozole"
+        ]
+      },
+      {
+        "text": "Turbo pachmas, reikia užgesint baką",
+        "items": [
+          "Item_ACC",
+          "Item_SodaVytautas",
+          "Item_Aspirin"
+        ]
+      },
+      {
+        "text": "Šok iš kedų!!!",
+        "items": []
+      },
+      {
+        "text": "Sportinis išsivartymas iš gaidžio",
+        "items": []
+      },
+      {
+        "text": "Baunyzas kamuoja, reika numušt perichodą",
+        "items": [
+          "Item_Durex"
+        ]
+      }
+    ]
+  }
+]
