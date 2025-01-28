@@ -114,7 +114,6 @@ MonoBehaviour:
   - Master
   - Master.strings
   - Ambience
-  - Music
   - SFX
   CollisionTag: 
   PreloadSamples: 0
