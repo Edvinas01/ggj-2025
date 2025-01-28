@@ -39,11 +39,7 @@ namespace UABPetelnia.GGJ2025.Runtime.UI.Controllers
 
         private void OnViewExitGameClicked()
         {
-#if UNITY_EDITOR
-            UnityEditor.EditorApplication.ExitPlaymode();
-#else
-            UnityEngine.Application.Quit();
-#endif
+            sceneSystem.LoadMenuScene();
         }
     }
 }

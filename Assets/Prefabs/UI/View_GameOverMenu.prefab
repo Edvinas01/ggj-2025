@@ -290,7 +290,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Apleisti bizn\u012F"
+  m_text: "Gr\u012F\u017Eti \u012F meniu"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dfbc880057fcd614cb64f3c9ebea9c5d, type: 2}
   m_sharedMaterial: {fileID: -3089450171780375611, guid: dfbc880057fcd614cb64f3c9ebea9c5d, type: 2}

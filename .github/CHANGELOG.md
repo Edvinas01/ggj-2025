@@ -8,12 +8,14 @@
 
 - Reduced table-top size so the characters are more visible.
 - Enabled vSync.
-- Optimized the game by reducing shadow caster count.
+- Optimized the game by reducing shadow caster count and simplifying post FX.
+- Game over menu button will load the menu scene instead of exiting the game.
 
 ### Fixed
 
 - Selection cursor offset.
 - Made ray-casting more accurate.
+- Pause menu UI text to use LT.
 
 ### Removed
 

@@ -431,7 +431,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Exit
+  m_text: "Gr\u012F\u017Eti \u012F meniu"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dfbc880057fcd614cb64f3c9ebea9c5d, type: 2}
   m_sharedMaterial: {fileID: -3089450171780375611, guid: dfbc880057fcd614cb64f3c9ebea9c5d, type: 2}
@@ -701,7 +701,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Resume
+  m_text: "T\u0119sti \u017Eaidim\u0105"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dfbc880057fcd614cb64f3c9ebea9c5d, type: 2}
   m_sharedMaterial: {fileID: -3089450171780375611, guid: dfbc880057fcd614cb64f3c9ebea9c5d, type: 2}
