@@ -4,17 +4,24 @@
 
 # Žalio Kiosko Patirtis (Green Kiosk Experience)
 
-## LT
+## Description
+
+### LT
 
 2008 m., Alytus. Jūs kaip Žalio kiosko pardavėjas dirbate Putinų mikrorajone. Ekonominei krizei rodant nagus kyla įtampa tarp kiosko klientų. Kiekvienas pardavimas sudėtingas – pirkėjai turi daug norų, bet juos suprasti sunku, o ne taip supratus galima gauti į snukį ir bankrutuoti. Visas darbas dėl svarbaus tikslo - uždirbti litų ir išvykti į Jamaiką.
 
 Skūpus du rozu moka, tinginys du rozu eina!
 
-## EN
+### EN
 
 2008, Alytus. You work as a green kiosk vendor in the Putinai district. As the economic crisis shows its claws, tensions arise among the kiosk's customers. Every sale is difficult - customers have many desires, but it's hard to understand them, and if you make a wrong sell, you can get punched in the nose and go bankrupt. All this work for an important goal - to earn litas and go to Jamaica.
 
 A scrooge pays twice, a lazy man goes twice!
+
+## Credits
+
+- Edvinas Danevičius
+-
 
 ## Links
 
