@@ -11,6 +11,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay.States
         private IShopperSystem shopperSystem;
 
         private float spawnTimeSeconds;
+        private bool isSpawnedOnce;
 
         public ShopperSpawnState(GameplaySettings gameplaySettings)
         {
@@ -34,11 +35,12 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay.States
         protected override void OnExited(GameplayStateContext context)
         {
             spawnTimeSeconds = 0f;
+            isSpawnedOnce = true;
         }
 
         protected override Status OnUpdated(GameplayStateContext context)
         {
-            if (Time.time < spawnTimeSeconds)
+            if (isSpawnedOnce && Time.time < spawnTimeSeconds)
             {
                 return Status.Working;
             }

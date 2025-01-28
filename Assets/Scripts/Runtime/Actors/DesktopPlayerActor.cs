@@ -119,6 +119,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         {
             initialFov = cinemachineCamera.Lens.FieldOfView;
             targetFov = cinemachineCamera.Lens.FieldOfView;
+            currentFov = cinemachineCamera.Lens.FieldOfView;
 
             gameplaySystem.StartGameplay();
             cursorSystem.LockCursor();
