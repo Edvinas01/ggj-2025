@@ -43,6 +43,13 @@ namespace UABPetelnia.GGJ2025.Runtime.UI.Views
             tmpWriter.OnFinishWriter.RemoveListener(OnStopWriter);
         }
 
+        protected override void OnViewHideExited()
+        {
+            base.OnViewHideExited();
+
+            OnSpeechExited?.Invoke();
+        }
+
         private void OnStartWriter(TMPWriter writer)
         {
             OnSpeechEntered?.Invoke();

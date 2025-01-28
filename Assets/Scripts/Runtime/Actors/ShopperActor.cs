@@ -76,12 +76,6 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         public UnityEvent OnMoveStop;
 
         [SerializeField]
-        private UnityEvent onTalkEntered;
-
-        [SerializeField]
-        private UnityEvent onTalkExited;
-
-        [SerializeField]
         private string texturePropertyId = "_BaseMap";
 
         private IShopperSystem shopperSystem;

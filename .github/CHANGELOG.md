@@ -26,6 +26,7 @@
 - Some typos and incorrect options in character texts.
 - Cursor being visible in victory scene.
 - Timing sync in victory animation.
+- Shopper VO not finishing on punch.
 
 ### Removed
 
