@@ -2,6 +2,7 @@
 
 ### Added
 
+- More clear health tracking on mirror.
 - Bubble highlight.
 - Background to pause menu.
 - Hand as default cursor.
