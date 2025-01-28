@@ -84,11 +84,6 @@ MonoBehaviour:
       items:
       - {fileID: 11400000, guid: 2d273ff84cb579548baa8e619de975db, type: 2}
       - {fileID: 11400000, guid: ce3cbe4343c90ee4485704202b12d020, type: 2}
-    - text: "pana\u0161u, kad po devyni\u0173 m\u0117nesi\u0173 bus problem\u0173"
-      items:
-      - {fileID: 11400000, guid: 384e0a13927803f46bd3943a3f8ee317, type: 2}
-      - {fileID: 11400000, guid: 04fcf23ca0a9cbe458eb42e6f9338b1a, type: 2}
-      - {fileID: 11400000, guid: ce3cbe4343c90ee4485704202b12d020, type: 2}
   - templateText: "Labas! U\u017Eklydau \u010Dia visai nety\u010Dia, bet ka\u017Ekaip
       ${KEYWORD}. Gal turite k\u0105 pasi\u016Blyti?"
     keywords:
