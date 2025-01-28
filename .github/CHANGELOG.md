@@ -1,4 +1,4 @@
-## [v1.0.1](https://github.com/Edvinas01/ggj-2025/compare/v1.0.0...v1.0.1) - 2025-01-28
+## [v1.1.0](https://github.com/Edvinas01/ggj-2025/compare/v1.0.0...v1.1.0) - 2025-01-28
 
 ### Added
 
@@ -22,6 +22,7 @@
 - Pause menu UI text to use LT.
 - Some typos and incorrect options in character texts.
 - Cursor being visible in victory scene.
+- Timing sync in victory animation.
 
 ### Removed
 
