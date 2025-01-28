@@ -6,11 +6,15 @@
 
 ## LT
 
-Esate kiosko pardavėjas didžiuliame daugiabučių komplekse, nuolat stebintis ir analizuojantis įvairius jūsų stendą aplankančius klientus. Šiuos klientus dažnai sunku suprasti – jie elgiasi savitai, o kartais kreipiasi į jus net neketindami nieko pirkti. Jūsų užduotis – išsiaiškinti jų poreikius, pasiūlyti tinkamus produktus ir juos parduoti. Tačiau būkite atsargūs – netinkamos prekės pardavimas gali turėti rimtų pasekmių. Nepaisant rizikos, jūsų pasiryžimas uždirbti pakankamai pinigų ir pelnytai įgyti laisvę skatina jus priimti šį iššūkį.
+2008 m., Alytus. Jūs kaip Žalio kiosko pardavėjas dirbate Putinų mikrorajone. Ekonominei krizei rodant nagus kyla įtampa tarp kiosko klientų. Kiekvienas pardavimas sudėtingas – pirkėjai turi daug norų, bet juos suprasti sunku, o ne taip supratus galima gauti į snukį ir bankrutuoti. Visas darbas dėl svarbaus tikslo - uždirbti litų ir išvykti į Jamaiką.
+
+Skūpus du rozu moka, tinginys du rozu eina!
 
 ## EN
 
-You are a kiosk keeper in a sprawling apartment complex, constantly observing and analyzing the diverse array of clients who visit your stand. These clients are often hard to read, with peculiar behaviors, and sometimes they approach you without even intending to make a purchase. Your job is to decipher their needs, offer the right products, and make the sale. But be careful—selling the wrong item could lead to serious consequences. Despite the risks, your determination to earn enough money and secure your well-deserved freedom drives you to take on this challenge.
+2008, Alytus. You work as a green kiosk vendor in the Putinai district. As the economic crisis shows its claws, tensions arise among the kiosk's customers. Every sale is difficult - customers have many desires, but it's hard to understand them, and if you make a wrong sell, you can get punched in the nose and go bankrupt. All this work for an important goal - to earn litas and go to Jamaica.
+
+A scrooge pays twice, a lazy man goes twice!
 
 ## Links
 
