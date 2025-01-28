@@ -3,6 +3,7 @@
 ### Added
 
 - Bubble highlight.
+- Background to pause menu.
 
 ### Changed
 
