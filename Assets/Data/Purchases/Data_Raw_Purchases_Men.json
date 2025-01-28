@@ -188,10 +188,8 @@
     "text": "Laba diena! Artėja draugo gimtadienis ir ${KEYWORD}. Gal turite ką pasiūlyti?",
     "keywords": [
       {
-        "text": "noriu nustebinti jį smulkmena",
+        "text": "noriu nustebinti jį smulkmena. Jei žinote ką turiu omeny",
         "items": [
-          "Item_CrazyDips",
-          "Item_BubbleTubeBlower",
           "Item_Durex",
           "Item_GumLoveIs"
         ]
@@ -313,7 +311,9 @@
       {
         "text": "Visai norėčiau kažko saldaus",
         "items": [
-          "Item_SodaBuratinas"
+          "Item_SodaBuratinas",
+          "Item_Selita",
+          "Item_Alita"
         ]
       },
       {

@@ -67,7 +67,7 @@ MonoBehaviour:
         vyras sveikas."
       items:
       - {fileID: 11400000, guid: 9b4bda098ea53224ba2474e72c92c44e, type: 2}
-    - text: Ahoi, pone bebre!
+    - text: '- Ahoi, pone bebre!'
       items:
       - {fileID: 11400000, guid: ea65881a8ba18f04cbe706e7ac7e4458, type: 2}
   - templateText: "Ko \u010Dia \u017Ei\u016Bri ${KEYWORD}"
