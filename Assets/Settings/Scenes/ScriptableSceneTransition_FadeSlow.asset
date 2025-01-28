@@ -15,5 +15,5 @@ MonoBehaviour:
   fadeInAlpha: 1
   fadeOutAlpha: 0
   transitionDelaySeconds: 0.3
-  fadeInDurationSeconds: 1.5
-  fadeOutDurationSeconds: 0.5
+  fadeInDurationSeconds: 1
+  fadeOutDurationSeconds: 1.5

@@ -8,6 +8,7 @@
 - Hand as default cursor.
 - Minimal intro cinematic.
 - Blood VFX.
+- More spawn points.
 
 ### Changed
 
@@ -17,6 +18,7 @@
 - Game over menu button will load the menu scene instead of exiting the game.
 - Test character data to make more sense.
 - Victory scene will reload the game instead of loading the main menu.
+- Reduced render scale, still looks good.
 
 ### Fixed
 
