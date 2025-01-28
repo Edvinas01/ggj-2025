@@ -29,7 +29,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
 
         [Min(0f)]
         [SerializeField]
-        private float choiceOffset = 0.2f;
+        private float choiceSpawnOffset = 0.1f;
 
         [SerializeField]
         private Vector2Int invalidItemRange = new(2, 4);
@@ -320,51 +320,33 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
             speechAudioEmitter.Stop();
         }
 
-        private Transform GetOriginPoint()
-        {
-            for (var index = 0; index < choiceOrigin.childCount; index++)
-            {
-                if (Random.value > 0.5f)
-                {
-                    return choiceOrigin.GetChild(index);
-                }
-            }
-
-            return choiceOrigin;
-        }
-
         public void ShowPurchase(PurchaseRequest purchase)
         {
-            // TODO: move spawn logic to a system and use some spawn point for bubbles
-            // TODO: spawn randomly and wobble
-            // TODO: something is broken when empty item list is the only one remaining, sometimes get empty bubbles
-
+            var points = new Queue<Transform>(GetShuffledOriginPoints());
             foreach (var invalidItem in purchase.InvalidItems)
             {
-                var origin = GetOriginPoint();
+                var origin = points.Dequeue();
                 var choice = Instantiate(
                     choicePrefab,
-                    origin.position + GetRandomChoiceOffset(),
-                    Quaternion.identity,
-                    origin
+                    choiceOrigin.transform.position + GetRandomChoiceSpawnOffset(),
+                    Quaternion.identity
                 );
 
-                choice.PullPoint = origin.position + GetRandomChoiceOffset();
+                choice.PullPoint = origin;
                 choice.Initialize(invalidItem, isCorrect: false);
                 choices.Add(choice);
             }
 
             foreach (var validItem in purchase.ValidItems)
             {
-                var origin = GetOriginPoint();
+                var origin = points.Dequeue();
                 var choice = Instantiate(
                     choicePrefab,
-                    origin.position + GetRandomChoiceOffset(),
-                    Quaternion.identity,
-                    origin
+                    choiceOrigin.transform.position + GetRandomChoiceSpawnOffset(),
+                    Quaternion.identity
                 );
 
-                choice.PullPoint = origin.position + GetRandomChoiceOffset();
+                choice.PullPoint = origin;
                 choice.Initialize(validItem, isCorrect: true);
                 choices.Add(choice);
             }
@@ -383,12 +365,23 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
             choices.Clear();
         }
 
-        private Vector3 GetRandomChoiceOffset()
+        private IEnumerable<Transform> GetShuffledOriginPoints()
+        {
+            var points = new List<Transform>();
+            for (var index = 0; index < choiceOrigin.childCount; index++)
+            {
+                points.Add(choiceOrigin.GetChild(index));
+            }
+
+            return points.Shuffle();
+        }
+
+        private Vector3 GetRandomChoiceSpawnOffset()
         {
             return new Vector3(
-                Random.Range(-choiceOffset, +choiceOffset),
-                Random.Range(-choiceOffset, +choiceOffset),
-                Random.Range(0f, 0f)
+                Random.Range(-choiceSpawnOffset, +choiceSpawnOffset),
+                Random.Range(-choiceSpawnOffset, +choiceSpawnOffset),
+                Random.Range(-choiceSpawnOffset, +choiceSpawnOffset)
             );
         }
     }
