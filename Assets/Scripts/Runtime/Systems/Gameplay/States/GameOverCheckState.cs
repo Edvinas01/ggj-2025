@@ -33,12 +33,14 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Gameplay.States
             var player = playerSystem.Player;
             if (player.IsCentsGoalReached)
             {
+                NextState = default;
                 sceneSystem.LoadGameVictoryScene();
                 return;
             }
 
             if (player.Health <= 0)
             {
+                NextState = default;
                 sceneSystem.LoadGameOverScene();
             }
         }
