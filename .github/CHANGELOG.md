@@ -18,6 +18,7 @@
 - Selection cursor offset.
 - Made ray-casting more accurate.
 - Pause menu UI text to use LT.
+- Some typos in chat text.
 
 ### Removed
 
