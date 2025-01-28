@@ -9,6 +9,7 @@
 - Minimal intro cinematic.
 - Blood VFX.
 - More spawn points.
+- Wobble animation to controls help panel.
 
 ### Changed
 
