@@ -34,6 +34,9 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
         [SerializeField]
         private Vector2Int invalidItemRange = new(2, 4);
 
+        [SerializeField]
+        private Vector2Int autoWinItemRange = new(3, 17);
+
         [Header("Animations")]
         [SerializeField]
         private Animator buyAnimation;
@@ -208,49 +211,69 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
             var purchases = purchaseCollection.Purchases;
             var purchase = purchases.GetRandom();
 
-            var allKeywords = purchase.Keywords.ToList();
-            var unusedKeywords = allKeywords.Where(k => k.IsUsed == false).ToList();
-            var keyword = unusedKeywords.GetRandom();
+            var purchaseKeywords = purchase.Keywords.ToList();
+            var keywords = purchaseKeywords.Where(k => k.IsUsed == false).ToList();
+            var keyword = keywords.GetRandom();
 
             keyword.IsUsed = true;
 
-            if (unusedKeywords.Count <= 1)
+            // Use-up keywords to avoid repeating the same lines
+            keywords.Remove(keyword);
+
+            // If keywords are gone, use cleanup purchase situations as well
+            if (keywords.Count <= 0)
             {
                 purchases.Remove(purchase);
             }
 
-            var text = purchase.TemplateText.Replace(keywordToken, keyword.Text);
+            var requestText = purchase.TemplateText.Replace(keywordToken, keyword.Text);
+            var items = keyword.Items
+                .Distinct()
+                .ToList();
 
-            if (unusedKeywords.Count(k => k.Items.Count <= 0) == unusedKeywords.Count)
+            // Keyword contains no item: just came to rant and SMACK!
+            if (items.Count <= 0)
             {
                 return new PurchaseRequest(
-                    text: text,
+                    text: requestText,
                     invalidItems: Array.Empty<ItemData>(),
                     validItems: Array.Empty<ItemData>(),
                     shopper: this
                 );
             }
 
-            var validKeywordItems = keyword.Items
-                .Distinct()
-                .ToList();
+            var globalItems = shopperSystem.AvailableItems.ToList();
 
-            var availableItems = shopperSystem.AvailableItems;
-            var invalidItems = availableItems
-                .Where(item => validKeywordItems.Contains(item) == false)
+            // Keywords contain all global items - juicy success!
+            if (items.Count == globalItems.Count)
+            {
+                return new PurchaseRequest(
+                    text: requestText,
+                    invalidItems: Array.Empty<ItemData>(),
+                    validItems: items
+                        .Shuffle()
+                        .Take(
+                            count: Random.Range(autoWinItemRange.x, autoWinItemRange.y)
+                        )
+                        .ToList(),
+                    shopper: this
+                );
+            }
+
+            // Usual case: one valid item + filler invalid items.
+            var invalidItems = globalItems
+                .Where(item => items.Contains(item) == false)
                 .Shuffle()
                 .Take(Random.Range(invalidItemRange.x, invalidItemRange.y))
                 .ToList();
 
-            var validItems = validKeywordItems
-                .Shuffle()
-                .Take(1)
-                .ToList();
-
             return new PurchaseRequest(
-                text: text,
+                text: requestText,
                 invalidItems: invalidItems,
-                validItems: validItems,
+                validItems: items
+                    .Shuffle()
+                    .Take(1)
+                    .ToList(),
                 shopper: this
             );
         }
@@ -319,6 +342,12 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
             var points = new Queue<Transform>(GetShuffledOriginPoints());
             foreach (var invalidItem in purchase.InvalidItems)
             {
+                if (points.Count <= 0)
+                {
+                    points = new Queue<Transform>(GetShuffledOriginPoints());
+                    continue;
+                }
+
                 var origin = points.Dequeue();
                 var choice = Instantiate(
                     choicePrefab,
@@ -333,6 +362,12 @@ namespace UABPetelnia.GGJ2025.Runtime.Actors
 
             foreach (var validItem in purchase.ValidItems)
             {
+                if (points.Count <= 0)
+                {
+                    points = new Queue<Transform>(GetShuffledOriginPoints());
+                    continue;
+                }
+
                 var origin = points.Dequeue();
                 var choice = Instantiate(
                     choicePrefab,
