@@ -23399,7 +23399,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2028945886}
-  - component: {fileID: 2028945887}
   - component: {fileID: 2028945888}
   m_Layer: 0
   m_Name: UI
@@ -23423,24 +23422,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2028945887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2028945884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c15ff7d487c94c01870751dbb630c207, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  awakeBehaviour: 4
-  startBehaviour: 0
-  viewPrefab: {fileID: 5524660624329982130, guid: 6dd8ce31c136d3a4a9d2e59e2b5b295e, type: 3}
-  view: {fileID: 0}
-  viewParentTransform: {fileID: 0}
-  toggleMenuListener: {fileID: 2028945888}
 --- !u!114 &2028945888
 MonoBehaviour:
   m_ObjectHideFlags: 0
