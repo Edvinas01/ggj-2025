@@ -7,6 +7,7 @@
 - Background to pause menu.
 - Hand as default cursor.
 - Minimal intro cinematic.
+- Blood VFX.
 
 ### Changed
 
