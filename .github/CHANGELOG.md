@@ -12,6 +12,7 @@
 - Enabled vSync.
 - Optimized the game by reducing shadow caster count and simplifying post FX.
 - Game over menu button will load the menu scene instead of exiting the game.
+- Test character data to make more sense.
 
 ### Fixed
 
