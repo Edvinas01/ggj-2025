@@ -4,6 +4,7 @@
 
 - Bubble highlight.
 - Background to pause menu.
+- Hand as default cursor.
 
 ### Changed
 
