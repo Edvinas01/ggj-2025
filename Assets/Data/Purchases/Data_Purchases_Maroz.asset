@@ -50,10 +50,12 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 01909233e3340f242affdc824f410b46, type: 2}
     - text: "Turbo pachmas, reikia u\u017Egesint bak\u0105"
       items:
-      - {fileID: 11400000, guid: 72020ec0dfe286a429a66e4a2e94ee62, type: 2}
       - {fileID: 11400000, guid: b221a383fdb858548b47265abe5f242d, type: 2}
       - {fileID: 11400000, guid: 2a3629b18e96c9044aa19fcc5d8e3892, type: 2}
     - text: "\u0160ok i\u0161 ked\u0173!!!"
       items: []
     - text: "Sportinis i\u0161sivartymas i\u0161 gaid\u017Eio"
       items: []
+    - text: "Baunyzas kamuoja, reika numu\u0161t perichod\u0105"
+      items:
+      - {fileID: 11400000, guid: 384e0a13927803f46bd3943a3f8ee317, type: 2}

@@ -80,7 +80,9 @@
         "items": [
           "Item_Alita",
           "Item_Selita",
-          "Item_Aspirin"
+          "Item_Aspirin",
+          "Item_ACC",
+          "Item_SodaBuratinas"
         ]
       },
       {

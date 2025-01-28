@@ -67,6 +67,8 @@ MonoBehaviour:
       - {fileID: 11400000, guid: ce3cbe4343c90ee4485704202b12d020, type: 2}
       - {fileID: 11400000, guid: 359ee535b4d02194eab0ae7d01dad32d, type: 2}
       - {fileID: 11400000, guid: 2a3629b18e96c9044aa19fcc5d8e3892, type: 2}
+      - {fileID: 11400000, guid: 72020ec0dfe286a429a66e4a2e94ee62, type: 2}
+      - {fileID: 11400000, guid: 8023b9585305f5e44880ea79b48cd89b, type: 2}
     - text: Gal galima Aspirino?
       items:
       - {fileID: 11400000, guid: 2a3629b18e96c9044aa19fcc5d8e3892, type: 2}
