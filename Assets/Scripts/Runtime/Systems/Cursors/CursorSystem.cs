@@ -5,6 +5,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Cursors
 {
     internal sealed class CursorSystem : MonoSystem, ICursorSystem
     {
+        // ReSharper disable once UnusedMember.Local
         [Header("Cursor (Web)")]
         [SerializeField]
         private Texture2D webCursorTexture;
@@ -13,10 +14,12 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Cursors
         [SerializeField]
         private Vector2 cursorHotspotWeb = new(12f, 1f);
 
+        // ReSharper disable once UnusedMember.Local
         [Header("Cursor (PC)")]
         [SerializeField]
         private Texture2D cursorTexture;
 
+        // ReSharper disable once UnusedMember.Local
         [SerializeField]
         private Vector2 cursorHotspot = new(47f, 6f);
 
