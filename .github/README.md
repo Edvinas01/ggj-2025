@@ -12,7 +12,7 @@
   <img width="100%" src="characters.png" />
 </p>
 
-[Global Game Jam 2025 entry](https://globalgamejam.org/games/2025/green-kiosk-experience-zalio-kiosko-patirtis-0) game entry, where the theme was "Bubble".
+This game was developed during [Global Game Jam 2025](https://globalgamejam.org/games/2025/green-kiosk-experience-zalio-kiosko-patirtis-0) in 48 hours, where the theme was "Bubble".
 
 ### LT
 
