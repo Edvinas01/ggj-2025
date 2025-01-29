@@ -93,6 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00d78e5a61d5493a92a8c051f0890933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bankLoader: {fileID: 0}
   globalMasterVolumeParameter: {fileID: 2654973150724560419}
   globalMusicVolumeParameter: {fileID: 821812384097132345}
   globalSfxVolumeParameter: {fileID: 3792741928687031707}
@@ -116,7 +117,7 @@ MonoBehaviour:
   - Ambience
   - SFX
   CollisionTag: 
-  PreloadSamples: 0
+  PreloadSamples: 1
 --- !u!1 &3660914291565715677
 GameObject:
   m_ObjectHideFlags: 0

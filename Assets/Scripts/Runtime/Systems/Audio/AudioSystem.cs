@@ -27,7 +27,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Audio
 
         private ISettingsSystem settingsSystem;
 
-        public bool IsLoading // TODO, not working, trigger bank load manually
+        public bool IsLoading
         {
             get
             {
@@ -63,13 +63,7 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Audio
 
         private void Start()
         {
-            // Parameters are not initialized in OnInitialized...
             InitializeGlobalVolumeParameters();
-        }
-
-        private void OnDestroy()
-        {
-            bankLoader.Unload();
         }
 
         public float GetVolume(VolumeType type)
