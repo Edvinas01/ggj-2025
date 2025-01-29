@@ -5,7 +5,10 @@
 			<value>3</value>
 		</property>
 		<property name="quality">
-			<value>37</value>
+			<value>10</value>
+		</property>
+		<property name="sampleRateMode">
+			<value>1</value>
 		</property>
 		<relationship name="platform">
 			<destination>{3b79b6b5-dde0-4ac9-9fd6-57b8c4415669}</destination>

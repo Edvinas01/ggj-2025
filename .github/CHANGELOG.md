@@ -1,10 +1,15 @@
-## [v1.1.1](https://github.com/Edvinas01/ggj-2025/compare/v1.1.0...v1.1.1) - 2025-01-29
+## [v1.2.0](https://github.com/Edvinas01/ggj-2025/compare/v1.1.0...v1.2.0) - 2025-01-29
 
 ### Changed
 
 - Optimized shadow rendering.
 - Optimized materials by using `Simple Lit` shader instead of `Lit`.
 - Rendering path to use `Forward` instead of `Forward+` (WebGL doesn't like `Forward+`)
+- Main menu scene will be loaded on game victory instead of restarting.
+
+### Fixed
+
+- WebGL builds.
 
 ## [v1.1.0](https://github.com/Edvinas01/ggj-2025/compare/v1.0.0...v1.1.0) - 2025-01-29
 
