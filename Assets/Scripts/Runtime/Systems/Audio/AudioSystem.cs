@@ -2,6 +2,7 @@
 using CHARK.GameManagement;
 using CHARK.GameManagement.Systems;
 using CHARK.ScriptableAudio;
+using FMODUnity;
 using UABPetelnia.GGJ2025.Runtime.Settings;
 using UABPetelnia.GGJ2025.Runtime.Systems.Settings;
 using UnityEngine;
@@ -10,6 +11,10 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Audio
 {
     internal sealed class AudioSystem : MonoSystem, IAudioSystem
     {
+        [Header("Banks")]
+        [SerializeField]
+        private StudioBankLoader bankLoader;
+
         [Header("Global Parameters")]
         [SerializeField]
         private AudioParameter globalMasterVolumeParameter;
@@ -22,22 +27,32 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Audio
 
         private ISettingsSystem settingsSystem;
 
-        public bool IsLoading
+        public bool IsLoading // TODO, not working, trigger bank load manually
         {
             get
             {
-                if (FMODUnity.RuntimeManager.HaveAllBanksLoaded == false)
+                if (RuntimeManager.HaveAllBanksLoaded == false)
                 {
                     return true;
                 }
 
-                if (FMODUnity.RuntimeManager.AnySampleDataLoading())
+                if (RuntimeManager.AnySampleDataLoading())
                 {
                     return true;
                 }
 
                 return false;
             }
+        }
+
+        public void LoadBanks()
+        {
+            bankLoader.Load();
+        }
+
+        public void UnLoadBanks()
+        {
+            bankLoader.Unload();
         }
 
         public override void OnInitialized()
@@ -50,6 +65,11 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Audio
         {
             // Parameters are not initialized in OnInitialized...
             InitializeGlobalVolumeParameters();
+        }
+
+        private void OnDestroy()
+        {
+            bankLoader.Unload();
         }
 
         public float GetVolume(VolumeType type)

@@ -9,6 +9,16 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Audio
         /// </summary>
         public bool IsLoading { get; }
 
+        /// <summary>
+        /// Load audio banks.
+        /// </summary>
+        public void LoadBanks();
+
+        /// <summary>
+        /// Un-load audio banks.
+        /// </summary>
+        public void UnLoadBanks();
+
         /// <returns>
         /// Audio volume for given <paramref name="type"/> in [0, 1] range.
         /// </returns>
