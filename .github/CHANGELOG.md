@@ -2,7 +2,8 @@
 
 ### Changed
 
-- Optimized more materials.
+- Optimized shadow rendering.
+- Optimized materials by using `Simple Lit` shader instead of `Lit`.
 
 ## [v1.1.0](https://github.com/Edvinas01/ggj-2025/compare/v1.0.0...v1.1.0) - 2025-01-29
 
