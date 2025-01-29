@@ -79,6 +79,8 @@ namespace UABPetelnia.GGJ2025.Runtime
                 yield return null;
             }
 
+            // TODO: scuffed workaround for WebGL not playing audio in main menu, oh well...
+            yield return new WaitForSeconds(1f);
             sceneSystem.LoadInitialScene();
         }
 #endif
