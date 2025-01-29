@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 6868026080085324312}
   - component: {fileID: 3873428204600877024}
   - component: {fileID: 6391176266517997455}
+  - component: {fileID: 7682550232562218}
   m_Layer: 0
   m_Name: View_MainMenu
   m_TagString: Untagged
@@ -227,6 +228,33 @@ MonoBehaviour:
   exitGameButton: {fileID: 5093636186272052765}
   lookSensitivitySlider: {fileID: 7808504613157015406}
   masterVolumeSlider: {fileID: 8184344104537359667}
+--- !u!114 &7682550232562218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318806664548845064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b306066ce1f647caa85605b32015e01f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onWebGl:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2327436380890251031}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &435846853566644373
 GameObject:
   m_ObjectHideFlags: 0
