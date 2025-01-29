@@ -6,7 +6,7 @@
 
 # Žalio Kiosko Patirtis (Green Kiosk Experience)
 
-## Description
+## About
 
 <p align="center">
   <img width="100%" src="characters.png" />
