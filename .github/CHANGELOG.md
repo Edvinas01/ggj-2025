@@ -1,8 +1,9 @@
-## [v1.2.1](https://github.com/Edvinas01/ggj-2025/compare/v1.1.0...v1.2.1) - 2025-01-29
+## [v1.2.1](https://github.com/Edvinas01/ggj-2025/compare/v1.2.0...v1.2.1) - 2025-01-29
 
 ### Fixed
 
 - WebGL audio bank loading.
+- Cursor not showing for WebGL builds.
 
 ## [v1.2.0](https://github.com/Edvinas01/ggj-2025/compare/v1.1.0...v1.2.0) - 2025-01-29
 

@@ -5,6 +5,15 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Cursors
 {
     internal sealed class CursorSystem : MonoSystem, ICursorSystem
     {
+        [Header("Cursor (Web)")]
+        [SerializeField]
+        private Texture2D webCursorTexture;
+
+        // ReSharper disable once UnusedMember.Local
+        [SerializeField]
+        private Vector2 cursorHotspotWeb = new(12f, 1f);
+
+        [Header("Cursor (PC)")]
         [SerializeField]
         private Texture2D cursorTexture;
 
@@ -17,11 +26,19 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Cursors
         {
             base.OnInitialized();
 
+#if UNITY_WEBGL
+            Cursor.SetCursor(
+                webCursorTexture,
+                cursorHotspotWeb,
+                CursorMode.ForceSoftware
+            );
+#else
             Cursor.SetCursor(
                 cursorTexture,
                 cursorHotspot,
                 CursorMode.ForceSoftware
             );
+#endif
         }
 
         public void LockCursor()
