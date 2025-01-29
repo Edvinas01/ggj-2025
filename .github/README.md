@@ -8,7 +8,11 @@
 
 ## Description
 
-[Global Game Jam 2025](https://globalgamejam.org/) game entry, where the theme was "Bubbles".
+<p align="center">
+  <img width="100%" src="characters.png" />
+</p>
+
+[Global Game Jam 2025](https://globalgamejam.org/) game entry, where the theme was "Bubble".
 
 ### LT
 
@@ -23,6 +27,10 @@ Skūpus du rozu moka, tinginys du rozu eina!
 A scrooge pays twice, a lazy man goes twice!
 
 ## Credits
+
+<p align="center">
+  <img width="100%" src="team.png" />
+</p>
 
 - [Edvinas Danevičius](https://github.com/Edvinas01)
 - [Dovydas Reitelaitis](https://www.instagram.com/reitelaitis/)
