@@ -164,7 +164,7 @@ namespace CHARK.BuildTools.Editor
             var buildFileName = $"{string.Join(settings.BuildNameDelimiter, parts)}";
             if (string.IsNullOrWhiteSpace(buildFileExtension) == false)
             {
-                buildFileName = $"{buildFileName}.${buildFileExtension}";
+                buildFileName = $"{buildFileName}.{buildFileExtension}";
             }
 
             var buildDirectory = settings.BuildDirectory;
