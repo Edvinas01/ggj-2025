@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using CHARK.GameManagement;
+﻿using CHARK.GameManagement;
 using CHARK.GameManagement.Systems;
 using CHARK.ScriptableScenes;
 using CHARK.ScriptableScenes.Events;
@@ -57,6 +56,11 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Scenes
         public bool IsStartingScene(ScriptableSceneCollection collection)
         {
             return startingSceneCollection == collection || menuSceneCollection == collection;
+        }
+
+        public void LoadInitialScene()
+        {
+            controller.LoadInitialSceneCollection();
         }
 
         public void ReloadScene()

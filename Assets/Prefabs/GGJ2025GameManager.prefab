@@ -1001,7 +1001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialCollection: {fileID: 11400000, guid: 4ded77bce1f4449449772934cbf79cdb, type: 2}
-  initialCollectionLoadMode: 1
+  initialCollectionLoadMode: 0
   collectionEvents:
     onLoadEntered:
       m_PersistentCalls:

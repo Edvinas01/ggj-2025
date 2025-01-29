@@ -22,6 +22,24 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Audio
 
         private ISettingsSystem settingsSystem;
 
+        public bool IsLoading
+        {
+            get
+            {
+                if (FMODUnity.RuntimeManager.HaveAllBanksLoaded == false)
+                {
+                    return true;
+                }
+
+                if (FMODUnity.RuntimeManager.AnySampleDataLoading())
+                {
+                    return true;
+                }
+
+                return false;
+            }
+        }
+
         public override void OnInitialized()
         {
             base.OnInitialized();

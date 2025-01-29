@@ -342,8 +342,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioEventAsset: {fileID: 11400000, guid: 6860a20dd28375641add4bc2b20bb1f3, type: 2}
   rigidBody: {fileID: 0}
-  playMode: 1
-  stopMode: 1
+  playMode: 3
+  stopMode: 2
   isAllowFadeout: 1
   isTriggerOnce: 0
   isPreload: 0

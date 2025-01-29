@@ -22,6 +22,11 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Scenes
         public bool IsStartingScene(ScriptableSceneCollection collection);
 
         /// <summary>
+        /// Load initial game scene.
+        /// </summary>
+        public void LoadInitialScene();
+
+        /// <summary>
         /// Reload currently active scene.
         /// </summary>
         public void ReloadScene();

@@ -1,4 +1,5 @@
-﻿using CHARK.GameManagement;
+﻿using System.Collections;
+using CHARK.GameManagement;
 using UABPetelnia.GGJ2025.Runtime.Systems.Audio;
 using UABPetelnia.GGJ2025.Runtime.Systems.Cursors;
 using UABPetelnia.GGJ2025.Runtime.Systems.Gameplay;
@@ -59,5 +60,27 @@ namespace UABPetelnia.GGJ2025.Runtime
         protected override void OnAfterInitializeSystems()
         {
         }
+
+        protected override void OnStarted()
+        {
+            base.OnStarted();
+#if UNITY_WEBGL
+            StartCoroutine(LoadGameRoutine());
+#else
+            sceneSystem.LoadInitialScene();
+#endif
+        }
+
+#if UNITY_WEBGL
+        private IEnumerator LoadGameRoutine()
+        {
+            if (audioSystem.IsLoading)
+            {
+                yield return null;
+            }
+
+            sceneSystem.LoadInitialScene();
+        }
+#endif
     }
 }

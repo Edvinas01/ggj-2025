@@ -4,6 +4,11 @@ namespace UABPetelnia.GGJ2025.Runtime.Systems.Audio
 {
     internal interface IAudioSystem : ISystem
     {
+        /// <summary>
+        /// <c>true</c> if any audio data is being loaded or <c>false</c> otherwise.
+        /// </summary>
+        public bool IsLoading { get; }
+
         /// <returns>
         /// Audio volume for given <paramref name="type"/> in [0, 1] range.
         /// </returns>
