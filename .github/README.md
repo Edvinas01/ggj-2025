@@ -28,8 +28,6 @@ A scrooge pays twice, a lazy man goes twice!
 
 ## Global Game Jam 2025
 
-This game was developed as a part of [Global Game Jam 2025](https://globalgamejam.org/games/2025/green-kiosk-experience-zalio-kiosko-patirtis-0) in Kaunas, where the theme was "Bubble". Source-code can be found on [GitHub](https://github.com/Edvinas01/ggj-2025).
-
 <p align="center">
   <img width="100%" src="team.png" />
 </p>
