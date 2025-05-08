@@ -1,3 +1,13 @@
+## [v1.2.2](https://github.com/Edvinas01/ggj-2025/compare/v1.2.1...v1.2.2) - 2025-XX-XX
+
+### Added
+
+- Linux build support.
+
+### Changed
+
+- Audio bank names.
+
 ## [v1.2.1](https://github.com/Edvinas01/ggj-2025/compare/v1.2.0...v1.2.1) - 2025-01-29
 
 ### Fixed
