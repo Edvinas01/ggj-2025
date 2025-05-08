@@ -7,7 +7,8 @@
 ### Changed
 
 - Audio bank names.
-- Optimized shadows.
+- Optimized shadows by using fewer cascades and reducing shadow receivers.
+- Optimized SSAO by reducing quality.
 
 ## [v1.2.1](https://github.com/Edvinas01/ggj-2025/compare/v1.2.0...v1.2.1) - 2025-01-29
 
