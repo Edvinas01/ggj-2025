@@ -1788,6 +1788,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1069766110327336592}
   - component: {fileID: 5332739979232833366}
+  - component: {fileID: 2322869813555852302}
   m_Layer: 0
   m_Name: Reflections
   m_TagString: Untagged
@@ -1821,14 +1822,14 @@ ReflectionProbe:
   serializedVersion: 2
   m_Type: 0
   m_Mode: 1
-  m_RefreshMode: 1
+  m_RefreshMode: 2
   m_TimeSlicingMode: 1
-  m_Resolution: 512
+  m_Resolution: 256
   m_UpdateFrequency: 0
   m_BoxSize: {x: 5, y: 5, z: 5}
   m_BoxOffset: {x: 0, y: 0, z: 0}
   m_NearClip: 0.3
-  m_FarClip: 1000
+  m_FarClip: 15
   m_ShadowDistance: 0
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
@@ -1843,6 +1844,19 @@ ReflectionProbe:
   m_UseOcclusionCulling: 1
   m_Importance: 1
   m_CustomBakedTexture: {fileID: 0}
+--- !u!114 &2322869813555852302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5760225239824160823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40872e3598bd465a8c892ada5e42c0bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateInterval: 0.1
 --- !u!1 &6229022424731117973
 GameObject:
   m_ObjectHideFlags: 0
