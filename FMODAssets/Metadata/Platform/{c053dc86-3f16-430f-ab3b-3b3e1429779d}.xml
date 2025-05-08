@@ -8,7 +8,7 @@
 			<value>StandaloneWindows64</value>
 		</property>
 		<property name="subDirectory">
-			<value>StandaloneWindows64</value>
+			<value>Desktop</value>
 		</property>
 		<property name="speakerFormat">
 			<value>5</value>
