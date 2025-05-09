@@ -5,7 +5,7 @@
 			<value>0</value>
 		</property>
 		<property name="name">
-			<value>StandaloneWindows64</value>
+			<value>Desktop</value>
 		</property>
 		<property name="subDirectory">
 			<value>Desktop</value>
