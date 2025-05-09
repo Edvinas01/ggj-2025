@@ -16,7 +16,12 @@ namespace CHARK.BuildTools.Editor
         private const Deflater.CompressionLevel ArchiveCompressionLevel =
             Deflater.CompressionLevel.BEST_COMPRESSION;
 
-        private const string BurstDebugInformationDirectorySuffix = "_BurstDebugInformation_DoNotShip";
+        private static readonly List<string> IgnoreZipSuffixes = new()
+        {
+            "_BackUpThisFolder_ButDontShipItWithYourGame",
+            "_BurstDebugInformation_DoNotShip",
+        };
+
         private const string BuildArchiveExtension = "zip";
 
         /// <summary>
@@ -198,8 +203,7 @@ namespace CHARK.BuildTools.Editor
                 parts.Add(buildOptions.DateTime.ToString(settings.BuildDateTimeFormat));
             }
 
-            var archiveFileName = $"{string.Join(settings.BuildNameDelimiter, parts)}." +
-                                  $"{BuildArchiveExtension}";
+            var archiveFileName = $"{string.Join(settings.BuildNameDelimiter, parts)}." + $"{BuildArchiveExtension}";
 
             var archiveDirectory = settings.ArchiveDirectory;
 
@@ -285,7 +289,15 @@ namespace CHARK.BuildTools.Editor
         {
             public bool IsMatch(string name)
             {
-                return name.EndsWith(BurstDebugInformationDirectorySuffix) == false;
+                foreach (var ignoreZipSuffix in IgnoreZipSuffixes)
+                {
+                    if (name.EndsWith(ignoreZipSuffix))
+                    {
+                        return false;
+                    }
+                }
+
+                return true;
             }
         }
     }
