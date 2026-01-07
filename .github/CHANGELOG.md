@@ -1,4 +1,4 @@
-## [v1.2.2](https://github.com/Edvinas01/ggj-2025/compare/v1.2.1...v1.2.2) - 2025-XX-XX
+## [v1.2.2](https://github.com/Edvinas01/ggj-2025/compare/v1.2.1...v1.2.2) - 2026-01-07
 
 ### Added
 
