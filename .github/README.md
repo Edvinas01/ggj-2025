@@ -43,7 +43,7 @@ The team behind this game:
 
 - [Watch Trailer On YouTube](https://www.youtube.com/watch?v=9QybWqN1ttU)
 - [Download latest release](https://github.com/Edvinas01/ggj-2025/releases/latest)
-- [Download from itch.io](https://uab-petelnia.itch.io/zalio-kiosko-patirtis)
+- [Download from itch.io](https://rieves.itch.io/zalio-kiosko-patirtis)
 
 ## Development
 
