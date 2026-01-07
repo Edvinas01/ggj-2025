@@ -47,5 +47,5 @@ The team behind this game:
 
 ## Development
 
-- [Unity 6000.0.34f1](https://unity.com/download#how-get-started)
+- [Unity 6000.0.59f2](unityhub://6000.0.59f2/ef281c76c3c1)
 - [FMOD Studio 2.02.11](https://www.fmod.com/download) (optional)
